@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.wondershare.famisafe" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <application android:allowBackup="false" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.wondershare.famisafe.FamisafeApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/Theme.default" android:usesCleartextTraffic="true">
+        <activity android:name="com.wondershare.famisafe.parent.ui.search.SetSearchActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.search.SafeSearchActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.screen.ScreenTimeSetActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.appusage.AppUsagePcActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.screen.ScreenTimePcActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.billing.SubscriptionStatusActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.screen.TimeLimitActivity"/>
+        <activity android:name="com.wondershare.famisafe.child.ui.SmsSuccessActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.guide.Guide3Activity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.nsfw.NsfwActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.nsfw.NsfwIosActivity"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.nsfw.NsfwPhotosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.nsfw.NsfwSwitchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.nsfw.NsfwSettingAct" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.wondershare.famisafe.account.PayActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.wondershare.famisafe.parent.ui.ReconnectActivity"/>
+        <activity android:excludeFromRecents="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.wondershare.famisafe.account.SplashAct" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="famisafe.page.link" android:scheme="http"/>
+                <data android:host="famisafe.page.link" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="fb" android:pathPrefix="/deeplink1" android:scheme="famisafe"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="Login" android:launchMode="singleTask" android:name="com.wondershare.famisafe.account.LoginAct" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.wondershare.famisafe.child.ui.permission.PermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.child.ui.permission.DynamicActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lbAgreement" android:name="com.wondershare.famisafe.account.AgreementAct" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.wondershare.famisafe.account.RegisterAcrt" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.wondershare.famisafe.child.ui.StartedAct" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.account.RoleActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.wondershare.famisafe.parent.ui.MainParentActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.wondershare.famisafe.parent.ui.RealMainParentActivity" android:screenOrientation="portrait" android:taskAffinity="com.wondershare.famisafe.parent"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.sms.SmsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.sms.SmsBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.sms.SmsBaseAddActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.sms.SmsAdditionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.sms.SmsAdditionAddActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.account.AboutAct" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.wondershare.famisafe.child.auth.YoutubeAuthActivity" android:theme="@style/DefaultAppTheme.FullScreen"/>
+        <activity android:label="@string/app_name" android:name="com.wondershare.famisafe.parent.ui.notify.NotificationSettingAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.location.RealTimeLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.child.ui.AskedRequestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.location.RealTimeOldActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.location.HistoryLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.location.SetGeofencesInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.account.ForgetPsdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.child.ui.ChildModeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.child.ui.DoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.guide.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.guide.GuideInstallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.guide.Guide2Activity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.wondershare.famisafe.child.ui.HintUninstallActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.wondershare.famisafe.child.ui.FindParentLocationActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.wondershare.famisafe.child.ui.InterceptionAppActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.screen.ScreenTimeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.appusage.ScreenTimeUsageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.appusage.AppUsageIosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.schedule.ScheduleDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.schedule.AddScheduleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.schedule.ScheduleLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.schedule.SearchLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.schedule.SetScheduleNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.location.AddPlaceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.child.ui.YoutubeInterceptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.youtube.YoutubeHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.youtube.YoutubeBlockListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.limit.LimitDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.drive.DriveMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.drive.DriveDetailMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.drive.DriveSpeedSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.drive.DriveSetActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.wondershare.famisafe.parent.ui.SuspensionActivity" android:theme="@style/float_Transparent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.wondershare.famisafe.child.ui.PinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:launchMode="singleInstance" android:name="com.wondershare.famisafe.child.ui.AllowActivity" android:theme="@style/protect_transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.wondershare.famisafe" android:scheme="famisafe"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wondershare.famisafe.parent.ui.screen.AppBlockSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wondershare.famisafe.parent.ui.screen.AppBlockIOSSetActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="channel" android:value="production"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/notify_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.wondershare.famisafe.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/android_n_apk"/>
+        </provider>
+        <provider android:authorities="Sms" android:enabled="true" android:exported="true" android:name="com.wondershare.famisafe.common.util.SmsContentProvider"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.wondershare.famisafe.receiver.NetworkReconnectReceiver"/>
+        <receiver android:name="com.wondershare.famisafe.receiver.NetWorkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wondershare.famisafe.receiver.myReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:icon="@drawable/ic_lancher" android:label="@string/app_name" android:name="com.wondershare.famisafe.child.ui.permission.DeviceAdmin" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED"/>
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"/>
+            </intent-filter>
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.wondershare.famisafe.child.drive.geofence.DriveGeoFenceBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.wondershare.map.geofences.GeofenceBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.wondershare.famisafe.logic.jobs.MyJobCreator$AddReceiver">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.ADD_JOB_CREATOR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.wondershare.famisafe.child.receiver.GeofenceTransitionsReceiver"/>
+        <receiver android:name="com.wondershare.famisafe.child.receiver.WakeUpReceiver" android:process=":watch">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="com.wondershare.famisafe.deamon.CANCEL_JOB_ALARM_SUB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wondershare.famisafe.child.receiver.WakeUpReceiver$WakeUpAutoStartReceiver" android:process=":watch">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wondershare.map.livelocation.helper.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.famisafe.alarm.clock"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.evernote.android.job.gcm.PlatformGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.wondershare.famisafe.MainService" android:persistent="true"/>
+        <service android:label="@string/app_name" android:name="com.wondershare.famisafe.child.notify.MyNotificationMonitorService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.wondershare.famisafe.logic.firebase.FirebaseMessageReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:icon="@drawable/ic_lancher" android:label="@string/app_name" android:name="com.wondershare.famisafe.child.accessibility.SCAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <service android:exported="true" android:name="com.wondershare.map.geofences.GeofenceTransitionsJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.wondershare.famisafe.child.service.FamisafeWorkService$WorkNotificationService"/>
+        <service android:name="com.wondershare.famisafe.child.service.WatchDogService" android:process=":watch"/>
+        <service android:name="com.wondershare.famisafe.child.service.WatchDogService$WatchDogNotificationService" android:process=":watch"/>
+        <service android:exported="false" android:name="com.wondershare.famisafe.child.drive.recognition.google.DetectedActivitiesIntentService"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.wondershare.famisafe.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.wondershare.famisafe.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <provider android:authorities="com.wondershare.famisafe.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v21.PlatformJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"/>
+        <receiver android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.evernote.android.job.JobBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.evernote.android.job.JobRescheduleService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.wondershare.famisafe.MarketingInitProvider" android:exported="false" android:name="com.facebook.marketing.internal.MarketingInitProvider"/>
+        <provider android:authorities="com.wondershare.famisafe.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.facebook.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

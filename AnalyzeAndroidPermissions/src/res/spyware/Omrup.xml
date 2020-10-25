@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.omrup.cell.tracker" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <action android:name="android.location.PROVIDERS_CHANGED"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.omrup.cell.tracker.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.omrup.cell.tracker.permission.C2D_MESSAGE"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="android.support.multidex.MultiDexApplication" android:roundIcon="@drawable/roundicon" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="802c8222de4abde5f67c9fe1f8f0ab8654ca5faa"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_launcher"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/color_gray"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="com.omrup.cell.tracker.activity.Home_Activity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.omrup.cell.tracker.activity.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme_Edit_Profile"/>
+        <activity android:name="com.omrup.cell.tracker.activity.Add_new_friend" android:screenOrientation="portrait" android:theme="@style/add_friend">
+            <intent-filter>
+                <action android:name="Add_new_friend"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.omrup.cell.tracker.activity.Chat_screen" android:screenOrientation="portrait" android:theme="@style/AppTheme_Nobar"/>
+        <activity android:label="Add Place" android:name="com.omrup.cell.tracker.activity.Add_place" android:screenOrientation="portrait" android:theme="@style/AppTheme_Nobar"/>
+        <activity android:name="com.omrup.cell.tracker.activity.Love_alarm" android:screenOrientation="portrait" android:theme="@style/AppTheme_Nobar"/>
+        <activity android:name="com.omrup.cell.tracker.activity.Startup_activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_maps" android:name="com.omrup.cell.tracker.map.MapsActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="true" android:name="com.omrup.cell.tracker.service.Signal_service"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.omrup.cell.tracker.Firebase.FirebaseDataReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.omrup.cell.tracker"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.omrup.cell.tracker.activity.splashscreen" android:screenOrientation="portrait" android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Try Premium" android:name="com.omrup.cell.tracker.activity.Try_premium_activity" android:screenOrientation="portrait" android:theme="@style/AppTheme_premium"/>
+        <activity android:label="" android:name="com.omrup.cell.tracker.activity.Profileview.Profile_view_activity" android:screenOrientation="portrait" android:theme="@style/AppTheme.StatusBarTransparent"/>
+        <service android:enabled="true" android:exported="true" android:name="com.omrup.cell.tracker.service.Getlocation"/>
+        <receiver android:name="com.omrup.cell.tracker.fragment.SmsFragment$SmsNotifications">
+            <intent-filter>
+                <action android:name="in.share.sent"/>
+                <action android:name="in.share.delivered"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.omrup.cell.tracker.activity.Add_new_friend$SmsNoti">
+            <intent-filter>
+                <action android:name="in.invite.sent"/>
+                <action android:name="in.invite.delivered"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.omrup.cell.tracker.receiver.GpsReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.omrup.cell.tracker.receiver.CallReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.omrup.cell.tracker.receiver.SmsReciever" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_SENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.omrup.cell.tracker.activity.Permission_activity" android:screenOrientation="portrait" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.omrup.cell.tracker.activity.User_location_history_activity" android:screenOrientation="portrait" android:theme="@style/love_alaram"/>
+        <activity android:name="com.omrup.cell.tracker.activity.Love_alaram_sent_activity" android:screenOrientation="portrait" android:theme="@style/love_alaram_sent"/>
+        <activity android:label="Place Settings" android:name="com.omrup.cell.tracker.activity.Add_place_setting" android:screenOrientation="portrait"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:label="GirlFriend Cell Tracker" android:name="com.omrup.cell.tracker.activity.Update_Activity" android:screenOrientation="portrait" android:theme="@style/AppTheme_premium"/>
+        <provider android:authorities="com.omrup.cell.tracker.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="com.omrup.cell.tracker.activity.ProfilePhotoEdit" android:screenOrientation="portrait" android:theme="@style/AppTheme_Edit_ProfileView"/>
+        <activity android:name="com.omrup.cell.tracker.activity.LoginPagerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:theme="@style/MediaTheme"/>
+        <activity android:name="com.twitter.sdk.android.tweetui.GalleryActivity" android:theme="@style/MediaTheme"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.omrup.cell.tracker"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.omrup.cell.tracker.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/tw__transparent" android:label="@string/kit_name" android:name="com.twitter.sdk.android.core.identity.ShareEmailActivity"/>
+        <provider android:authorities="com.omrup.cell.tracker.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+    </application>
+</manifest>

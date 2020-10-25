@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="auto" package="com.amazon.mShop.android.shopping" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <permission android:name="com.amazon.mShop.android.shopping.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.mShop.android.shopping.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.amazon.CONTENT_PROVIDER_ACCESS" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.light" android:required="false"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER"/>
+    <permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="com.amazon.whas.API_COMMUNICATION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <permission android:label="WhiteListPolicyUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permission" android:protectionLevel="signature"/>
+    <permission android:label="ArcusSettingsUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission"/>
+    <application android:allowBackup="false" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:fullBackupContent="false" android:icon="@mipmap/app_icon" android:label="@string/app_label" android:largeHeap="true" android:name="com.amazon.mShop.MShopApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AmazonTheme">
+        <meta-data android:name="MAPRuntimeIsolateForAccountPool" android:value="Amazon_Teens"/>
+        <meta-data android:name="com.amazon.mobile.smash.nal" android:value="@integer/smash_nal"/>
+        <meta-data android:name="com.amazon.mobile.smash.local-loading-asset" android:value="cordova-mash-full-1.11.js"/>
+        <meta-data android:name="com.amazon.mobile.smash.metric-sender" android:value="com.amazon.mShop.mash.metrics.DcmMetricSender"/>
+        <meta-data android:name="com.amazon.mobile.smash.weblabClient" android:value="com.amazon.mShop.mash.weblab.WeblabClientImpl"/>
+        <meta-data android:name="com.amazon.mas.client.versionName" android:value="release-10.05992019"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTask" android:name="com.amazon.mShop.navigation.MainActivity" android:theme="@style/AmazonTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTask" android:name="com.amazon.mShop.navigation.MainSingleStackActivity" android:theme="@style/AmazonTheme.Home" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:name="com.amazon.mShop.splashscreen.StartupActivity"/>
+        <activity-alias android:exported="true" android:name="com.amazon.windowshop.home.HomeLauncherActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity"/>
+        <activity-alias android:exported="true" android:name="com.amazon.mShop.storefront.StorefrontActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity"/>
+        <activity-alias android:name="com.amazon.mShop.android.home.PublicUrlActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity">
+            <intent-filter>
+                <data android:scheme="com.amazon.mobile.shopping"/>
+                <data android:scheme="com.amazon.mobile.shopping.web"/>
+                <data android:scheme="com.amazon.mShop.android.shopping"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:name="com.amazon.mShop.home.HomeActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:name="com.amazon.mShop.android.home.HomeActivity" android:targetActivity="com.amazon.mShop.splashscreen.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity-alias>
+        <receiver android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.amazon.mShop.android.shopping"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:name="com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.whitelist.FFSWhiteListJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.FFSBackgroundProvisioningServiceBinder"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.amazon.mas.client.kiwiCompatibleVersion" android:value="2"/>
+        <meta-data android:name="com.amazon.platform.plugin.outboundMarketingPlugins" android:resource="@array/outbound_marketing_plugins"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTask" android:name="com.amazon.traffic.automation.notification.util.PushNotificationContentActivity"/>
+        <receiver android:name="com.amazon.traffic.automation.notification.activity.ScheduleCallBackBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.amazon.traffic.automation.notification.util.PushNotificationBroadcastReceiver"/>
+        <service android:name="com.amazon.traffic.automation.notification.geofence.NotificationGeofenceTransition"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.amazon.platform.plugin.phoneLibPlugins" android:resource="@array/plugins"/>
+        <meta-data android:name="MAPBootstrapSSOTargetApplication" android:value="true"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.publicurl.PublicURLActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.pushnotification.WebNotificationsSettingsActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.FeedbackActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.amazon.mShop.search.MShopWebSearchActivity" android:theme="@style/AmazonTheme.Search">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.action.WEB_VIEW_SEARCH"/>
+                <category android:name="android.intent.category.GADGET"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:name="com.amazon.mShop.search.SearchActivity" android:targetActivity="com.amazon.mShop.search.MShopWebSearchActivity">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.action.SEARCH"/>
+                <category android:name="android.intent.category.GADGET"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.categoryBrowse.CategoryBrowseActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.details.ProductDetailsActivity">
+            <intent-filter>
+                <data android:scheme="amazon"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="www.amazon.com" android:pathPrefix="/openInMobileApp" android:scheme="http"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.amazon.mShop.featured" android:scheme="mshop"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.shop.DETAIL_PAGE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation|screenSize" android:exported="false" android:name="com.amazon.mShop.details.web.OfferListingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.goldbox.GoldboxActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.goldbox.WebGoldboxActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.history.HistoryActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.history.web.WebHistoryActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.opl.web.WebPurchaseActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.opl.web.WebPurchaseMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mShop.order.ViewOrderActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.cart.web.WebCartActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.cart.web.WebCartMigrationActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.wishlist.web.WebWishListActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity-alias android:exported="true" android:name="com.amazon.windowshop.wishlist.WSWishListActivity" android:targetActivity="com.amazon.mShop.wishlist.web.WebWishListActivity">
+            <intent-filter>
+                <action android:name="com.amazon.registry.WISHLIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.wishlist.web.WebWishListMigrationActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.help.web.WebContactUsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.help.web.WebAIVHelpActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.youraccount.YourAccountActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.moa.interstitial.MessageCenterInterstitialOnMoaCreationWebActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.about.MShopAppInfoActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.localeswitch.LocaleSwitchActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.startup.StartupLocalizationSelectionActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.startup.StartupLocalizationSelectionMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.ScopeSearchMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.AmazonChooserActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.debug.DebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.web.DebugHtmlSandboxSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.SSODebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.search.SearchDebugSettingsActivity" android:theme="@style/AmazonTheme.Search"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.mobileads.AdsWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.device.ads.AdActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.mobileads.DebugSettingsActivityForAds"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.MShopModalWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.MShopModalWebMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.MShopWebDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sns.SnsWebViewActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sns.SnsManageYourSubscribesActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVMShopWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.web.MShopWebActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.web.MShopWebMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.web.EmbeddedBrowserActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.DistributedSSOLoginActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.DistributedSSOLoginMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.SigninPromptActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.SigninPromptMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.SSOBootstrapScreenActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.SSOBootstrapScreenMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:name="com.amazon.mShop.sso.CentralSSOLoginActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.DistributedSSOLogoutActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.DistributedSSOLogoutMigrationActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.CentralSSOLogoutActivity" android:theme="@style/AmazonSemitransparentNoTitle"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.SSOSplashScreenActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.sso.SSOSplashScreenMigrationActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.primeupsell.PrimeUpsellActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.primeupsell.PrimeUpsellDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.kiang.KiangDebugSettingsActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVGatewayStartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.aiv.AIVGatewayActivity"/>
+        <receiver android:name="com.amazon.mShop.sso.SSOAccountListener" android:permission="com.amazon.dcp.sso.permission.account.changed">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.account.added"/>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.amazon.mShop.kiang.DeviceRegistrationReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.mShop.pushnotification.tracking.SystemSettingsNotificationChangeReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.mShop.error.NetworkChangeService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.mShop.sso.SSOBackgroundAccountService"/>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.mShop.lite.m2b" android:exported="true" android:name="com.amazon.mShop.sso.MShopMAPInformationProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <provider android:authorities="@string/asset_content_provider_authority" android:exported="false" android:name="com.amazon.mShop.util.AssetContentProvider" android:syncable="false"/>
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <provider android:authorities="@string/attachment_content_provider_authority" android:exported="false" android:name="com.amazon.mShop.util.AttachmentContentProvider" android:syncable="false"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.home.web.MShopWebGatewayActivity" android:theme="@style/AmazonTheme.Home" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.home.web.MShopWebGatewayMigrationActivity" android:theme="@style/AmazonTheme.Home" android:windowSoftInputMode="stateHidden"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTask" android:name="com.amazon.mShop.pushnotification.NotificationContentActivity"/>
+        <activity android:name="com.amazon.mShop.aiv.AivHttpIntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.co.uk" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.co.uk" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.co.jp" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.co.jp" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.de" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.de" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.amazon.com" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="http"/>
+                <data android:host="www.amazon.com" android:pathPattern="/gp/aw/d/........../aiv/..*" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.weblab.MShopWeblabDebugActivity"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:name="com.amazon.mShop.details.FullScreenVideoActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name="com.amazon.mShop.pushnotification.MShopClearNotificationReceiver"/>
+        <meta-data android:name="com.amazon.platform.plugin.startPlugins" android:resource="@xml/startup_weblabs"/>
+        <uses-library android:name="com.amazon.client.metrics.api" android:required="false"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Amazon AuthPortal" android:launchMode="singleTop" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Amazon Auth Challenge" android:name="com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Sign up and enroll" android:name="com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="true" android:label="Enroll actor UI" android:name="com.amazon.identity.auth.device.activity.ActorEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.amazon.platform.plugin.core" android:resource="@xml/core_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.weblab" android:resource="@xml/weblab_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.aeeResolver.api" android:resource="@xml/aee_resolver_api_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.canaryAPI" android:resource="@xml/mshop_canary_api"/>
+        <meta-data android:name="com.amazon.jungo.contract.core" android:resource="@array/jungo_core_contracts"/>
+        <activity android:configChanges="locale|orientation|screenSize" android:name="com.amazon.mobile.mash.embeddedbrowser.EmbeddedBrowserMigrationActivity"/>
+        <activity android:configChanges="locale|orientation|screenSize" android:name="com.amazon.mobile.mash.embeddedbrowser.EmbeddedBrowserActivity"/>
+        <activity android:name="com.amazon.mobile.mash.MASHConfigurationActivity"/>
+        <provider android:authorities="@string/mash_file_provider_authority" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.mobile.mash.util.MASHFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <meta-data android:name="com.amazon.platform.plugin.searchLibPlugins" android:resource="@array/search_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.eventcenter" android:resource="@xml/eventcenter_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.fireDeviceContextServicePlugins" android:resource="@xml/fdc_plugin"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <meta-data android:name="com.amazon.platform.plugin.alexa.sdk" android:resource="@xml/alexa_sdk_plugin"/>
+        <service android:name="com.amazon.alexa.sdk.audio.channel.content.amp.service.AmpService" android:stopWithTask="false"/>
+        <meta-data android:name="com.amazon.platform.plugin.sampling" android:resource="@xml/sampling_service_shopkit_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.apperror" android:resource="@array/mobile_app_error_plugins"/>
+        <service android:exported="false" android:name="com.amazon.client.metrics.nexus.EventUploadService"/>
+        <service android:exported="true" android:name="com.amazon.client.metrics.nexus.UploadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.amazon.mShop.android.shopping.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.amazon.mShop.android.shopping.mlsInitializationProvider" android:enabled="true" android:exported="false" android:name="com.amazon.mls.config.internal.sushi.background.ProcessLifecycleTrackerInitialization"/>
+        <service android:name="com.amazon.mls.config.internal.sushi.uploader.BackupUploaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.amazon.platform.plugin.alipay" android:resource="@xml/alipay_plugin"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <service android:name="com.amazon.identity.auth.device.authorization.AmazonAuthorizationService1stParty">
+            <meta-data android:name="map.version" android:value="3.5.4"/>
+            <intent-filter>
+                <action android:name="com.amazon.identity.auth.device.authorization.MapAuthorizationService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenSize" android:finishOnTaskLaunch="true" android:name="com.amazon.identity.auth.device.authorization.AuthzDialogActivity" android:taskAffinity=".com.amazon.lwa" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenSize" android:finishOnTaskLaunch="true" android:name="com.amazon.identity.auth.device.workflow.WorkflowDialogActivity" android:taskAffinity=".com.amazon.lwa" android:theme="@android:style/Theme.NoDisplay"/>
+        <meta-data android:name="com.amazon.platform.plugin.deviceinfoprovider" android:resource="@array/device_info_provider_plugins"/>
+        <provider android:authorities="com.amazon.mShop.android.shopping.marketplace.provider" android:exported="true" android:name="com.amazon.mShop.marketplace.provider.MarketplaceProvider"/>
+        <meta-data android:name="com.amazon.platform.plugin.freshLib" android:resource="@array/fresh_plugins"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.fresh.debug.FreshDebugActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.chrome" android:resource="@array/chrome_plugins"/>
+        <activity android:name="com.amazon.mShop.wonderland.WonderlandDebugSettingsActivity"/>
+        <activity android:name="com.amazon.mShop.menu.rdc.debug.RDCDebugSettingsActivity"/>
+        <activity android:name="com.amazon.mShop.weblab.MShopChromeBetaTogglesActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.address.location" android:resource="@xml/address_location_plugin"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.amazon.android.address.lib.PermissionRequestActivity" android:theme="@style/AAL_Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.amazon.android.address.lib.LocationUpdateRequestActivity" android:theme="@style/AAL_Theme.Transparent"/>
+        <meta-data android:name="com.amazon.platform.plugin.packard" android:resource="@xml/packard_weblabs"/>
+        <meta-data android:name="com.amazon.platform.plugin.mShopAndroidCBI" android:resource="@xml/cbi_weblab"/>
+        <meta-data android:name="com.amazon.platform.plugin.va" android:resource="@xml/va_weblabs"/>
+        <activity android:label="@string/title_activity_debug" android:name="com.amazon.mShop.voice.assistant.debug.DebugActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.voice.assistant.VoiceActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.amazon.platform.plugin.fling" android:resource="@array/fling_plugins"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.amazon.mShop.fling.wishlist.uwl.WebUwlActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.amazon.mShop.fling.FlingDebugSettingsActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.pantry" android:resource="@xml/pantry_plugin"/>
+        <meta-data android:name="com.amazon.client.metrics.nexus.RunContext" android:value="com.amazon.mShop.metrics.nexus.context.MShopRunContext"/>
+        <meta-data android:name="com.amazon.platform.plugin.packardWeblabs" android:resource="@xml/location_packard_weblabs"/>
+        <activity android:exported="true" android:name="com.amazon.mShop.location.ChangeDeliveryCountryActivity"/>
+        <activity android:exported="true" android:name="com.amazon.mShop.location.ChangePCDActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.httpUrlDeepLink" android:resource="@array/deeplinking_plugins"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.mShop.deeplink.DeepLinkDebugActivity"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent">
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.amazon.com"/>
+                <data android:host="www.amazon.ca"/>
+                <data android:host="www.amazon.co.uk"/>
+                <data android:host="www.amazon.fr"/>
+                <data android:host="www.amazon.de"/>
+                <data android:host="www.amazon.es"/>
+                <data android:host="www.amazon.com.br"/>
+                <data android:host="www.amazon.com.mx"/>
+                <data android:host="www.amazon.it"/>
+                <data android:host="www.amazon.co.jp"/>
+                <data android:host="www.amazon.com.au"/>
+                <data android:host="www.amazon.ae"/>
+                <data android:host="www.amazon.com.tr"/>
+                <data android:host="www.amazon.sg"/>
+                <data android:host="www.amazon.nl"/>
+                <data android:host="www.amazon.sa"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="dl.amazon.com"/>
+                <data android:host="dl.amazon.ca"/>
+                <data android:host="dl.amazon.co.uk"/>
+                <data android:host="dl.amazon.fr"/>
+                <data android:host="dl.amazon.de"/>
+                <data android:host="dl.amazon.es"/>
+                <data android:host="dl.amazon.com.br"/>
+                <data android:host="dl.amazon.com.mx"/>
+                <data android:host="dl.amazon.it"/>
+                <data android:host="dl.amazon.co.jp"/>
+                <data android:host="dl.amazon.com.au"/>
+                <data android:host="dl.amazon.ae"/>
+                <data android:host="dl.amazon.com.tr"/>
+                <data android:host="dl.amazon.sg"/>
+                <data android:host="dl.amazon.nl"/>
+                <data android:host="dl.amazon.sa"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="a.co"/>
+                <data android:host="amz.onl"/>
+                <data android:host="amzn.eu"/>
+                <data android:host="amzn.asia"/>
+                <data android:pathPattern="/d/......."/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.amazon.platform.plugin.coreFeaturesPlugins" android:resource="@array/coreFeaturesPlugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.share" android:resource="@array/social_share_plugins"/>
+        <activity android:name="com.amazon.mShop.AmazonShareActivity"/>
+        <activity android:icon="@drawable/copy_to_clipboard" android:label="Copy To Clipboard" android:name="com.amazon.mShop.share.copy.ShareToClipboardActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.install_referrer" android:resource="@array/install_referrer_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.deviceinformation" android:resource="@xml/device_information_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.navigation" android:resource="@xml/shopkit_navigationservice"/>
+        <meta-data android:name="com.amazon.platform.plugin.canaryImpl" android:resource="@xml/mshop_canary_service"/>
+        <meta-data android:name="com.amazon.platform.plugin.smrtmash" android:resource="@xml/smrt_mash_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.kwl" android:resource="@xml/kwl_plugin"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.kwl.KidsWishlistExperienceMigrationActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.secureurl.pharmacyurlinterception" android:resource="@xml/pharmacy_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.webview" android:resource="@xml/webview_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.hve" android:resource="@array/hve_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.ParentalControls" android:resource="@xml/parental_controls_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.appgrade" android:resource="@array/appgrade_plugins"/>
+        <activity android:name="com.amazon.mShop.appgrade.ui.AppgradeWebViewActivity"/>
+        <activity android:name="com.amazon.mShop.appgrade.ui.AppgradeSsnapActivity"/>
+        <activity android:enabled="false" android:exported="true" android:name="com.amazon.mShop.appgrade.ui.AppgradeKillSwitchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.amazon.platform.plugin.securestorage" android:resource="@array/secure_storage_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.mshop_csa" android:resource="@xml/csa_startup"/>
+        <meta-data android:name="com.amazon.platform.plugin.smashLocalizationWeblabs" android:resource="@xml/smash_localization_weblabs"/>
+        <meta-data android:name="com.amazon.platform.plugin.pushregistration" android:resource="@array/registration_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.contentdecorator" android:resource="@xml/decorator_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.font" android:resource="@array/fontplugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.inlineSearchSuggestionsLibPlugins" android:resource="@array/iss_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.voice" android:resource="@xml/voice_assistant_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.contextualActions" android:resource="@array/contextual_actions_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.deferredDeeplink" android:resource="@xml/deferred_deeplink_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.localizationService" android:resource="@array/localization_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.wishlist" android:resource="@xml/web_wish_list_plugin"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.wishlist.WebWishListActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.wishlist.WebWishListMigrationActivity" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMListenerOrchestrator$MShopGCMListenerJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMListenerOrchestrator$MShopGCMListenerIntentService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.mShop.pushnotification.gcm.MShopInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMRegistrationOrchestrator$MShopGCMRegistrationJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.amazon.mShop.pushnotification.gcm.MShopGCMRegistrationOrchestrator$MShopGCMRegistrationIntentService"/>
+        <meta-data android:name="com.amazon.platform.plugin.knowAppMetrics" android:resource="@xml/know_app_metrics_plugin"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.android.oma.hub.NotificationHubActivity" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.amazon.platform.plugin.hub" android:resource="@xml/notification_hub_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.searchBarPlugins" android:resource="@array/search_bar_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.startup_service" android:resource="@xml/startup_service_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.mshopmetrics" android:resource="@xml/mshopmetrics_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.lists_service" android:resource="@xml/lists_service_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.push.reporting" android:resource="@array/reporting_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.permission.v2" android:resource="@xml/permission_service_shopkit_plugin"/>
+        <activity android:name="com.amazon.mShop.permission.PermissionRequestActivity" android:theme="@style/PSTheme.Transparent"/>
+        <activity android:name="com.amazon.mShop.permission.v2.storage.PermissionCheckerImpl$SystemPermissionRequestActivity" android:theme="@style/PSTheme.Transparent"/>
+        <meta-data android:name="com.amazon.platform.plugin.localizationConfiguration" android:resource="@xml/localization_configuration_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.shortcut" android:resource="@array/shortcut_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.storemodes" android:resource="@array/storemodes_plugin"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="standard" android:name="com.amazon.mShop.storemodes.StoreModesActivity" android:theme="@style/AmazonTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.amazon.platform.plugin.appIconBadging" android:resource="@xml/app_icon_badging_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.locationService" android:resource="@xml/native_location_service_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.qtips" android:resource="@xml/qtips_weblabs"/>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <meta-data android:name="com.amazon.platform.plugin.a9vsPlugins" android:resource="@array/weblab_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.vision" android:resource="@xml/vision_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.a9vsService" android:resource="@xml/shopkit_a9vsservice_plugin"/>
+        <activity android:name="com.amazon.vsearch.debug.ScanItDebugActivity"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:enabled="false" android:launchMode="singleTask" android:name="com.amazon.vsearch.galleryshare.SearchPhotoGalleryShareActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/search_photo_gallery_share_label">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:enabled="false" android:launchMode="singleTask" android:name="com.amazon.vsearch.galleryshare.StyleSnapGalleryShareActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/style_snap_gallery_share_label">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize" android:launchMode="singleTask" android:name="com.amazon.vsearch.VSearchEntryActivity" android:screenOrientation="portrait" android:theme="@style/ModesTheme"/>
+        <meta-data android:name="com.amazon.platform.plugin.marketplaceresources" android:resource="@xml/marketplaceresources_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.runtimeconfig" android:resource="@xml/runtimeconfig_service_shopkit_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.mshopsearch.browse" android:resource="@xml/shopkit_mshopsearch_browse_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.mshopsearch.search" android:resource="@xml/shopkit_mshopsearch_search_plugin"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mshopsearch.browse.CategoryBrowseMigrationActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.amazon.mshopsearch.search.MShopWebSearchMigrationActivity" android:theme="@style/AmazonTheme.Search"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.amazon.mshopsearch.search.MShopWebSearchEntryMigrationActivity" android:theme="@style/AmazonTheme.Search"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:name="com.amazon.mshopsearch.search.SearchWebviewDebugActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.searchScopePlugins" android:resource="@array/search_scope_plugins"/>
+        <activity android:configChanges="layoutDirection|locale|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.amazon.vsearch.amazonpay.AmazonPayEntryActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.amazon.platform.plugin.ssnap" android:resource="@xml/ssnap_plugin"/>
+        <activity android:configChanges="@integer/activity_configChangesMask" android:exported="false" android:name="com.amazon.mobile.ssnap.SsnapActivity"/>
+        <activity android:configChanges="@integer/activity_configChangesMask" android:exported="false" android:name="com.amazon.mobile.ssnap.SsnapTransparentModalActivity" android:theme="@style/SsnapTransparentModal"/>
+        <meta-data android:name="com.amazon.platform.plugin.issWidgetsPlugins" android:resource="@array/iss_widgets_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.location" android:resource="@array/location_plugins_list"/>
+        <provider android:authorities="com.amazon.mShop.android.shopping.ShareAndroidProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.mobile.koko.ShareAndroidFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_android_provider_paths"/>
+        </provider>
+        <meta-data android:name="com.amazon.platform.plugin.ssnaplocalization" android:resource="@xml/ssnap_localization_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.mshop.sharedcomponents" android:resource="@xml/react_package_supplier_plugin"/>
+        <service android:exported="true" android:name="com.burnweb.rnsendintent.RNSendIntentModule"/>
+        <provider android:authorities="com.amazon.mShop.android.shopping.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.burnweb.rnsendintent.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.amazon.mShop.android.shopping.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.utils.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.amazon.platform.plugin.regionMonitoringServices.ssnap" android:resource="@xml/region_monitoring_services_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.ffs.react" android:resource="@xml/ffs_react_bridge"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationLayoutDirectionScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.mozart.MozartDebugSettingsActivity"/>
+        <activity-alias android:exported="true" android:name="com.amazon.mShop.mozart.MozartDSActivity" android:targetActivity="com.amazon.mShop.mozart.MozartDebugSettingsActivity"/>
+        <meta-data android:name="com.amazon.platform.plugin.mozart_debug_settings_plugin" android:resource="@xml/mozart_debug_settings_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.alexa" android:resource="@array/alexa_plugins"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.AlexaActivity" android:theme="@style/Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.WakeWordOnBoardingActivity" android:theme="@style/Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.AlexaOnBoardingActivity" android:theme="@style/Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/title_activity_debug" android:name="com.amazon.mShop.alexa.debug.DebugActivity"/>
+        <activity android:configChanges="layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.AlexaMShopWebActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.ssnap.activities.AlexaSettingsActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.ssnap.activities.AlexaSettingsMigrationActivity"/>
+        <activity android:configChanges="layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.amazon.mShop.alexa.ssnap.activities.DirectiveActivity" android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.alexa.ssnap.activities.DirectiveActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.mShop.alexa.onboarding.PermissionRequestActivity" android:theme="@style/Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.activities.AlexaMShopWebMigrationActivity" android:windowSoftInputMode="stateHidden"/>
+        <service android:exported="false" android:name="com.amazon.mShop.alexa.carmode.ActivityDetectionIntentService"/>
+        <receiver android:exported="false" android:name="com.amazon.mShop.alexa.settings.AlexaSettingsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.alexa.settings"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.amazon.platform.plugin.alexa.audioux" android:resource="@array/ux_plugins"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.audio.ux.PlaybackSheetActivity" android:theme="@style/Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.amazon.mShop.alexa.audio.ux.ssnap.MediaPlayerSsnapLauncherActivity" android:theme="@style/Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <receiver android:exported="false" android:name="com.amazon.mShop.alexa.audio.ux.ssnap.MediaPlayerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.mShop.alexa.audioux.mediaplayer"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.wakeword.WakewordService" android:stopWithTask="false"/>
+        <meta-data android:name="com.amazon.platform.plugin.aeeResolver" android:resource="@array/aee_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.a9arService" android:resource="@xml/shopkit_a9arservice_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.arview" android:resource="@array/arview_plugins"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.a9.fez.ARCoreShimMigrationActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.amazon.mShop.goals.debug.GeofenceDebugActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light"/>
+        <service android:exported="false" android:name="com.amazon.mShop.goals.orchestrator.GoalsIntentService"/>
+        <service android:exported="false" android:foregroundServiceType="location" android:name="com.amazon.mShop.goals.location.LocationUpdatesService"/>
+        <service android:name="com.amazon.mShop.goals.orchestrator.GoalsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.amazon.mShop.goals.orchestrator.GoalsGeofenceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="GEOFENCE_TRIGGER_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.amazon.platform.plugin.regionmonitoring" android:resource="@xml/regionmonitoring_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.campusInstantPickup" android:resource="@xml/campus_instant_pickup_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.commercex" android:resource="@xml/commercex_plugin"/>
+        <activity android:name="com.amazon.mShop.smile.debug.SmileDebugActivity"/>
+        <activity android:name="com.amazon.mShop.smile.features.SmileSystemSettingPermissionActivity" android:theme="@style/Transparent"/>
+        <meta-data android:name="com.amazon.platform.plugin.smile" android:resource="@xml/smile_plugin"/>
+        <meta-data android:name="com.amazon.platform.plugin.searchSuggestionsCardPlugins" android:resource="@array/searchsuggestions_cards_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.searchSuggestionsChicletPlugins" android:resource="@array/searchsuggestions_chiclets_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.searchSuggestionsDexPrimePlugins" android:resource="@array/searchsuggestions_dex_prime_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.searchSuggestionsProductsPlugins" android:resource="@array/searchsuggestions_products_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.shoppingaids" android:resource="@xml/shopping_aids_weblabs"/>
+        <meta-data android:name="com.amazon.platform.plugin.CardBasedSelectionPlugins" android:resource="@array/card_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.ChicletBasedSelectionPlugins" android:resource="@array/chiclet_plugins"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.arcus.FFSArcusSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="190120000"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.google.ar.core.InstallActivity" android:theme="@android:style/Theme.Material.Light.Dialog.Alert"/>
+        <meta-data android:name="com.amazon.platform.plugin.trendingSearchesPlugins" android:resource="@array/trending_searches_plugins"/>
+        <meta-data android:name="com.amazon.platform.plugin.rviPlugins" android:resource="@array/rvi_plugins"/>
+    </application>
+</manifest>

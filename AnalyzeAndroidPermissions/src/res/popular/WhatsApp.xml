@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.whatsapp" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <queries>
+        <package android:name="com.facebook.orca"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="messenger.com" android:scheme="https"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.lite"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="vnd.android-dir/mms-sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <package android:name="com.whatsapp.w4b"/>
+    </queries>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.whatsapp.permission.BROADCAST"/>
+    <uses-permission android:name="com.whatsapp.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.whatsapp.permission.REGISTRATION"/>
+    <uses-permission android:name="com.whatsapp.sticker.READ"/>
+    <uses-permission-sdk-23 android:name="android.permission.CALL_PHONE"/>
+    <uses-permission-sdk-23 android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_CALL_LOG"/>
+    <permission android:name="com.whatsapp.permission.BROADCAST" android:protectionLevel="signature"/>
+    <permission android:name="com.whatsapp.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.whatsapp.permission.REGISTRATION" android:protectionLevel="signature"/>
+    <permission android:name="com.whatsapp.permission.MIGRATION_CONTENT_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:description="@string/sticker_read_perm_description" android:label="@string/sticker_read_perm_label" android:name="com.whatsapp.sticker.READ"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.whatsapp.registration.backuptoken.BackupTokenAgentHelper" android:extractNativeLibs="true" android:fullBackupContent="false" android:fullBackupOnly="false" android:hardwareAccelerated="@bool/is_at_least_api_16" android:hasFragileUserData="true" android:icon="@mipmap/icon" android:label="@string/localized_app_name" android:name="com.whatsapp.AppShell" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:restoreAnyVersion="true" android:supportsRtl="true" android:theme="@style/Theme.App">
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_api_key"/>
+        <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598.0dip"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:exported="false" android:name="org.npci.commonlibrary.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentsTosActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentTransactionDetailsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentsAccountSetupActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiBankPickerActivity" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentBankSetupActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiBankAccountPickerActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiDebitCardVerifActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiEducationActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiBankAccountLinkingConfirmationActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiBankAccountLinkingRetryActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndiaUpiBankAccountDetailsActivity" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiResetPinActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiDeviceBindActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiVpaContactInfoActivity" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiChangePinActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiCheckPinActivity" android:theme="@style/Theme.App.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiInvitePaymentActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentSettingsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndiaUpiMandateHistoryActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiContactPicker" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiQrCodeScanActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiSecureQrCodeDisplayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.QRCode" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiQrCodeUrlValidationActivity" android:theme="@style/Theme.App.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiPaymentLauncherActivity" android:theme="@style/Theme.QuickContact" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndiaUpiMandatePaymentActivity" android:theme="@style/Theme.App.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.whatsapp.payments.receiver.IndiaUpiPayIntentReceiverActivity" android:theme="@style/Theme.App.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="upi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.MexicoPaymentActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.MexicoPaymentSettingsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.MexicoFbPayHubActivity" android:theme="@style/Theme.App.FbPayCard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.MexicoPayBloksActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.BloksTransparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.MexicoPaymentCardDetailsActivity" android:theme="@style/Theme.App.FbPayCard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.MexicoTransactionDetailsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndonesiaPaymentSettingsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.IndonesiaPayBloksActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.BloksTransparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndonesiaPaymentActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndonesiaPaymentMethodDetailsActivity" android:theme="@style/Theme.App.FbPayCard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.IndonesiaFbPayHubActivity" android:theme="@style/Theme.App.FbPayCard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.support.IndonesiaPartnerSupportActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilPaymentSettingsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.BrazilPayBloksActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.BloksTransparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilPaymentActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilSmbPaymentActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilPaymentTransactionDetailActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilPaymentCardDetailsActivity" android:theme="@style/Theme.App.FbPayCard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilFbPayHubActivity" android:theme="@style/Theme.App.FbPayCard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.BrazilMerchantDetailsListActivity" android:theme="@style/Theme.App.FbPayCard" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.MerchantPayoutTransactionHistoryActivity" android:theme="@style/Theme.App.FbPayCard" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.PaymentTransactionHistoryActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.PaymentGroupParticipantPickerActivity" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.PaymentTransactionDetailsListActivity" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.PaymentDeleteAccountActivity" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.PaymentContactPicker" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.payments.ui.PaymentsUpdateRequiredActivity" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.payments.ui.PaymentSupportTopicsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.wabloks.ui.WaBloksActivity" android:theme="@style/Theme.App.Bloks" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAImRFQvx8szY9HcRV2sTL7zp5DyY5Lr6ldGt0Z1Q"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:label="@string/launcher_app_name" android:name="com.whatsapp.Main" android:theme="@style/Theme.App.Launcher">
+            <intent-filter android:label="@string/launcher_app_name">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.Conversation" android:theme="@style/Theme.App.CondensedActionBar" android:windowSoftInputMode="stateUnchanged">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.whatsapp.Conversation"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.profile.ProfileInfoActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity-alias android:name="com.whatsapp.SetAsProfilePhoto" android:targetActivity="com.whatsapp.profile.ProfileInfoActivity">
+            <intent-filter android:label="@string/set_as_profile_photo">
+                <action android:name="android.intent.action.ATTACH_DATA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ProfilePhotoReminder" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.SetStatus" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.registration.EULA" android:theme="@style/Theme.App.White.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.registration.RegisterPhone" android:theme="@style/Theme.App.White.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.registration.VerifySms" android:theme="@style/Theme.App.White.NoActionBar">
+            <intent-filter android:label="@string/register_phone_header">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="r" android:scheme="whatsapp"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.whatsapp.VerifySmsDeepLink" android:targetActivity="com.whatsapp.registration.VerifySms">
+            <intent-filter android:autoVerify="true" android:label="@string/register_phone_header">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="v.whatsapp.com" android:scheme="http"/>
+                <data android:host="v.whatsapp.com" android:scheme="https"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.registration.VerifyTwoFactorAuth" android:theme="@style/Theme.App.White.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.registration.directmigration.RestoreFromConsumerDatabaseActivity" android:theme="@style/Theme.App.White.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.registration.RegisterName" android:theme="@style/Theme.App.White.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.DescribeProblemActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.SystemStatusActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.Settings" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsAccount" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.SettingsChat" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsDataUsageActivity" android:theme="@style/Theme.App.Settings.DayNight">
+            <intent-filter android:label="@string/settings_data_and_storage_usage">
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsChatHistory" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsHelp" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsNotifications" android:theme="@style/Theme.App.Settings.DayNight">
+            <intent-filter android:label="@string/settings_notifications">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.group.GroupSettingsActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsJidNotificationActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.SettingsNetworkUsage" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.storage.StorageUsageActivity" android:theme="@style/Theme.App.Prefs.StorageUsage"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.storage.StorageUsageDetailActivity" android:theme="@style/Theme.App.Prefs.StorageUsage"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.storage.StorageUsageGalleryActivity" android:theme="@style/Theme.App.Prefs.StorageUsage"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsPrivacy" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.SettingsSecurity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.GdprReportActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.twofactor.SettingsTwoFactorAuthActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.twofactor.TwoFactorAuthActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.backup.google.SettingsGoogleDrive" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.faq.SearchFAQ"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.faq.FaqItemActivity"/>
+        <activity android:name="com.whatsapp.About" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.whatsapp.stickers.StickerStorePackPreviewActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.BlockList"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.AppAuthSettingsActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ContactPicker" android:theme="@style/Theme.App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.whatsapp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="androidx.sharetarget.ChooserTargetServiceCompat"/>
+        </activity>
+        <activity-alias android:label="@string/conversation_shortcut" android:name="com.whatsapp.CreateConversationShortcut" android:targetActivity="com.whatsapp.ContactPicker">
+            <intent-filter android:label="@string/conversation_shortcut">
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.group.GroupAdminPickerActivity" android:theme="@style/Theme.App.GroupAdminPicker"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.voipcalling.GroupCallParticipantPickerSheet" android:theme="@style/Theme.App.GroupCallParticipantPicker" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.contact.picker.PhoneContactsSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.contact.picker.InviteNonWhatsAppContactPickerActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.deeplink.DeepLinkActivity" android:theme="@style/Theme.App.Translucent"/>
+        <activity-alias android:name="com.whatsapp.TextAndDirectChatDeepLink" android:targetActivity="com.whatsapp.deeplink.DeepLinkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="com.whatsapp.DEEP_LINK_REDIRECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="api.whatsapp.com" android:scheme="http"/>
+                <data android:host="api.whatsapp.com" android:scheme="https"/>
+                <data android:host="wa.me" android:scheme="http"/>
+                <data android:host="wa.me" android:scheme="https"/>
+                <data android:host="send" android:scheme="whatsapp"/>
+                <data android:host="catalog" android:scheme="whatsapp"/>
+                <data android:host="product" android:scheme="whatsapp"/>
+                <data android:host="message" android:scheme="whatsapp"/>
+                <data android:host="send" android:scheme="whatsapp-consumer"/>
+                <data android:host="pay" android:scheme="whatsapp"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ListMembersSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.EditBroadcastRecipientsSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.group.GroupMembersSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.contact.picker.AddGroupParticipantsSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.MessageDetailsActivity" android:theme="@style/Theme.App.Gray.TransparentActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.NewGroup" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.group.GroupChatInfo" android:theme="@style/Theme.App.ChatInfo"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.EditGroupAdminsSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.location.GroupChatLiveLocationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.location.GroupChatLiveLocationsActivity2"/>
+        <activity android:name="com.whatsapp.Licenses" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ListChatInfo" android:theme="@style/Theme.App.ChatInfo"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ContactInfoActivity" android:theme="@style/Theme.App.ChatInfo"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.BusinessProfileExtraFieldsActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.voipcalling.CallLogActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.voipcalling.GroupCallLogActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.StarredMessagesActivity" android:theme="@style/Theme.App.Starred"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ArchivedConversationsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ArchiveNotificationSettingActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.whatsapp.HomeActivity" android:theme="@style/Theme.App.Home">
+            <intent-filter android:label="@string/localized_app_name">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/com.whatsapp.chat"/>
+                <data android:mimeType="application/com.whatsapp.join"/>
+            </intent-filter>
+            <intent-filter android:label="@string/localized_app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="chat" android:scheme="whatsapp"/>
+            </intent-filter>
+            <intent-filter android:label="@string/localized_app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="status" android:scheme="whatsapp"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.whatsapp.AcceptInviteLinkActivityDeepLink" android:targetActivity="com.whatsapp.HomeActivity">
+            <intent-filter android:autoVerify="true" android:label="@string/localized_app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="chat.whatsapp.com" android:scheme="http"/>
+                <data android:host="chat.whatsapp.com" android:scheme="https"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.QuickContactActivity" android:theme="@style/Theme.QuickContact"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ViewSharedContactArrayActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.CountryPicker" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:name="com.whatsapp.crop.CropImage"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.settings.chat.wallpaper.WallpaperPicker" android:theme="@style/Theme.App.GalleryPicker.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.settings.chat.wallpaper.WallpaperPreview" android:theme="@style/Theme.App.WallpaperPreviewTranslucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.settings.chat.wallpaper.WallpaperCurrentPreviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ContactPickerHelp"/>
+        <activity android:icon="@drawable/clear" android:name="com.whatsapp.settings.chat.wallpaper.ResetWallpaper" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:icon="@drawable/ic_menu_solid_color_wallpaper" android:name="com.whatsapp.settings.chat.wallpaper.SolidColorWallpaper" android:theme="@style/Theme.App.GalleryPicker.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.settings.chat.wallpaper.SolidColorWallpaperPreview" android:theme="@style/Theme.App.WallpaperPreviewTranslucent"/>
+        <activity android:icon="@drawable/ic_menu_default_wallpaper" android:name="com.whatsapp.settings.chat.wallpaper.DefaultWallpaper" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.settings.chat.wallpaper.WallpaperCategoriesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:icon="@drawable/ic_capture" android:name="com.whatsapp.CapturePhoto" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:icon="@drawable/clear" android:name="com.whatsapp.ResetGroupPhoto" android:theme="@style/Theme.App.Translucent"/>
+        <activity android:icon="@drawable/clear" android:name="com.whatsapp.ResetProfilePhoto" android:theme="@style/Theme.App.Translucent"/>
+        <activity android:icon="@drawable/clear" android:name="com.whatsapp.Remove" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:icon="@drawable/attach_gallery" android:name="com.whatsapp.ViewProfilePhoto$SavePhoto" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:name="com.whatsapp.accountsync.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:name="com.whatsapp.accountsync.ProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.contacts"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.whatsapp.profile"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:name="com.whatsapp.accountsync.CallContactLandingActivity" android:permission="android.permission.CALL_PHONE">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.contacts"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.whatsapp.voip.call"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.whatsapp.video.call"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.whatsapp.notification.PopupNotification" android:taskAffinity="" android:theme="@style/Theme.App.PopupNotification" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.gallery.MediaGalleryActivity" android:theme="@style/Theme.App.GalleryPicker.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.mediaview.MediaViewActivity" android:theme="@style/Theme.MediaView"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:icon="@drawable/ic_search_web" android:name="com.whatsapp.WebImagePicker" android:theme="@style/Theme.App.Gray" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ViewProfilePhoto" android:theme="@style/Theme.ProfilePhoto"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.SmsDefaultAppWarning" android:theme="@style/Theme.App.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTop" android:name="com.whatsapp.location.LocationPicker" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTop" android:name="com.whatsapp.location.LocationPicker2" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.DocumentPickerActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.account.delete.DeleteAccountActivity" android:theme="@style/Theme.App" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.account.delete.DeleteAccountFeedback" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.account.delete.DeleteAccountConfirmation" android:theme="@style/Theme.App"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.whatsapp.messaging.CaptivePortalActivity" android:taskAffinity="" android:theme="@style/Theme.PopupAlert"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.registration.ChangeNumber" android:theme="@style/Theme.App.Settings.DayNight" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.registration.ChangeNumberNotifyContacts" android:theme="@style/Theme.App.Settings.DayNight" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.registration.ChangeNumberOverview" android:theme="@style/Theme.App.Settings.DayNight" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.registration.NotifyContactsSelector" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:icon="@drawable/ic_gallery_picker" android:name="com.whatsapp.gallerypicker.MediaPreviewActivity" android:theme="@style/Theme.App.Black.NoActionBar" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:icon="@drawable/ic_gallery_picker" android:name="com.whatsapp.gallerypicker.GalleryPicker" android:theme="@style/Theme.App.GalleryPicker"/>
+        <activity android:icon="@drawable/ic_gallery" android:name="com.whatsapp.gallerypicker.GalleryPickerLauncher" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:icon="@drawable/ic_gallery_picker" android:name="com.whatsapp.gallerypicker.MediaPicker" android:theme="@style/Theme.App.GalleryPicker"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:icon="@drawable/launcher_camera" android:label="@string/camera_shortcut" android:launchMode="singleTask" android:name="com.whatsapp.camera.CameraActivity" android:theme="@style/Theme.Camera" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter android:label="@string/camera_shortcut">
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="true" android:icon="@drawable/launcher_camera" android:label="@string/camera_shortcut" android:name="com.whatsapp.camera.LauncherCameraActivity" android:taskAffinity=":camera" android:theme="@style/Theme.Camera" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:name="com.whatsapp.voipcalling.VoipActivityV2" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:taskAffinity=":voip" android:theme="@style/Theme.Voip"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.voipcalling.VoipNotAllowedActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.voipcalling.GroupCallParticipantPicker" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.whatsapp.voipcalling.CallRatingActivity" android:theme="@style/Theme.App.CallRating" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.whatsapp.voipcalling.VoipAppUpdateActivity" android:theme="@style/Theme.App.VoipAppUpdate" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.voipcalling.CallSpamActivity" android:theme="@style/Theme.App.CallSpam" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.RequestPermissionActivity" android:theme="@style/Theme.App.RequestPermission" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.RequestPermissionRegistrationActivity" android:theme="@style/Theme.App.RequestPermission" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.registration.directmigration.RequestPermissionFromSisterAppActivity" android:theme="@style/Theme.App.RequestPermission" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.backup.google.RestoreFromBackupActivity" android:theme="@style/Theme.App.White.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.backup.google.GoogleDriveNewUserSetupActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:launchMode="singleInstance" android:name="com.whatsapp.CorruptInstallationActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:launchMode="singleTop" android:name="com.whatsapp.InsufficientStorageSpaceActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.whatsapp.SpamWarningActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.qrcode.DevicePairQrScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.companiondevice.PairedDevicesActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.companiondevice.LinkedDevicesActivity" android:theme="@style/Theme.App.Gray"/>
+        <activity android:name="com.whatsapp.VoiceMessagingActivity" android:showForAllUsers="true" android:showOnLockScreen="true" android:showWhenLocked="true" android:taskAffinity=":voice" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.google.android.voicesearch.SEND_MESSAGE_TO_CONTACTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="audio/wav"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.identity.IdentityVerificationActivity" android:theme="@style/Theme.App">
+            <intent-filter android:label="@string/verify_identity">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/com.whatsapp.identity"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="" android:launchMode="singleTop" android:name="com.whatsapp.TosUpdateActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:name="com.whatsapp.settings.chat.wallpaper.GalleryWallpaperPreview" android:screenOrientation="portrait" android:theme="@style/Theme.App.WallpaperPreview"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.ShareInviteLinkActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.invites.ViewGroupInviteActivity" android:theme="@style/Theme.Translucent.Dimmed"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.invites.InviteGroupParticipantsActivity" android:theme="@style/Theme.Translucent.Dimmed"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.AcceptInviteLinkActivity" android:theme="@style/Theme.Translucent.Dimmed"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.qrcode.contactqr.QrSheetDeepLinkActivity" android:theme="@style/Theme.Translucent.Dimmed"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.WriteNfcTagActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.group.GroupAddPrivacyActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.group.GroupAddBlacklistPickerActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.StatusPrivacyActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.StatusRecipientsActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.status.playback.StatusPlaybackActivity" android:theme="@style/Theme.App.StatusPlayback"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.whatsapp.status.playback.StatusReplyActivity" android:theme="@style/Theme.App.Translucent" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.status.playback.MyStatusesActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.LiveLocationPrivacyActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.TextStatusComposerActivity" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.conversationrow.album.MediaAlbumActivity" android:theme="@style/Theme.App.MediaAlbum"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.MessageReplyActivity" android:theme="@style/Theme.App.Translucent" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:name="com.whatsapp.GifVideoPreviewActivity" android:theme="@style/Theme.App.Black" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:name="com.whatsapp.voipcalling.VoipPermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.stickers.AddThirdPartyStickerPackActivity" android:theme="@style/Theme.App.Translucent">
+            <intent-filter>
+                <action android:name="com.whatsapp.intent.action.ENABLE_STICKER_PACK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.AudioPickerActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.whatsapp.WaInAppBrowsingActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.AuthenticationActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTask" android:name="com.whatsapp.AppAuthenticationActivity" android:theme="@style/Theme.App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.whatsapp.conversation.ConversationVideoPictureInPictureActivity" android:supportsPictureInPicture="true" android:taskAffinity="com.whatsapp.ConversationVideoPictureInPictureActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.qrcode.contactqr.ContactQrActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.qrcode.GroupLinkQrActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.backup.encryptedbackup.EncryptedBackupPhoneValidationActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.backup.encryptedbackup.PasswordInputActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.backup.encryptedbackup.ConfirmPasswordActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.backup.encryptedbackup.RestorePasswordInputActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.BackingUpDatabaseActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.catalog.CatalogMediaView" android:theme="@style/Theme.MediaView"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.catalog.view.activity.CatalogListActivity" android:theme="@style/Theme.App"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.product.view.activity.ProductDetailActivity" android:screenOrientation="portrait" android:taskAffinity="com.whatsapp.biz.product.view.activity.CatalogDetailActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.catalog.CatalogImageListActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.catalog.ShareCatalogLinkActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.whatsapp.biz.catalog.ShareProductLinkActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.ephemeral.ChangeEphemeralSettingActivity" android:theme="@style/Theme.App.Settings.DayNight"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:name="com.whatsapp.ephemeral.EphemeralNUXActivity" android:theme="@style/Theme.App.NoActionBar"/>
+        <receiver android:enabled="true" android:name="com.whatsapp.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.whatsapp.UpdatedOurAppReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whatsapp.ExternalMediaManager$ExternalMediaStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.whatsapp.appwidget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.whatsapp.notification.MessageNotificationDismissedReceiver"/>
+        <receiver android:exported="false" android:name="com.whatsapp.notification.MissedCallNotificationDismissedReceiver"/>
+        <receiver android:exported="true" android:name="com.whatsapp.AlarmBroadcastReceiver" android:permission="com.whatsapp.permission.BROADCAST"/>
+        <receiver android:exported="false" android:name="com.whatsapp.location.FinalLiveLocationBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.whatsapp.WebSessionVerificationReceiver"/>
+        <receiver android:exported="false" android:name="com.whatsapp.companiondevice.CompanionDeviceVerificationReceiver"/>
+        <receiver android:name="com.whatsapp.RegistrationCompletedReceiver" android:permission="com.whatsapp.permission.REGISTRATION">
+            <intent-filter>
+                <action android:name="com.whatsapp.SMBRegistrationCompleted"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whatsapp.registration.directmigration.MigrationProviderOrderedBroadcastReceiver" android:permission="com.whatsapp.permission.REGISTRATION">
+            <intent-filter>
+                <action android:name="com.whatsapp.registration.directmigration.initialMigrationInfoAction"/>
+                <action android:name="com.whatsapp.registration.directmigration.recoveryTokenAction"/>
+                <action android:name="com.whatsapp.registration.directmigration.setMigrationStateOnProviderSide"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.whatsapp.registration.directmigration.MigrationRequesterBroadcastReceiver" android:permission="com.whatsapp.permission.REGISTRATION">
+            <intent-filter>
+                <action android:name="com.whatsapp.registration.directmigration.providerIsLoggedOutAction"/>
+                <action android:name="com.whatsapp.registration.directmigration.providerAppMigrationSpaceNeededAction"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.whatsapp.registration.PreRegNotificationLearnMoreReceiver"/>
+        <receiver android:exported="false" android:name="com.whatsapp.registration.RegRetryVerificationReceiver">
+            <intent-filter>
+                <action android:name="com.whatsapp.alarm.REGISTRATION_RETRY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.whatsapp.accounttransfer.AccountTransferReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.START_ACCOUNT_EXPORT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.whatsapp.TellAFriendReceiver"/>
+        <receiver android:exported="true" android:name="com.whatsapp.push.WAFbnsPreloadReceiver">
+            <intent-filter>
+                <category android:name="com.whatsapp"/>
+                <action android:name="com.facebook.rti.fbns.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.whatsapp.provider.contact" android:exported="false" android:name="com.whatsapp.contact.ContactProvider"/>
+        <provider android:authorities="com.whatsapp.provider.media" android:exported="false" android:grantUriPermissions="true" android:name="com.whatsapp.contentprovider.MediaProvider"/>
+        <provider android:authorities="com.whatsapp.provider.MigrationContentProvider" android:enabled="true" android:exported="true" android:grantUriPermissions="false" android:name="com.whatsapp.registration.directmigration.MigrationContentProvider" android:readPermission="com.whatsapp.permission.MIGRATION_CONTENT_PROVIDER"/>
+        <provider android:authorities="com.whatsapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.whatsapp.provider.sticker_whitelist_check" android:exported="true" android:name="com.whatsapp.stickers.WhitelistPackQueryContentProvider"/>
+        <service android:name="com.whatsapp.breakpad.NativeCrashDumpUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.memory.dump.MemoryDumpUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.util.crash.JavaCrashesUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.perf.ProfiloUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.messaging.MessageService"/>
+        <service android:name="com.whatsapp.ExternalMediaManager" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.whatsapp.accountsync.AccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="true" android:name="com.whatsapp.contact.sync.ContactsSyncAdapterService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_contacts"/>
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts"/>
+        </service>
+        <service android:name="com.whatsapp.media.transcode.MediaTranscodeService"/>
+        <service android:foregroundServiceType="location" android:name="com.whatsapp.location.LocationSharingService"/>
+        <service android:name="com.whatsapp.voipcalling.SelfManagedConnectionService" android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.whatsapp.voipcalling.VoiceFGService"/>
+        <service android:name="com.whatsapp.service.BackgroundMediaControlService"/>
+        <service android:name="com.whatsapp.notification.AndroidWear"/>
+        <service android:name="com.whatsapp.backup.google.GoogleBackupService"/>
+        <service android:name="com.whatsapp.VoiceMessagingService"/>
+        <service android:name="com.whatsapp.AlarmService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.appwidget.WidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:name="com.whatsapp.service.WebClientService"/>
+        <service android:name="com.whatsapp.service.MDSyncService"/>
+        <service android:exported="false" android:name="com.whatsapp.push.GcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.whatsapp.push.InstanceIdListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.whatsapp.push.RegistrationIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.notification.DirectReplyService"/>
+        <service android:name="com.whatsapp.service.GcmFGService"/>
+        <service android:exported="false" android:name="com.whatsapp.data.ConversationDeleteService"/>
+        <service android:name="com.whatsapp.service.UnsentMessagesNetworkAvailableJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.whatsapp.schedulers.alarm.SchedulerExperimentAlarmReceiver"/>
+        <service android:name="com.whatsapp.schedulers.alarm.SchedulerExperimentAlarmService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.whatsapp.schedulers.job.SchedulerExperimentJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.whatsapp.phoneid.PhoneIdRequestReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.GET_PHONE_ID"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="androidx.sharetarget.ChooserTargetServiceCompat" android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.whatsapp.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.whatsapp.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>

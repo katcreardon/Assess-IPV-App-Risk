@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Horoscope of the Day</string>
+    <string name="action_settings">Settings</string>
+    <string name="chooseText">Choose Your Sign</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <!-- Strings used for horoscopes -->
+    <string name="ariesText">You have much more creativity than you think you do, especially today,
+        when the universe is sending you a bright can-do attitude. Good thing, too, because you
+        could be thrust into a situation that forces you to think on your feet and come up with some
+        quick answers. Have no fear and you will have lots of fun. It\'s time to stop worrying about
+        what is right or wrong and just do what feels right. Forget about breaking the rules.
+        Make your own new ones.
+    </string>
+    <string name="taurusText">Usually you can be tolerant of just about anything, but today your
+        sensitivity level is high and your temper is short. If you want to keep from blowing your
+        top, you should do whatever you can to avoid all the people who have pushed you near the
+        breaking point in the past. But if you are itching for a fight, these are the people you
+        should walk right up to early in the day. Getting everything off your chest might feel
+        awfully good and empowering.
+    </string>
+    <string name="geminiText">People who disagree with you might be annoying and troublesome, but
+        they do have a right to their own opinions no matter how wrong they may be! If you can keep
+        that attitude in mind today, you will actually enjoy coming across people who don\'t think
+        the way you do about some hot topics. You will have an absolute blast debating different
+        positions and learning why other people see things the way they do. This kind of
+        intellectual conflict stimulates you.
+    </string>
+    <string name="cancerText">Planned expenses are fine, but acting on impulse at your favorite
+        online store is not advised right now. You are going to need more money in the coming weeks,
+        and it would be very wise to stay as cash rich as you possibly can. If you need to, get a
+        friend to distract you and keep you from buying stuff you don\'t really need. They\'ll help
+        you find a way to have fun for free by making cookies, watching TV, or reading a book.
+    </string>
+    <string name="leoText">Make an effort to talk to that person no one else will talk to, to solve
+        that problem that has been plaguing you for so long, to fix that household item once and for
+        all, whatever. Trying will take you a long way today, perhaps even all the way to success.
+        Even if your heart isn\'t totally into it, you should give it a go anyway. If you always shy
+        away from things that make you uncomfortable or intimidate you, you\'ll never go as far as
+        you could.</string>
+    <string name="virgoText">Be flexible and you will be more powerful. Being too rigid about life
+        closes you off to too many things. If you push things away that confuse you or frustrate
+        you, you could be depriving yourself of some amazing growth opportunities. It\'s time to
+        leave your comfort zone behind and open up your mind and heart. Take a risk and see what
+        happens. Roll with the punches and know that no matter what happens, you can totally handle
+        it.
+    </string>
+    <string name="libraText">Hope is the word to hold on to today. No matter how unlikely success
+        seems from where you\'re standing now, amazing things can happen. You must think positively
+        because you know in your heart that positive things can happen. People can show up from out
+        of the blue. Mother Nature can sweep in and change everything. Money can be found in the
+        pocket of a coat forgotten in the back of the closet. The answer to your problem is out
+        there. Open your mind to it.
+    </string>
+    <string name="scorpioText">Take things slowly today and give yourself time to be able to focus
+        on saying the right things to the right people, especially if you\'re in a delicate
+        negotiation with someone. You should watch yourself but be confident, too. Don\'t be afraid
+        to push for what you want. Adding a dash of humor to the situation will help you gain some
+        ground and keep the tone light and pleasant. You don\'t have to be super serious to get some
+        serious stuff done.
+    </string>
+    <string name="sagittariusText">You can\'t always be as generous as you would like to be with
+        your friends. When you don\'t have the time, you don\'t have the time. Trying to convince
+        yourself otherwise is only going to make you resent them for forcing you to squeeze your
+        already tight schedule even tighter. Don\'t make promises you don\'t feel comfortable
+        keeping. They will respect you much more if you say you can\'t help out than if you say you
+        can and then just flake out at the last minute.
+    </string>
+    <string name="capricornText">Your business schedule might be causing problems with your social
+        schedule. Be prepared to make a difficult decision about whether to show up at a work event
+        or spend an evening with a special someone. They might not be as forgiving about being
+        second place as they have been in the past, so don\'t assume that they\'re as supportive of
+        your ambition as you think they are. When you plan something with someone, you need to stay
+        true to your word.
+    </string>
+    <string name="aquariusText">Your energy isn\'t going to be easily integrated into anyone
+        else\'s today, so it\'s not a very good idea to get involved with a lot of different people.
+        You are feeling so strong and independent that you don\'t want to compromise, and that could
+        rub people the wrong way. But you have a vision that must be obeyed. This is a powerful
+        phase for you. You can put your ideas into action and start on those ambitious plans you\'ve
+        been formulating for so long.
+    </string>
+    <string name="piscesText">Take another look at your health and diet today. Things have changed
+        more than you realize, and it will be time for either a celebration or a complete overhaul.
+        If you have slipped a bit, then you need to face facts and trim the fat, literally!
+        Investigate new ideas on how to eat more healthfully and exercise more. But if the change
+        has been a healthy one, then let yourself take one day off and celebrate. You\'ve got the
+        fundamentals and you\'re on your way!
+    </string>
+
+</resources>

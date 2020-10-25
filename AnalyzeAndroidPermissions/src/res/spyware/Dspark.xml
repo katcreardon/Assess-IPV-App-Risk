@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dspark.phone.modefind" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <permission android:name="com.dspark.phone.modefind.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.dspark.phone.modefind.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.dspark.phone.modefind.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.dspark.phone.modefind.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.0"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Merkez" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Girver" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Helpr" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Girc" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Blackl23" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Startforblack" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Startforgps" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Anaact"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Dimact" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Izinver" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Blackl" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name=".Blackl"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Blackl2" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name=".Blackl2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Listinpark" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Listinpark2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Smssec" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.InAppBillingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.InAppBillingActivity4" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.InAppBillingActivity2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.InAppBillingActivity3" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.NewContact" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.NewContact2" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.NewContact3" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Smso"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Smso2"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Degistir" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Allcode" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Setter" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Setter2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Sinema" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.SinemawR" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Yardimsms" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Meeting" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.MeetingSet" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Select" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Infort" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Saats" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Notifi" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog">
+            <intent-filter>
+                <action android:name=".Notifi"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.SinemaNotifi" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.MeetNotifi" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.MeetNotifi2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.EssAss" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name=".Ess"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Iptalci" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Gpspark" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Iptalcirmtsms" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Iptalcirmtara" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Iptal1" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Iptal2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Seeks" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Mapis" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Aralik" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Girvr" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Numara" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Passsec" android:theme="@android:style/Theme.Holo.Dialog" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:label="@string/app_name" android:name="com.dspark.phone.modefind.Girc2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Textosms" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.dspark.phone.modefind.Textosms2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog">
+            <intent-filter>
+                <action android:name=".Textosms2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.Broadwa"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.BroadwaSinema"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.BroadwaMeeting"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.BroadwaMeeting2"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.Broadwaarama"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.Broadwareject"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.BroadwaiptalMeet"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.Broadwaiptal"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.BroadwaiptalSinema"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.Calan"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.AlarmSender">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:largeHeap="true" android:name="com.dspark.phone.modefind.IncomingCallReder" android:noHistory="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dspark.phone.modefind.SmsReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.dspark.phone.modefind.Dimserv"/>
+        <service android:name="com.dspark.phone.modefind.Ssmsserv"/>
+        <service android:enabled="true" android:exported="true" android:name="com.dspark.phone.modefind.Ssmsserv2"/>
+        <service android:name="com.dspark.phone.modefind.Algonder3"/>
+        <service android:name="com.dspark.phone.modefind.Denepass"/>
+        <service android:name="com.dspark.phone.modefind.Algonder"/>
+        <service android:name="com.dspark.phone.modefind.Algonder2"/>
+        <service android:label="DimmerService" android:name="com.dspark.phone.modefind.ScreenDimmer"/>
+        <service android:label="Dervice" android:name="com.dspark.phone.modefind.CallDealer"/>
+        <receiver android:name="com.dspark.phone.modefind.Mybroadcast3">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dspark.phone.modefind.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.dspark.phone.modefind"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.dspark.phone.modefind.GcmIntentService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+    </application>
+</manifest>

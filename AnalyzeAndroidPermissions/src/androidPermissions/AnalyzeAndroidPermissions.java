@@ -10,19 +10,20 @@ public class AnalyzeAndroidPermissions {
     static HashSet<String> normal = new HashSet<>();
     static HashSet<String> dangerous = new HashSet<>();
     static HashSet<String> signature = new HashSet<>();
-    static File[] spyFiles = new File("AnalyzeAndroidPermissions/src/res/spyware").listFiles();
-    static File[] popFiles = new File("AnalyzeAndroidPermissions/src/res/popular").listFiles();
-    static File normFile = new File("AnalyzeAndroidPermissions/src/res/normalPermissions.txt");
-    static File dangFile = new File("AnalyzeAndroidPermissions/src/res/dangerousPermissions.txt");
-    static File sigFile = new File("AnalyzeAndroidPermissions/src/res/signaturePermissions.txt");
-    static File popData = new File("AnalyzeAndroidPermissions/src/res/popularPermissions.txt");
-    static File spyData = new File("AnalyzeAndroidPermissions/src/res/spywarePermissions.txt");
+    static File[] spyFiles = new File("src/res/spyware").listFiles();
+    static File[] popFiles = new File("src/res/popular").listFiles();
+    static File normFile = new File("src/res/normalPermissions.txt");
+    static File dangFile = new File("src/res/dangerousPermissions.txt");
+    static File sigFile = new File("src/res/signaturePermissions.txt");
+    static File popData = new File("src/res/popularPermissions.txt");
+    static File spyData = new File("src/res/spywarePermissions.txt");
     static Map<String, List<String>> spyMap = new HashMap<String, List<String>>();
     static Map<String, List<String>> popMap = new HashMap<String, List<String>>();
-    static File popCount = new File("AnalyzeAndroidPermissions/src/res/popPermissionsCount.txt");
-    static File spyCount = new File("AnalyzeAndroidPermissions/src/res/spywarePermissionsCount.txt");
+    static File popCount = new File("src/res/popPermissionsCount.txt");
+    static File spyCount = new File("src/res/spywarePermissionsCount.txt");
 
     public static void main(String[] args) {
+        System.out.println(System.getProperty("user.dir"));
         try {
             getCategories(normFile, normal);
             getCategories(dangFile, dangerous);

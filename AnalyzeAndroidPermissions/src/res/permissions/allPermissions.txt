@@ -107,6 +107,8 @@ android.permission.FLASHLIGHT
 android.permission.MANAGE_ACCOUNTS
 android.permission.READ_PROFILE
 android.permission.READ_USER_DICTIONARY
+android.permission.SUBSCRIBED_FEEDS_READ
+android.permission.SUBSCRIBED_FEEDS_WRITE
 android.permission.USE_CREDENTIALS
 android.permission.WRITE_SMS
 android.permission.WRITE_USER_DICTIONARY

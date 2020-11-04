@@ -3,9 +3,9 @@ package androidPermissions;
 import java.io.*;
 import java.util.*;
 import java.util.Map.Entry;
+import org.apache.commons.collections4.ListUtils;
 
 public class AnalyzeAndroidPermissions {
-    static boolean asc = true;
     static HashSet<String> normal = new HashSet<>();
     static HashSet<String> dangerous = new HashSet<>();
     static HashSet<String> signature = new HashSet<>();
@@ -16,18 +16,21 @@ public class AnalyzeAndroidPermissions {
     static File permFile = new File("src/res/permissions/allPermissions.txt");
     static File popData = new File("src/res/permissions/popularPermissions.txt");
     static File spyData = new File("src/res/permissions/spywarePermissions.txt");
-    static Map<String, List<String>> spyMap = new HashMap<>();
-    static Map<String, List<String>> popMap = new HashMap<>();
+    static Map<String, Permissions> spyMap = new HashMap<>();
+    static Map<String, Permissions> popMap = new HashMap<>();
     static File popCount = new File("src/res/permissions/popPermissionsCount.txt");
     static File spyCount = new File("src/res/permissions/spywarePermissionsCount.txt");
+    static File sharedPerms = new File("src/res/permissions/sharedPermissions.txt");
+    static File uniquePerms = new File("src/res/permissions/uniquePermissions.txt");
 
     public static void main(String[] args) {
         try {
             getCategories();
             getPermissions(spyFiles, spyData);
             getPermissions(popFiles, popData);
-            countPermissions(spyData, spyMap, spyCount);
-            countPermissions(popData, popMap, popCount);
+            List<Entry<String, Permissions>> sortedSpy = countPermissions(spyData, spyMap, spyCount);
+            List<Entry<String, Permissions>> sortedPop = countPermissions(popData, popMap, popCount);
+            comparePermissions(sortedSpy, sortedPop);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -77,15 +80,14 @@ public class AnalyzeAndroidPermissions {
                 if (line.contains(prefix)) {
                     String[] result = line.split("\"");
                     bw.write(result[1] + "\n");
-//                    System.out.println(file + ": " + result[1]);
                 }
             }
             br.close();
         }
         bw.close();
     }
-    // Counts number of times a permission is listed in file and sorts by category
-    static void countPermissions(File txt, Map<String, List<String>> map, File countTxt) throws IOException {
+    // Counts repeated permissions and outputs to file sorted by type and descending count
+    static List<Entry<String, Permissions>> countPermissions(File txt, Map<String, Permissions> map, File countTxt) throws IOException {
         String line;
         boolean isNormal = false;
         boolean isDangerous = false;
@@ -97,50 +99,39 @@ public class AnalyzeAndroidPermissions {
 
         while ((line = br.readLine()) != null) {
             if (map.containsKey(line)) {
-                List<String> countAndType = map.get(line);
-                int count = Integer.parseInt(countAndType.get(0)) + 1;
-                countAndType.set(0, String.valueOf(count));
-                map.put(line, countAndType);
+                map.get(line).increaseCount();
             } else {
-                List<String> countAndType = new ArrayList<>();
                 if (normal.contains(line)) {
-                    countAndType.add("1");
-                    countAndType.add("normal");
+                    map.put(line, new Permissions(1, "normal"));
                     isNormal = true;
                 }
                 if (!isNormal) {
                     if (dangerous.contains(line)) {
-                        countAndType.add("1");
-                        countAndType.add("dangerous");
+                        map.put(line, new Permissions(1, "dangerous"));
                         isDangerous = true;
                     }
                 }
                 if (!isNormal && !isDangerous) {
                     if (signature.contains(line)) {
-                        countAndType.add("1");
-                        countAndType.add("signature");
+                        map.put(line, new Permissions(1, "signature"));
                         isSignature = true;
                     }
                 }
                 if (!isNormal && !isDangerous && !isSignature) {
                     if (removed.contains(line)) {
-                        countAndType.add("1");
-                        countAndType.add("removed");
+                        map.put(line, new Permissions(1, "removed"));
                         isRemoved = true;
                     }
                 }
                 if (!isNormal && !isDangerous && !isSignature && !isRemoved) {
                     if (other.contains(line)) {
-                        countAndType.add("1");
-                        countAndType.add("other");
+                        map.put(line, new Permissions(1, "other"));
                         isOther = true;
                     }
                 }
                 if (!isNormal && !isDangerous && !isSignature && !isRemoved && !isOther) {
-                    countAndType.add("1");
-                    countAndType.add("unknown");
+                    map.put(line, new Permissions(1, "unknown"));
                 }
-                map.put(line, countAndType);
                 isNormal = false;
                 isDangerous = false;
                 isSignature = false;
@@ -150,30 +141,65 @@ public class AnalyzeAndroidPermissions {
         }
         br.close();
 
-        Map<String, List<String>> sortedSpyMap = sortByComparator(map, asc);
+        List<Entry<String, Permissions>> sortedEntries = new ArrayList<>(map.entrySet());
+        Collections.sort(sortedEntries, Entry.comparingByValue(Comparator.comparing(Permissions::getType)
+                .thenComparing(Permissions::getCount, Comparator.reverseOrder())));
 
-        for (Entry<String, List<String>> entry : sortedSpyMap.entrySet()) {
+        for (Entry<String, Permissions> entry : sortedEntries) {
+            int count = entry.getValue().getCount();
+            String type = entry.getValue().getType();
+            String name = entry.getKey();
+            double percentIncl = ((double)count / 20) * 100;
 
-            bw.write(entry.getValue() + " " + entry.getKey() + "\n");
+            bw.write(count + " " + type + " " + name + " " + String.format("%,.0f", percentIncl) + "%\n");
         }
         bw.close();
+
+        return sortedEntries;
     }
 
-    static Map<String, List<String>> sortByComparator(Map<String, List<String>> unsortMap, final boolean order) {
-        List<Map.Entry<String, List<String>>> list = new LinkedList<>(unsortMap.entrySet());
-        // Sorting the list based on values
-        list.sort((o1, o2) -> {
-            if (order) {
-                return o1.getValue().get(1).compareTo(o2.getValue().get(1));
-            } else {
-                return o2.getValue().get(1).compareTo(o1.getValue().get(1));
-            }
-        });
-        // Maintaining insertion order with the help of LinkedList
-        Map<String, List<String>> sortedMap = new LinkedHashMap<>();
-        for (Map.Entry<String, List<String>> entry : list) {
-            sortedMap.put(entry.getKey(), entry.getValue());
+    static void comparePermissions(List<Entry<String, Permissions>> sp, List<Entry<String, Permissions>> pp) throws IOException {
+        BufferedWriter bw1 = new BufferedWriter(new FileWriter(sharedPerms));
+        BufferedWriter bw2 = new BufferedWriter(new FileWriter(uniquePerms));
+        List<String> spyList = new ArrayList<>();
+        List<String> popList = new ArrayList<>();
+        List<String> sharedList;
+        List<String> uniqueSpyList;
+        List<String> uniquePopList;
+        double percentIncl;
+
+        for (Entry<String, Permissions> e : sp) {
+            spyList.add(e.getKey());
         }
-        return sortedMap;
+
+        for (Entry<String, Permissions> e : pp) {
+            popList.add(e.getKey());
+        }
+
+        sharedList = ListUtils.intersection(spyList, popList);
+        uniqueSpyList = ListUtils.subtract(spyList, popList);
+        uniquePopList = ListUtils.subtract(popList, spyList);
+        Collections.sort(sharedList);
+        Collections.sort(uniqueSpyList);
+        Collections.sort(uniquePopList);
+
+        for (String e : sharedList) {
+            percentIncl = ((double)(spyMap.get(e).getCount() + popMap.get(e).getCount()) / 40) * 100;
+            bw1.write(e + " " + String.format("%,.0f", percentIncl) +"%\n");
+        }
+
+        bw2.write("Spyware\n");
+        for (String e : uniqueSpyList) {
+            percentIncl = ((double)spyMap.get(e).getCount() / 20) * 100;
+            bw2.write(e + " " + String.format("%,.0f", percentIncl) +"%\n");
+        }
+        bw2.write("\nPopular\n");
+        for (String e : uniquePopList) {
+            percentIncl = ((double)popMap.get(e).getCount() / 20) * 100;
+            bw2.write(e + " " + String.format("%,.0f", percentIncl) +"%\n");
+        }
+
+        bw1.close();
+        bw2.close();
     }
 }

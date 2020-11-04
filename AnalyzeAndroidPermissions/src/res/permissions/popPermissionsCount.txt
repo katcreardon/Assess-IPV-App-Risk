@@ -1,156 +1,174 @@
-[1, dangerous] android.permission.WRITE_CALENDAR
-[3, dangerous] android.permission.ACCESS_BACKGROUND_LOCATION
-[11, dangerous] android.permission.READ_CONTACTS
-[2, dangerous] android.permission.READ_SMS
-[12, dangerous] android.permission.ACCESS_FINE_LOCATION
-[3, dangerous] android.permission.SEND_SMS
-[1, dangerous] android.permission.RECEIVE_MMS
-[3, dangerous] android.permission.READ_CALENDAR
-[10, dangerous] android.permission.ACCESS_COARSE_LOCATION
-[9, dangerous] android.permission.RECORD_AUDIO
-[2, dangerous] android.permission.ACTIVITY_RECOGNITION
-[12, dangerous] android.permission.GET_ACCOUNTS
-[4, dangerous] android.permission.CALL_PHONE
-[2, dangerous] android.permission.ACCESS_MEDIA_LOCATION
-[13, dangerous] android.permission.WRITE_EXTERNAL_STORAGE
-[3, dangerous] android.permission.WRITE_CONTACTS
-[3, dangerous] android.permission.RECEIVE_SMS
-[13, dangerous] android.permission.CAMERA
-[10, dangerous] android.permission.READ_EXTERNAL_STORAGE
-[10, dangerous] android.permission.READ_PHONE_STATE
-[2, normal] android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
-[1, normal] android.permission.INSTALL_SHORTCUT
-[16, normal] android.permission.WAKE_LOCK
-[1, normal] android.permission.GET_PACKAGE_SIZE
-[6, normal] android.permission.CHANGE_WIFI_STATE
-[16, normal] android.permission.INTERNET
-[3, normal] android.permission.GET_TASKS
-[4, normal] android.permission.READ_SYNC_SETTINGS
-[13, normal] android.permission.FOREGROUND_SERVICE
-[8, normal] android.permission.BLUETOOTH_ADMIN
-[14, normal] android.permission.RECEIVE_BOOT_COMPLETED
-[5, normal] android.permission.NFC
-[3, normal] com.android.launcher.permission.UNINSTALL_SHORTCUT
-[9, normal] android.permission.USE_FINGERPRINT
-[7, normal] com.android.launcher.permission.INSTALL_SHORTCUT
-[14, normal] android.permission.VIBRATE
-[1, normal] android.permission.REORDER_TASKS
-[5, normal] android.permission.WRITE_SYNC_SETTINGS
-[9, normal] android.permission.BLUETOOTH
-[13, normal] android.permission.ACCESS_WIFI_STATE
-[3, normal] android.permission.CHANGE_WIFI_MULTICAST_STATE
-[2, normal] android.permission.BROADCAST_STICKY
-[1, normal] android.permission.READ_SYNC_STATS
-[4, normal] android.permission.USE_FULL_SCREEN_INTENT
-[2, normal] android.permission.MANAGE_OWN_CALLS
-[16, normal] android.permission.ACCESS_NETWORK_STATE
-[7, normal] android.permission.USE_BIOMETRIC
-[5, normal] android.permission.CHANGE_NETWORK_STATE
-[9, normal] android.permission.MODIFY_AUDIO_SETTINGS
-[2, other] com.facebook.mlite.provider.ACCESS
-[2, other] com.facebook.orca.provider.ACCESS
-[7, other] com.sec.android.provider.badge.permission.WRITE
-[2, other] com.anddoes.launcher.permission.UPDATE_COUNT
-[6, other] com.android.vending.BILLING
-[4, other] com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
-[2, other] com.google.android.gms.permission.ACTIVITY_RECOGNITION
-[3, other] com.oppo.launcher.permission.READ_SETTINGS
-[7, other] com.sonyericsson.home.permission.BROADCAST_BADGE
-[8, other] com.htc.launcher.permission.READ_SETTINGS
-[2, other] me.everything.badger.permission.BADGE_COUNT_READ
-[2, other] com.android.launcher.permission.READ_SETTINGS
-[6, other] com.huawei.android.launcher.permission.CHANGE_BADGE
-[2, other] com.nokia.pushnotifications.permission.RECEIVE
-[15, other] com.google.android.c2dm.permission.RECEIVE
-[3, other] com.oppo.launcher.permission.WRITE_SETTINGS
-[2, other] com.majeur.launcher.permission.UPDATE_BADGE
-[2, other] com.facebook.katana.provider.ACCESS
-[2, other] com.facebook.permission.prod.FB_APP_COMMUNICATION
-[2, other] me.everything.badger.permission.BADGE_COUNT_WRITE
-[5, other] com.amazon.device.messaging.permission.RECEIVE
-[4, other] com.huawei.android.launcher.permission.WRITE_SETTINGS
-[7, other] com.sec.android.provider.badge.permission.READ
-[9, other] com.google.android.providers.gsf.permission.READ_GSERVICES
-[8, other] com.htc.launcher.permission.UPDATE_SHORTCUT
-[2, other] com.facebook.receiver.permission.ACCESS
-[11, other] com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-[4, other] com.huawei.android.launcher.permission.READ_SETTINGS
-[6, removed] android.permission.AUTHENTICATE_ACCOUNTS
-[7, removed] android.permission.READ_PROFILE
-[1, removed] android.permission.WRITE_SMS
-[7, removed] android.permission.MANAGE_ACCOUNTS
-[3, removed] android.permission.FLASHLIGHT
-[8, removed] android.permission.USE_CREDENTIALS
-[1, signature] android.permission.MANAGE_DOCUMENTS
-[2, signature] android.permission.REQUEST_INSTALL_PACKAGES
-[5, signature] android.permission.SYSTEM_ALERT_WINDOW
-[1, signature] android.permission.BATTERY_STATS
-[1, signature] android.permission.WRITE_SETTINGS
-[1, unknown] com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permission
-[1, unknown] com.huawei.launcher2.permission.READ_SETTINGS
-[1, unknown] com.amazon.dcp.metrics.permission.METRICS_PERMISSION
-[1, unknown] amazon.permission.COLLECT_METRICS
-[1, unknown] com.snapchat.android.permission.UPDATE_STICKER_INDEX
-[1, unknown] com.zhiliao.musically.livewallpaper.permission.wallpaperplugin
-[1, unknown] me.lyft.android.permission.C2D_MESSAGE
-[1, unknown] com.vivo.notification.permission.BADGE_ICON
-[1, unknown] com.zhiliaoapp.musically.miniapp.PROCESS_COMMUNICATION
-[1, unknown] com.facebook.appmanager.UNPROTECTED_API_ACCESS
-[1, unknown] com.google.android.gms.permission.AD_ID_NOTIFICATION
-[1, unknown] com.ebproductions.android.launcher.permission.WRITE_SETTINGS
-[2, unknown] android.permission.READ_APP_BADGE
-[1, unknown] com.lge.launcher.permission.READ_SETTINGS
-[1, unknown] com.facebook.katana.permission.RECEIVE_ADM_MESSAGE
-[1, unknown] com.android.providers.tv.permission.READ_EPG_DATA
-[1, unknown] com.amazon.dcp.sso.permission.account.changed
-[1, unknown] com.huawei.launcher2.permission.WRITE_SETTINGS
-[1, unknown] com.facebook.orca.permission.RECEIVE_ADM_MESSAGE
-[1, unknown] com.snapchat.android.permission.C2D_MESSAGE
-[1, unknown] com.facebook.pages.app.provider.ACCESS
-[1, unknown] com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission
-[1, unknown] .permission.RECEIVE_ADM_MESSAGE
-[1, unknown] com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER
-[1, unknown] com.amazon.identity.auth.device.perm.AUTH_SDK
-[1, unknown] com.zhiliaoapp.musically.push.permission.MESSAGE
-[1, unknown] com.miui.mihome2.permission.WRITE_SETTINGS
-[1, unknown] com.facebook.katana.permission.CROSS_PROCESS_BROADCAST_MANAGER
-[1, unknown] com.facebook.orca.permission.CREATE_SHORTCUT
-[1, unknown] dianxin.permission.ACCESS_LAUNCHER_DATA
-[1, unknown] com.whatsapp.sticker.READ
-[1, unknown] com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
-[1, unknown] com.ubercab.permission.C2D_MESSAGE
-[1, unknown] com.twitter.android.permission.RESTRICTED
-[1, unknown] com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
-[1, unknown] com.whatsapp.permission.BROADCAST
-[1, unknown] com.zhiliaoapp.musically.permission.MIPUSH_RECEIVE
-[1, unknown] com.instagram.direct.permission.PROTECTED_DEEPLINKING
-[1, unknown] com.lge.launcher.permission.WRITE_SETTINGS
-[1, unknown] com.android.providers.tv.permission.WRITE_EPG_DATA
-[1, unknown] com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
-[1, unknown] com.amazon.mShop.android.shopping.permission.C2D_MESSAGE
-[1, unknown] com.amazon.dcp.sso.permission.MANAGE_COR_PFM
-[1, unknown] com.weather.Weather.permission.RECEIVE_ADM_MESSAGE
-[1, unknown] com.miui.mihome2.permission.READ_SETTINGS
-[1, unknown] com.instagram.direct.permission.DIRECT_APP_THREAD_STORE_SERVICE
-[1, unknown] com.nianticlabs.pokemongo.bgcore.util.contentProviderPermission
-[1, unknown] com.huawei.launcher3.permission.READ_SETTINGS
-[1, unknown] com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission
-[1, unknown] com.meizu.flyme.push.permission.RECEIVE
-[1, unknown] com.whatsapp.permission.MAPS_RECEIVE
-[1, unknown] com.facebook.orca.permission.CROSS_PROCESS_BROADCAST_MANAGER
-[1, unknown] com.zhiliaoapp.musically.permission.READ_ACCOUNT
-[1, unknown] com.huawei.launcher3.permission.WRITE_SETTINGS
-[1, unknown] com.amazon.whas.API_COMMUNICATION
-[1, unknown] com.zhiliaoapp.musically.permission.RECEIVE_ADM_MESSAGE
-[1, unknown] com.ebproductions.android.launcher.permission.READ_SETTINGS
-[1, unknown] com.amazon.identity.permission.GENERIC_IPC
-[1, unknown] com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
-[1, unknown] com.meizu.c2dm.permission.RECEIVE
-[1, unknown] com.facebook.katana.permission.CREATE_SHORTCUT
-[1, unknown] com.google.android.youtube.permission.C2D_MESSAGE
-[1, unknown] com.whatsapp.permission.REGISTRATION
-[1, unknown] com.zhiliaoapp.musically.permission.WRITE_ACCOUNT
-[1, unknown] com.twitter.android.permission.READ_DATA
-[1, unknown] com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
-[1, unknown] com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
-[1, unknown] android.permission.UPDATE_APP_BADGE
+16 dangerous android.permission.WRITE_EXTERNAL_STORAGE 80%
+14 dangerous android.permission.ACCESS_FINE_LOCATION 70%
+14 dangerous android.permission.GET_ACCOUNTS 70%
+14 dangerous android.permission.CAMERA 70%
+14 dangerous android.permission.READ_EXTERNAL_STORAGE 70%
+13 dangerous android.permission.READ_CONTACTS 65%
+13 dangerous android.permission.READ_PHONE_STATE 65%
+12 dangerous android.permission.ACCESS_COARSE_LOCATION 60%
+10 dangerous android.permission.RECORD_AUDIO 50%
+5 dangerous android.permission.CALL_PHONE 25%
+4 dangerous android.permission.READ_CALENDAR 20%
+4 dangerous android.permission.WRITE_CONTACTS 20%
+3 dangerous android.permission.ACCESS_BACKGROUND_LOCATION 15%
+3 dangerous android.permission.SEND_SMS 15%
+3 dangerous android.permission.ACTIVITY_RECOGNITION 15%
+3 dangerous android.permission.ACCESS_MEDIA_LOCATION 15%
+3 dangerous android.permission.RECEIVE_SMS 15%
+2 dangerous android.permission.WRITE_CALENDAR 10%
+2 dangerous android.permission.READ_SMS 10%
+1 dangerous android.permission.RECEIVE_MMS 5%
+20 normal android.permission.WAKE_LOCK 100%
+20 normal android.permission.INTERNET 100%
+20 normal android.permission.ACCESS_NETWORK_STATE 100%
+17 normal android.permission.RECEIVE_BOOT_COMPLETED 85%
+17 normal android.permission.VIBRATE 85%
+16 normal android.permission.ACCESS_WIFI_STATE 80%
+14 normal android.permission.FOREGROUND_SERVICE 70%
+11 normal android.permission.BLUETOOTH 55%
+10 normal android.permission.MODIFY_AUDIO_SETTINGS 50%
+9 normal android.permission.BLUETOOTH_ADMIN 45%
+9 normal android.permission.USE_FINGERPRINT 45%
+8 normal android.permission.CHANGE_WIFI_STATE 40%
+8 normal android.permission.NFC 40%
+7 normal com.android.launcher.permission.INSTALL_SHORTCUT 35%
+7 normal android.permission.USE_BIOMETRIC 35%
+6 normal android.permission.WRITE_SYNC_SETTINGS 30%
+5 normal android.permission.READ_SYNC_SETTINGS 25%
+5 normal android.permission.CHANGE_NETWORK_STATE 25%
+4 normal android.permission.CHANGE_WIFI_MULTICAST_STATE 20%
+4 normal android.permission.USE_FULL_SCREEN_INTENT 20%
+3 normal android.permission.DOWNLOAD_WITHOUT_NOTIFICATION 15%
+3 normal android.permission.GET_TASKS 15%
+3 normal com.android.launcher.permission.UNINSTALL_SHORTCUT 15%
+3 normal android.permission.BROADCAST_STICKY 15%
+2 normal android.permission.READ_SYNC_STATS 10%
+2 normal android.permission.MANAGE_OWN_CALLS 10%
+1 normal android.permission.INSTALL_SHORTCUT 5%
+1 normal android.permission.DISABLE_KEYGUARD 5%
+1 normal android.permission.GET_PACKAGE_SIZE 5%
+1 normal android.permission.REORDER_TASKS 5%
+18 other com.google.android.c2dm.permission.RECEIVE 90%
+12 other com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE 60%
+11 other com.google.android.providers.gsf.permission.READ_GSERVICES 55%
+8 other com.htc.launcher.permission.READ_SETTINGS 40%
+8 other com.htc.launcher.permission.UPDATE_SHORTCUT 40%
+7 other com.sec.android.provider.badge.permission.WRITE 35%
+7 other com.android.vending.BILLING 35%
+7 other com.sonyericsson.home.permission.BROADCAST_BADGE 35%
+7 other com.sec.android.provider.badge.permission.READ 35%
+6 other com.huawei.android.launcher.permission.CHANGE_BADGE 30%
+5 other com.amazon.device.messaging.permission.RECEIVE 25%
+4 other com.sonymobile.home.permission.PROVIDER_INSERT_BADGE 20%
+4 other com.google.android.gms.permission.ACTIVITY_RECOGNITION 20%
+4 other com.huawei.android.launcher.permission.WRITE_SETTINGS 20%
+4 other com.huawei.android.launcher.permission.READ_SETTINGS 20%
+3 other com.oppo.launcher.permission.READ_SETTINGS 15%
+3 other com.oppo.launcher.permission.WRITE_SETTINGS 15%
+2 other com.facebook.mlite.provider.ACCESS 10%
+2 other com.facebook.orca.provider.ACCESS 10%
+2 other com.anddoes.launcher.permission.UPDATE_COUNT 10%
+2 other me.everything.badger.permission.BADGE_COUNT_READ 10%
+2 other com.android.launcher.permission.READ_SETTINGS 10%
+2 other com.nokia.pushnotifications.permission.RECEIVE 10%
+2 other com.majeur.launcher.permission.UPDATE_BADGE 10%
+2 other com.facebook.katana.provider.ACCESS 10%
+2 other com.facebook.permission.prod.FB_APP_COMMUNICATION 10%
+2 other me.everything.badger.permission.BADGE_COUNT_WRITE 10%
+2 other com.facebook.receiver.permission.ACCESS 10%
+10 removed android.permission.USE_CREDENTIALS 50%
+9 removed android.permission.MANAGE_ACCOUNTS 45%
+8 removed android.permission.READ_PROFILE 40%
+7 removed android.permission.AUTHENTICATE_ACCOUNTS 35%
+3 removed android.permission.FLASHLIGHT 15%
+1 removed android.permission.SUBSCRIBED_FEEDS_READ 5%
+1 removed android.permission.WRITE_SMS 5%
+1 removed android.permission.SUBSCRIBED_FEEDS_WRITE 5%
+5 signature android.permission.SYSTEM_ALERT_WINDOW 25%
+2 signature android.permission.REQUEST_INSTALL_PACKAGES 10%
+1 signature android.permission.MANAGE_DOCUMENTS 5%
+1 signature android.permission.BATTERY_STATS 5%
+1 signature android.permission.WRITE_SETTINGS 5%
+2 unknown android.permission.READ_APP_BADGE 10%
+1 unknown com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permission 5%
+1 unknown com.google.android.googleapps.permission.GOOGLE_AUTH 5%
+1 unknown com.huawei.launcher2.permission.READ_SETTINGS 5%
+1 unknown com.amazon.dcp.metrics.permission.METRICS_PERMISSION 5%
+1 unknown amazon.permission.COLLECT_METRICS 5%
+1 unknown com.snapchat.android.permission.UPDATE_STICKER_INDEX 5%
+1 unknown com.zhiliao.musically.livewallpaper.permission.wallpaperplugin 5%
+1 unknown me.lyft.android.permission.C2D_MESSAGE 5%
+1 unknown com.vivo.notification.permission.BADGE_ICON 5%
+1 unknown com.zhiliaoapp.musically.miniapp.PROCESS_COMMUNICATION 5%
+1 unknown com.facebook.appmanager.UNPROTECTED_API_ACCESS 5%
+1 unknown com.google.android.gms.permission.AD_ID_NOTIFICATION 5%
+1 unknown com.ebproductions.android.launcher.permission.WRITE_SETTINGS 5%
+1 unknown com.google.android.gm.email.permission.READ_ATTACHMENT 5%
+1 unknown com.lge.launcher.permission.READ_SETTINGS 5%
+1 unknown com.google.android.gm.permission.WRITE_GMAIL 5%
+1 unknown com.netflix.mediaclient.permission.C2D_MESSAGE 5%
+1 unknown com.facebook.katana.permission.RECEIVE_ADM_MESSAGE 5%
+1 unknown com.android.providers.tv.permission.READ_EPG_DATA 5%
+1 unknown com.amazon.dcp.sso.permission.account.changed 5%
+1 unknown com.huawei.launcher2.permission.WRITE_SETTINGS 5%
+1 unknown com.facebook.orca.permission.RECEIVE_ADM_MESSAGE 5%
+1 unknown com.snapchat.android.permission.C2D_MESSAGE 5%
+1 unknown com.facebook.pages.app.provider.ACCESS 5%
+1 unknown com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission 5%
+1 unknown com.google.android.email.permission.ACCESS_PROVIDER 5%
+1 unknown .permission.RECEIVE_ADM_MESSAGE 5%
+1 unknown com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER 5%
+1 unknown com.amazon.identity.auth.device.perm.AUTH_SDK 5%
+1 unknown com.zhiliaoapp.musically.push.permission.MESSAGE 5%
+1 unknown com.miui.mihome2.permission.WRITE_SETTINGS 5%
+1 unknown com.facebook.katana.permission.CROSS_PROCESS_BROADCAST_MANAGER 5%
+1 unknown com.google.android.gm.email.permission.ACCESS_PROVIDER 5%
+1 unknown com.facebook.orca.permission.CREATE_SHORTCUT 5%
+1 unknown dianxin.permission.ACCESS_LAUNCHER_DATA 5%
+1 unknown com.google.android.apps.maps.permission.C2D_MESSAGE 5%
+1 unknown com.whatsapp.sticker.READ 5%
+1 unknown com.google.android.email.permission.READ_ATTACHMENT 5%
+1 unknown com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER 5%
+1 unknown com.google.android.apps.maps.permission.PREFETCH 5%
+1 unknown com.ubercab.permission.C2D_MESSAGE 5%
+1 unknown com.twitter.android.permission.RESTRICTED 5%
+1 unknown com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE 5%
+1 unknown com.whatsapp.permission.BROADCAST 5%
+1 unknown com.zhiliaoapp.musically.permission.MIPUSH_RECEIVE 5%
+1 unknown com.instagram.direct.permission.PROTECTED_DEEPLINKING 5%
+1 unknown com.lge.launcher.permission.WRITE_SETTINGS 5%
+1 unknown com.google.android.voicesearch.AUDIO_FILE_ACCESS 5%
+1 unknown com.android.providers.tv.permission.WRITE_EPG_DATA 5%
+1 unknown com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS 5%
+1 unknown com.google.android.googleapps.permission.GOOGLE_AUTH.mail 5%
+1 unknown com.amazon.permission.SET_FLAG_NOSOFTKEYS 5%
+1 unknown com.amazon.mShop.android.shopping.permission.C2D_MESSAGE 5%
+1 unknown com.amazon.dcp.sso.permission.MANAGE_COR_PFM 5%
+1 unknown com.weather.Weather.permission.RECEIVE_ADM_MESSAGE 5%
+1 unknown com.miui.mihome2.permission.READ_SETTINGS 5%
+1 unknown com.instagram.direct.permission.DIRECT_APP_THREAD_STORE_SERVICE 5%
+1 unknown com.nianticlabs.pokemongo.bgcore.util.contentProviderPermission 5%
+1 unknown com.huawei.launcher3.permission.READ_SETTINGS 5%
+1 unknown com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission 5%
+1 unknown com.meizu.flyme.push.permission.RECEIVE 5%
+1 unknown com.whatsapp.permission.MAPS_RECEIVE 5%
+1 unknown com.facebook.orca.permission.CROSS_PROCESS_BROADCAST_MANAGER 5%
+1 unknown com.zhiliaoapp.musically.permission.READ_ACCOUNT 5%
+1 unknown com.huawei.launcher3.permission.WRITE_SETTINGS 5%
+1 unknown com.amazon.whas.API_COMMUNICATION 5%
+1 unknown com.zhiliaoapp.musically.permission.RECEIVE_ADM_MESSAGE 5%
+1 unknown com.google.android.gm.permission.AUTO_SEND 5%
+1 unknown com.netflix.partner.activation.permission.CHANNEL_ID 5%
+1 unknown com.ebproductions.android.launcher.permission.READ_SETTINGS 5%
+1 unknown com.amazon.identity.permission.GENERIC_IPC 5%
+1 unknown com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED 5%
+1 unknown com.meizu.c2dm.permission.RECEIVE 5%
+1 unknown com.facebook.katana.permission.CREATE_SHORTCUT 5%
+1 unknown com.google.android.youtube.permission.C2D_MESSAGE 5%
+1 unknown com.whatsapp.permission.REGISTRATION 5%
+1 unknown com.zhiliaoapp.musically.permission.WRITE_ACCOUNT 5%
+1 unknown com.twitter.android.permission.READ_DATA 5%
+1 unknown com.google.android.gm.permission.READ_GMAIL 5%
+1 unknown com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed 5%
+1 unknown com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER 5%
+1 unknown android.permission.UPDATE_APP_BADGE 5%

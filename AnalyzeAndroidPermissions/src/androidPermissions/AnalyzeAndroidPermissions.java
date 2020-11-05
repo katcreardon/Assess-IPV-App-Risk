@@ -16,6 +16,7 @@ public class AnalyzeAndroidPermissions {
     static File permFile = new File("src/res/permissions/allPermissions.txt");
     static File popData = new File("src/res/permissions/popularPermissions.txt");
     static File spyData = new File("src/res/permissions/spywarePermissions.txt");
+    static File permByAppFile = new File("src/res/permissions/permissionsByApp.txt");
     static Map<String, Permissions> spyMap = new HashMap<>();
     static Map<String, Permissions> popMap = new HashMap<>();
     static File popCount = new File("src/res/permissions/popPermissionsCount.txt");
@@ -26,8 +27,8 @@ public class AnalyzeAndroidPermissions {
     public static void main(String[] args) {
         try {
             getCategories();
-            getPermissions(spyFiles, spyData);
-            getPermissions(popFiles, popData);
+            getPermissions(spyFiles, spyData, permByAppFile);
+            getPermissions(popFiles, popData, permByAppFile);
             List<Entry<String, Permissions>> sortedSpy = countPermissions(spyData, spyMap, spyCount);
             List<Entry<String, Permissions>> sortedPop = countPermissions(popData, popMap, popCount);
             comparePermissions(sortedSpy, sortedPop);
@@ -68,23 +69,27 @@ public class AnalyzeAndroidPermissions {
         br.close();
     }
     // Reads all permissions from set of apps (spyware or popular) and writes to file
-    static void getPermissions(File[] files, File txt) throws IOException {
+    static void getPermissions(File[] files, File dataTxt, File labeledTxt) throws IOException {
         String line;
         String prefix = "<uses-permission android:name=";
-        BufferedWriter bw = new BufferedWriter(new FileWriter(txt));
+        BufferedWriter bw1 = new BufferedWriter(new FileWriter(dataTxt));
+        BufferedWriter bw2 = new BufferedWriter(new FileWriter(labeledTxt, true));
 
         for (File file : files) {
             BufferedReader br = new BufferedReader(new FileReader(file));
-
+            bw2.write(file.toString() + "\n");
             while ((line = br.readLine()) != null) {
                 if (line.contains(prefix)) {
                     String[] result = line.split("\"");
-                    bw.write(result[1] + "\n");
+                    bw1.write(result[1] + "\n");
+                    bw2.write(result[1] + "\n");
                 }
             }
+            bw2.write("\n");
             br.close();
         }
-        bw.close();
+        bw1.close();
+        bw2.close();
     }
     // Counts repeated permissions and outputs to file sorted by type and descending count
     static List<Entry<String, Permissions>> countPermissions(File txt, Map<String, Permissions> map, File countTxt) throws IOException {
@@ -166,6 +171,7 @@ public class AnalyzeAndroidPermissions {
         List<String> sharedList;
         List<String> uniqueSpyList;
         List<String> uniquePopList;
+        String type;
         double percentIncl;
 
         for (Entry<String, Permissions> e : sp) {
@@ -184,19 +190,22 @@ public class AnalyzeAndroidPermissions {
         Collections.sort(uniquePopList);
 
         for (String e : sharedList) {
+            type = spyMap.get(e).getType();
             percentIncl = ((double)(spyMap.get(e).getCount() + popMap.get(e).getCount()) / 40) * 100;
-            bw1.write(e + " " + String.format("%,.0f", percentIncl) +"%\n");
+            bw1.write(type + " " + e + " " + String.format("%,.0f", percentIncl) +"%\n");
         }
 
         bw2.write("Spyware\n");
         for (String e : uniqueSpyList) {
+            type = spyMap.get(e).getType();
             percentIncl = ((double)spyMap.get(e).getCount() / 20) * 100;
-            bw2.write(e + " " + String.format("%,.0f", percentIncl) +"%\n");
+            bw2.write(type + " " + e + " " + String.format("%,.0f", percentIncl) +"%\n");
         }
         bw2.write("\nPopular\n");
         for (String e : uniquePopList) {
+            type = popMap.get(e).getType();
             percentIncl = ((double)popMap.get(e).getCount() / 20) * 100;
-            bw2.write(e + " " + String.format("%,.0f", percentIncl) +"%\n");
+            bw2.write(type + " " + e + " " + String.format("%,.0f", percentIncl) +"%\n");
         }
 
         bw1.close();

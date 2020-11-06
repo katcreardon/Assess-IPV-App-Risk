@@ -54,7 +54,7 @@ public class AppData {
             if (packageInfo.requestedPermissions != null) {
                 permissions = getPermissions(packageInfo.requestedPermissions);
             } else {
-                permissions = "null";
+                permissions = "none";
             }
             // Writing a file to Device File Explorer > data/data/net.sleepinginthevoid.horoscope
             try {

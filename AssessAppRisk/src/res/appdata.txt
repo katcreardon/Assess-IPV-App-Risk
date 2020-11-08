@@ -1,7 +1,212 @@
+App name: Cloud backup
+Package name: com.nsmon.guard
+First installed: Nov 08, 2020, 12:52 AM
+Last modified: Nov 08, 2020, 12:52 AM
+Permissions:
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.RECEIVE_BOOT_COMPLETED
+com.android.launcher.permission.UNINSTALL_SHORTCUT
+android.permission.INTERNET
+android.permission.READ_PHONE_STATE
+android.permission.READ_CONTACTS
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.GET_ACCOUNTS
+android.permission.RECORD_AUDIO
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.WAKE_LOCK
+android.permission.VIBRATE
+android.permission.READ_SMS
+android.permission.RECEIVE_SMS
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.GET_TASKS
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.READ_CALL_LOG
+com.huawei.permission.external_app_settings.USE_COMPONENT
+android.permission.READ_INTERNAL_STORAGE
+android.permission.CHANGE_WIFI_STATE
+android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+com.android.browser.permission.READ_HISTORY_BOOKMARKS
+android.permission.CAPTURE_AUDIO_OUTPUT
+android.permission.CAMERA
+android.permission.REAL_GET_TASKS
+android.permission.CAPTURE_SECURE_VIDEO_OUTPUT
+oppo.permission.OPPO_COMPONENT_SAFE
+android.permission.CAPTURE_VIDEO_OUTPUT
+android.permission..READ_CALL_LOG
+android.permission.FOREGROUND_SERVICE
+com.google.android.c2dm.permission.RECEIVE
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+android.permission.ACCESS_BACKGROUND_LOCATION
+
+App name: Android System4
+Package name: com.example.dat.a8andoserverx
+First installed: Nov 08, 2020, 1:37 AM
+Last modified: Nov 08, 2020, 1:37 AM
+Permissions:
+android.permission.QUICKBOOT_POWERON
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.WAKE_LOCK
+android.permission.CALL_PHONE
+android.permission.READ_CONTACTS
+android.permission.INTERNET
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_BACKGROUND_SERVICE
+android.permission.READ_SMS
+android.permission.SEND_SMS
+android.permission.WRITE_SMS
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_CALL_LOG
+android.permission.READ_PHONE_STATE
+android.permission.RECORD_AUDIO
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.GET_ACCOUNTS
+android.permission.USE_CREDENTIALS
+android.permission.CAMERA
+android.permission.INSTALL_PACKAGES
+android.permission.ACCESS_BACKGROUND_LOCATION
+
+App name: WhatsApp
+Package name: com.whatsapp
+First installed: Nov 08, 2020, 1:42 AM
+Last modified: Nov 08, 2020, 1:42 AM
+Permissions:
+android.permission.READ_PHONE_STATE
+android.permission.RECEIVE_SMS
+android.permission.VIBRATE
+android.permission.USE_FINGERPRINT
+android.permission.CAMERA
+android.permission.USE_BIOMETRIC
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.AUTHENTICATE_ACCOUNTS
+android.permission.BLUETOOTH
+android.permission.BROADCAST_STICKY
+android.permission.CHANGE_NETWORK_STATE
+android.permission.CHANGE_WIFI_STATE
+android.permission.GET_ACCOUNTS
+android.permission.GET_TASKS
+android.permission.INSTALL_SHORTCUT
+android.permission.INTERNET
+android.permission.MANAGE_ACCOUNTS
+android.permission.MANAGE_OWN_CALLS
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.NFC
+android.permission.READ_CONTACTS
+android.permission.READ_PROFILE
+android.permission.READ_SYNC_SETTINGS
+android.permission.READ_SYNC_STATS
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.RECORD_AUDIO
+android.permission.SEND_SMS
+android.permission.USE_CREDENTIALS
+android.permission.WAKE_LOCK
+android.permission.WRITE_CONTACTS
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.WRITE_SYNC_SETTINGS
+android.permission.REQUEST_INSTALL_PACKAGES
+android.permission.FOREGROUND_SERVICE
+android.permission.USE_FULL_SCREEN_INTENT
+com.android.launcher.permission.INSTALL_SHORTCUT
+com.android.launcher.permission.UNINSTALL_SHORTCUT
+com.google.android.c2dm.permission.RECEIVE
+com.google.android.providers.gsf.permission.READ_GSERVICES
+com.sec.android.provider.badge.permission.READ
+com.sec.android.provider.badge.permission.WRITE
+com.htc.launcher.permission.READ_SETTINGS
+com.htc.launcher.permission.UPDATE_SHORTCUT
+com.sonyericsson.home.permission.BROADCAST_BADGE
+com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+com.huawei.android.launcher.permission.READ_SETTINGS
+com.huawei.android.launcher.permission.WRITE_SETTINGS
+com.huawei.android.launcher.permission.CHANGE_BADGE
+com.whatsapp.permission.BROADCAST
+com.whatsapp.permission.MAPS_RECEIVE
+com.whatsapp.permission.REGISTRATION
+com.whatsapp.sticker.READ
+android.permission.CALL_PHONE
+android.permission.ANSWER_PHONE_CALLS
+android.permission.READ_CALL_LOG
+android.permission.READ_EXTERNAL_STORAGE
+
+App name: Discord
+Package name: com.discord
+First installed: Nov 08, 2020, 1:43 AM
+Last modified: Nov 08, 2020, 1:43 AM
+Permissions:
+com.android.vending.BILLING
+android.permission.ACCESS_NETWORK_STATE
+android.permission.BLUETOOTH
+android.permission.BROADCAST_STICKY
+android.permission.INTERNET
+android.permission.GET_ACCOUNTS
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.CAMERA
+android.permission.FOREGROUND_SERVICE
+android.permission.RECORD_AUDIO
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.PACKAGE_USAGE_STATS
+android.permission.VIBRATE
+android.permission.WAKE_LOCK
+android.permission.USE_FULL_SCREEN_INTENT
+android.permission.SYSTEM_ALERT_WINDOW
+com.google.android.c2dm.permission.RECEIVE
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+android.permission.RECEIVE_BOOT_COMPLETED
+
+App name: Google Settings
+Package name: com.wifiset.service
+First installed: Nov 08, 2020, 1:26 AM
+Last modified: Nov 08, 2020, 1:26 AM
+Permissions:
+android.permission.REQUEST_INSTALL_PACKAGES
+android.permission.READ_PHONE_STATE
+android.permission.READ_CALL_LOG
+com.android.browser.permission.READ_HISTORY_BOOKMARKS
+android.permission.INTERNET
+android.permission.WRITE_SMS
+android.permission.READ_SMS
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.READ_CONTACTS
+android.permission.SEND_SMS
+android.permission.RECEIVE_SMS
+android.permission.READ_LOGS
+android.permission.CALL_PHONE
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.GET_ACCOUNTS
+android.permission.WRITE_CONTACTS
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.WAKE_LOCK
+android.permission.WRITE_SETTINGS
+android.permission.WRITE_SECURE_SETTINGS
+android.permission.CHANGE_WIFI_STATE
+android.permission.CHANGE_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.ACCESS_NETWORK_STATE
+android.permission.CAMERA
+android.permission.RECORD_AUDIO
+android.permission.READ_EXTERNAL_STORAGE
+com.android.email.permission.ACCESS_PROVIDER
+com.virsys.system.permission.C2D_MESSAGE
+com.google.android.c2dm.permission.RECEIVE
+android.permission.ACCESS_BACKGROUND_LOCATION
+
 App name: Instagram
 Package name: com.instagram.android
-First installed: Sep 11, 2020, 12:26 AM
-Last modified: Sep 11, 2020, 12:26 AM
+First installed: Nov 08, 2020, 1:41 AM
+Last modified: Nov 08, 2020, 1:41 AM
 Permissions:
 android.permission.ACCESS_WIFI_STATE
 android.permission.INTERNET
@@ -45,10 +250,106 @@ com.amazon.device.messaging.permission.RECEIVE
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.READ_EXTERNAL_STORAGE
 
+App name: Settings
+Package name: wosc.cwf
+First installed: Nov 08, 2020, 1:19 PM
+Last modified: Nov 08, 2020, 1:19 PM
+Permissions:
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.ACCESS_WIFI_STATE
+android.permission.READ_CALL_LOG
+android.permission.READ_PHONE_STATE
+android.permission.INTERNET
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.WAKE_LOCK
+android.permission.RECORD_AUDIO
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.READ_SMS
+android.permission.READ_CONTACTS
+android.permission.VIBRATE
+android.permission.CAMERA
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.REQUEST_DELETE_PACKAGES
+android.permission.ACCESS_NETWORK_STATE
+com.google.android.c2dm.permission.RECEIVE
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+android.permission.ACCESS_BACKGROUND_LOCATION
+
+App name: System Service
+Package name: com.xno.systemservice
+First installed: Nov 08, 2020, 1:27 PM
+Last modified: Nov 08, 2020, 1:27 PM
+Permissions:
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_PHONE_STATE
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.RECORD_AUDIO
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.ACCESS_NETWORK_STATE
+android.permission.READ_CALL_LOG
+android.permission.READ_CONTACTS
+android.permission.READ_SMS
+android.permission.RECEIVE_SMS
+android.permission.SEND_SMS
+android.permission.GET_ACCOUNTS
+com.android.browser.permission.READ_HISTORY_BOOKMARKS
+android.permission.CAMERA
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.BLUETOOTH
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.ACCESS_BACKGROUND_LOCATION
+
+App name: Twitch
+Package name: tv.twitch.android.app
+First installed: Nov 08, 2020, 1:00 PM
+Last modified: Nov 08, 2020, 1:00 PM
+Permissions:
+android.permission.CAMERA
+android.permission.RECORD_AUDIO
+android.permission.INTERNET
+android.permission.ACCESS_WIFI_STATE
+android.permission.ACCESS_NETWORK_STATE
+android.permission.SYSTEM_ALERT_WINDOW
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.WRITE_EXTERNAL_STORAGE
+com.android.vending.BILLING
+android.permission.WAKE_LOCK
+android.permission.FOREGROUND_SERVICE
+com.google.android.c2dm.permission.RECEIVE
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+
+App name: DoorDash
+Package name: com.dd.doordash
+First installed: Nov 08, 2020, 1:28 PM
+Last modified: Nov 08, 2020, 1:28 PM
+Permissions:
+android.permission.INTERNET
+android.permission.ACCESS_NETWORK_STATE
+android.permission.WAKE_LOCK
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_BACKGROUND_LOCATION
+android.permission.CALL_PHONE
+com.google.android.c2dm.permission.RECEIVE
+android.permission.READ_CONTACTS
+android.permission.VIBRATE
+android.permission.CAMERA
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.FLASHLIGHT
+android.permission.FOREGROUND_SERVICE
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+android.permission.RECEIVE_BOOT_COMPLETED
+
 App name: Facebook
 Package name: com.facebook.katana
-First installed: Sep 11, 2020, 12:25 AM
-Last modified: Sep 11, 2020, 12:25 AM
+First installed: Nov 08, 2020, 1:41 AM
+Last modified: Nov 08, 2020, 1:41 AM
 Permissions:
 com.android.vending.BILLING
 android.permission.BLUETOOTH
@@ -113,70 +414,272 @@ com.amazon.device.messaging.permission.RECEIVE
 com.nokia.pushnotifications.permission.RECEIVE
 com.facebook.katana.permission.CREATE_SHORTCUT
 
-App name: Test App - Max Permissions
-Package name: com.test.app
-First installed: Sep 11, 2020, 12:26 AM
-Last modified: Sep 11, 2020, 12:26 AM
+App name: Update manager
+Package name: com.ibm.fb
+First installed: Nov 08, 2020, 1:16 AM
+Last modified: Nov 08, 2020, 1:16 AM
 Permissions:
+android.permission.INTERNET
+android.permission.WAKE_LOCK
+android.permission.SET_ALARM
+android.permission.BROADCAST_STICKY
 android.permission.WRITE_EXTERNAL_STORAGE
-android.permission.ACCESS_FINE_LOCATION
-android.permission.ACCESS_COARSE_LOCATION
+android.permission.WRITE_INTERNAL_STORAGE
 android.permission.READ_EXTERNAL_STORAGE
-android.permission.READ_PHONE_STATE
-android.permission.READ_CONTACTS
-android.permission.RECORD_AUDIO
-android.permission.CAMERA
-android.permission.READ_SMS
-android.permission.CALL_PHONE
-android.permission.RECEIVE_SMS
+android.permission.BLUETOOTH
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.CHANGE_NETWORK_STATE
+android.permission.CHANGE_WIFI_STATE
+android.permission.CHANGE_WIFI_MULTICAST_STATE
 android.permission.GET_ACCOUNTS
-android.permission.SEND_SMS
-android.permission.ACCESS_MEDIA_LOCATION
-android.permission.ACCESS_BACKGROUND_LOCATION
-android.permission.READ_CALENDAR
-android.permission.WRITE_CONTACTS
+android.permission.USE_CREDENTIALS
+android.permission.GET_PACKAGE_SIZE
 android.permission.READ_CALL_LOG
 android.permission.PROCESS_OUTGOING_CALLS
-android.permission.WRITE_CALL_LOG
-android.app.action.DEVICE_ADMIN_ENABLED
-android.permission.ACCESS_SUPERUSER
-android.permission.READ_PHONE_NUMBERS
-android.permission.ACTIVITY_RECOGNITION
-android.permission.WRITE_CALENDAR
-android.permission.RECEIVE_MMS
-android.permission.SYSTEM_ALERT_WINDOW
-android.permission.WRITE_SETTINGS
-android.permission.REQUEST_INSTALL_PACKAGES
-android.permission.PACKAGE_USAGE_STATS
-android.permission.READ_PRIVILEGED_PHONE_STATE
-android.permission.INTERACT_ACROSS_USERS
-android.permission.INTERACT_ACROSS_USERS_FULL
-android.permission.READ_LOGS
-android.permission.WRITE_SECURE_SETTINGS
-android.permission.MODIFY_PHONE_STATE
-android.permission.OVERRIDE_WIFI_CONFIG
-android.permission.MANAGE_USERS
-android.app.action.BIND_DEVICE_ADMIN
-android.permission.UPDATE_APP_OPS_STATS
-android.permission.TETHER_PRIVILEGED
-android.permission.STATUS_BAR
-android.permission.CHANGE_CONFIGURATION
-android.permission.BIND_ACCESSIBILITY_SERVICE
-android.permission.MANAGE_DEVICE_ADMINS
-android.permission.REBOOT
-com.android.launcher.permission.WRITE_SETTINGS
-android.permission.BATTERY_STATS
-android.permission.MANAGE_DOCUMENTS
-android.permission.MANAGE_ACCOUNTS
-android.permission.USE_CREDENTIALS
+android.permission.READ_SMS
+android.permission.READ_CONTACTS
+android.permission.READ_CALENDAR
+android.permission.READ_HISTORY_BOOKMARKS
+android.permission.READ_PHONE_STATE
 android.permission.READ_PROFILE
-android.permission.AUTHENTICATE_ACCOUNTS
-android.permission.FLASHLIGHT
-android.permission.WRITE_SMS
+android.permission.READ_SYNC_SETTINGS
+android.permission.READ_SYNC_STATS
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.RECEIVE_MMS
+android.permission.RECEIVE_SMS
+com.google.android.gm.permission.READ_GMAIL
+com.google.android.providers.gmail.permission.READ_GMAIL
+com.android.browser.permission.READ_HISTORY_BOOKMARKS
+com.android.email.permission.ACCESS_PROVIDER
+com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
+com.google.android.c2dm.permission.RECEIVE
+com.ibm.fb.permission.C2D_MESSAGE
+android.permission.ACCESS_BACKGROUND_LOCATION
+
+App name: Venmo
+Package name: com.venmo
+First installed: Nov 08, 2020, 1:01 PM
+Last modified: Nov 08, 2020, 1:01 PM
+Permissions:
+com.google.android.c2dm.permission.RECEIVE
+android.permission.FOREGROUND_SERVICE
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.READ_CONTACTS
+android.permission.ACCESS_NETWORK_STATE
+android.permission.VIBRATE
+android.permission.READ_PHONE_STATE
+android.permission.USE_BIOMETRIC
+android.permission.USE_FINGERPRINT
+android.permission.GET_ACCOUNTS
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.CALL_PHONE
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.SYSTEM_ALERT_WINDOW
+android.permission.CAMERA
+android.permission.WAKE_LOCK
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+
+App name: Backup
+Package name: com.spap_calabsss.alarm
+First installed: Nov 08, 2020, 1:21 AM
+Last modified: Nov 08, 2020, 1:21 AM
+Permissions:
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_PHONE_STATE
+android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+android.permission.RECEIVE_SMS
+android.permission.READ_SMS
+android.permission.FOREGROUND_SERVICE
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.GET_ACCOUNTS
+android.permission.MANAGE_ACCOUNTS
+android.permission.ACCESS_NETWORK_STATE
 com.android.browser.permission.READ_HISTORY_BOOKMARKS
 com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
-android.permission.READ_USER_DICTIONARY
-android.permission.WRITE_USER_DICTIONARY
-android.permission.SUBSCRIBED_FEEDS_READ
-android.permission.SUBSCRIBED_FEEDS_WRITE
+android.permission.READ_LOGS
+android.permission.READ_CALENDAR
+android.permission.RECORD_AUDIO
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.BROADCAST_STICKY
+android.permission.CHANGE_WIFI_STATE
+android.permission.ACCESS_BACKGROUND_LOCATION
+android.permission.ACCESS_WIFI_STATE
+android.permission.WRITE_CALL_LOG
+android.permission.READ_CALL_LOG
+android.permission.CHANGE_NETWORK_STATE
+android.permission.CAMERA
+android.permission.BLUETOOTH
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.BIND_ACCESSIBILITY_SERVICE
+android.permission.READ_CONTACTS
+android.permission.ACCESS_FINE_LOCATION
+android.permission.FLASHLIGHT
+android.hardware.camera.autofocus
+android.permission.RECEIVE_MMS
+android.permission.GET_TASKS
+android.permission.WAKE_LOCK
+android.permission.KILL_BACKGROUND_PROCESSES
+android.permission.CALL_PHONE
+android.permission.PACKAGE_USAGE_STATS
+android.permission.VOICE_COMMUNICATION
+android.permission.CAMCORDER
+com.google.android.c2dm.permission.RECEIVE
+com.spap_calabsss.alarm.permission.C2D_MESSAGE
+
+App name: Easy Logger
+Package name: app.EasyLogger
+First installed: Nov 08, 2020, 3:45 PM
+Last modified: Nov 08, 2020, 3:45 PM
+Permissions:
+android.permission.INTERNET
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.CALL_PHONE
+android.permission.READ_LOGS
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.READ_CALL_LOG
+android.permission.READ_PHONE_STATE
+android.permission.READ_CONTACTS
+android.permission.READ_SMS
+android.permission.RECEIVE_SMS
+android.permission.SEND_SMS
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_COARSE_LOCATION
+android.hardware.location.gps
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.GET_ACCOUNTS
+android.permission.GET_TASKS
+android.permission.WAKE_LOCK
+android.permission.GET_PACKAGE_SIZE
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.DISABLE_KEYGUARD
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.FOREGROUND_SERVICE
+android.permission.RECORD_AUDIO
+android.permission.SYSTEM_ALERT_WINDOW
+android.permission.PACKAGE_USAGE_STATS
+com.android.launcher.permission.UNINSTALL_SHORTCUT
+android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+com.google.android.c2dm.permission.RECEIVE
+android.permission.ACCESS_BACKGROUND_LOCATION
+
+App name: SoundCloud
+Package name: com.soundcloud.android
+First installed: Nov 08, 2020, 1:30 PM
+Last modified: Nov 08, 2020, 1:30 PM
+Permissions:
+android.permission.ACCESS_NETWORK_STATE
+android.permission.INTERNET
+android.permission.WAKE_LOCK
+android.permission.RECORD_AUDIO
+android.permission.ACCESS_WIFI_STATE
+android.permission.READ_PHONE_STATE
+android.permission.AUTHENTICATE_ACCOUNTS
+android.permission.MANAGE_ACCOUNTS
+android.permission.USE_CREDENTIALS
+android.permission.READ_SYNC_SETTINGS
+android.permission.WRITE_SYNC_SETTINGS
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.FOREGROUND_SERVICE
+com.google.android.providers.gsf.permission.READ_GSERVICES
+com.google.android.c2dm.permission.RECEIVE
+android.permission.RECEIVE_BOOT_COMPLETED
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+android.permission.WRITE_EXTERNAL_STORAGE
+
+App name: Device Health
+Package name: com.systemservice
+First installed: Nov 08, 2020, 12:32 AM
+Last modified: Nov 08, 2020, 12:32 AM
+Permissions:
+android.permission.FLASHLIGHT
+android.permission.SYSTEM_ALERT_WINDOW
+com.android.browser.permission.READ_HISTORY_BOOKMARKS
+android.permission.READ_CALENDAR
+android.permission.CAMERA
+android.permission.READ_CONTACTS
+android.permission.GET_ACCOUNTS
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_BACKGROUND_LOCATION
+android.permission.RECORD_AUDIO
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.READ_PHONE_STATE
+android.permission.READ_PHONE_NUMBERS
+android.permission.READ_CALL_LOG
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.CALL_PHONE
+android.permission.READ_SMS
+android.permission.RECEIVE_SMS
+android.permission.RECEIVE_MMS
+android.permission.SEND_SMS
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.INTERNET
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.CHANGE_WIFI_STATE
+android.permission.CHANGE_NETWORK_STATE
+android.permission.WAKE_LOCK
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+android.permission.ACCESS_SUPERUSER
+android.permission.FOREGROUND_SERVICE
+android.permission.REQUEST_DELETE_PACKAGES
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+com.google.android.c2dm.permission.RECEIVE
+
+App name: AllTracker Anti-Theft
+Package name: city.russ.alltrackercorp
+First installed: Nov 08, 2020, 1:11 AM
+Last modified: Nov 08, 2020, 1:11 AM
+Permissions:
+android.permission.READ_SMS
+android.permission.RECEIVE_SMS
+android.permission.READ_CALL_LOG
+android.permission.PROCESS_OUTGOING_CALLS
+android.permission.INTERNET
+com.google.android.c2dm.permission.RECEIVE
+android.permission.WAKE_LOCK
+android.permission.GET_ACCOUNTS
+android.permission.SYSTEM_ALERT_WINDOW
+android.permission.USE_CREDENTIALS
+android.permission.ACCESS_NETWORK_STATE
+android.permission.ACCESS_WIFI_STATE
+android.permission.CHANGE_WIFI_STATE
+android.permission.ACCESS_COARSE_LOCATION
+android.permission.ACCESS_FINE_LOCATION
+android.permission.CAMERA
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.GET_TASKS
+android.permission.RECORD_AUDIO
+android.permission.READ_CONTACTS
+android.permission.READ_PHONE_STATE
+android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+android.permission.RECEIVE_BOOT_COMPLETED
+com.android.browser.permission.READ_HISTORY_BOOKMARKS
+com.android.launcher.permission.INSTALL_SHORTCUT
+com.android.launcher.permission.UNINSTALL_SHORTCUT
+android.permission.CAPTURE_AUDIO_OUTPUT
+android.permission.ACCESS_SUPERUSER
+android.permission.READ_CALENDAR
+android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+android.permission.VIBRATE
+android.permission.MODIFY_AUDIO_SETTINGS
+android.permission.REQUEST_INSTALL_PACKAGES
+android.permission.PACKAGE_USAGE_STATS
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+android.permission.ACCESS_BACKGROUND_LOCATION
 

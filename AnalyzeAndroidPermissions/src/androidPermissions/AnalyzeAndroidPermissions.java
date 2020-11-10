@@ -77,12 +77,16 @@ public class AnalyzeAndroidPermissions {
 
         for (File file : files) {
             BufferedReader br = new BufferedReader(new FileReader(file));
+            HashSet<String> uniquePerms = new HashSet<>();
             bw2.write(file.toString() + "\n");
             while ((line = br.readLine()) != null) {
                 if (line.contains(prefix)) {
                     String[] result = line.split("\"");
-                    bw1.write(result[1] + "\n");
-                    bw2.write(result[1] + "\n");
+                    if (!uniquePerms.contains(result[1])) {
+                        bw1.write(result[1] + "\n");
+                        bw2.write(result[1] + "\n");
+                        uniquePerms.add(result[1]);
+                    }
                 }
             }
             bw2.write("\n");
@@ -173,6 +177,8 @@ public class AnalyzeAndroidPermissions {
         List<String> uniquePopList;
         String type;
         double percentIncl;
+        double spyPer;
+        double popPer;
 
         for (Entry<String, Permissions> e : sp) {
             spyList.add(e.getKey());
@@ -191,8 +197,11 @@ public class AnalyzeAndroidPermissions {
 
         for (String e : sharedList) {
             type = spyMap.get(e).getType();
+            spyPer = ((double)(spyMap.get(e).getCount()) / 20) * 100;
+            popPer = ((double)(popMap.get(e).getCount()) / 20) * 100;
             percentIncl = ((double)(spyMap.get(e).getCount() + popMap.get(e).getCount()) / 40) * 100;
-            bw1.write(type + " " + e + " " + String.format("%,.0f", percentIncl) +"%\n");
+            bw1.write(type + " " + e + " " + String.format("%,.0f", spyPer) + "% "
+                    + String.format("%,.0f", popPer) + "% " + String.format("%,.0f", percentIncl) +"%\n");
         }
 
         bw2.write("Spyware\n");

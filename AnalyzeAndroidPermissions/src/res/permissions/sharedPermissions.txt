@@ -1,52 +1,59 @@
-dangerous android.permission.ACCESS_BACKGROUND_LOCATION 15%
-dangerous android.permission.ACCESS_COARSE_LOCATION 63%
-dangerous android.permission.ACCESS_FINE_LOCATION 68%
-dangerous android.permission.ACCESS_MEDIA_LOCATION 20%
-normal android.permission.ACCESS_NETWORK_STATE 98%
-normal android.permission.ACCESS_WIFI_STATE 70%
-removed android.permission.AUTHENTICATE_ACCOUNTS 20%
-normal android.permission.BLUETOOTH 40%
-normal android.permission.BLUETOOTH_ADMIN 28%
-dangerous android.permission.CALL_PHONE 30%
-dangerous android.permission.CAMERA 57%
-normal android.permission.CHANGE_NETWORK_STATE 18%
-normal android.permission.CHANGE_WIFI_STATE 35%
-normal android.permission.DISABLE_KEYGUARD 5%
-removed android.permission.FLASHLIGHT 10%
-normal android.permission.FOREGROUND_SERVICE 48%
-dangerous android.permission.GET_ACCOUNTS 50%
-normal android.permission.GET_TASKS 15%
-normal android.permission.INTERNET 98%
-removed android.permission.MANAGE_ACCOUNTS 25%
-normal android.permission.MODIFY_AUDIO_SETTINGS 40%
-normal android.permission.NFC 23%
-dangerous android.permission.READ_CALENDAR 15%
-dangerous android.permission.READ_CONTACTS 63%
-dangerous android.permission.READ_EXTERNAL_STORAGE 68%
-dangerous android.permission.READ_PHONE_STATE 65%
-removed android.permission.READ_PROFILE 25%
-dangerous android.permission.READ_SMS 23%
-normal android.permission.RECEIVE_BOOT_COMPLETED 75%
-dangerous android.permission.RECEIVE_SMS 25%
-dangerous android.permission.RECORD_AUDIO 50%
-signature android.permission.REQUEST_INSTALL_PACKAGES 8%
-dangerous android.permission.SEND_SMS 20%
-signature android.permission.SYSTEM_ALERT_WINDOW 30%
-normal android.permission.USE_BIOMETRIC 20%
-removed android.permission.USE_CREDENTIALS 28%
-normal android.permission.USE_FINGERPRINT 25%
-normal android.permission.USE_FULL_SCREEN_INTENT 13%
-normal android.permission.VIBRATE 57%
-normal android.permission.WAKE_LOCK 98%
-dangerous android.permission.WRITE_CONTACTS 13%
-dangerous android.permission.WRITE_EXTERNAL_STORAGE 80%
-signature android.permission.WRITE_SETTINGS 18%
-removed android.permission.WRITE_SMS 8%
-normal com.android.launcher.permission.INSTALL_SHORTCUT 20%
-other com.android.launcher.permission.READ_SETTINGS 8%
-normal com.android.launcher.permission.UNINSTALL_SHORTCUT 10%
-other com.android.vending.BILLING 33%
-other com.google.android.c2dm.permission.RECEIVE 73%
-other com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE 48%
-other com.google.android.gms.permission.ACTIVITY_RECOGNITION 15%
-other com.google.android.providers.gsf.permission.READ_GSERVICES 33%
+dangerous android.permission.ACCESS_BACKGROUND_LOCATION 30% 15% 23%
+dangerous android.permission.ACCESS_COARSE_LOCATION 70% 60% 65%
+dangerous android.permission.ACCESS_FINE_LOCATION 75% 70% 73%
+dangerous android.permission.ACCESS_MEDIA_LOCATION 25% 15% 20%
+normal android.permission.ACCESS_NETWORK_STATE 95% 100% 98%
+normal android.permission.ACCESS_WIFI_STATE 75% 80% 78%
+removed android.permission.AUTHENTICATE_ACCOUNTS 5% 35% 20%
+normal android.permission.BLUETOOTH 30% 55% 43%
+normal android.permission.BLUETOOTH_ADMIN 10% 45% 28%
+normal android.permission.BROADCAST_STICKY 5% 15% 10%
+dangerous android.permission.CALL_PHONE 35% 25% 30%
+dangerous android.permission.CAMERA 50% 70% 60%
+normal android.permission.CHANGE_NETWORK_STATE 20% 25% 23%
+normal android.permission.CHANGE_WIFI_MULTICAST_STATE 5% 20% 13%
+normal android.permission.CHANGE_WIFI_STATE 45% 40% 43%
+normal android.permission.DISABLE_KEYGUARD 5% 5% 5%
+removed android.permission.FLASHLIGHT 10% 15% 13%
+normal android.permission.FOREGROUND_SERVICE 25% 70% 48%
+dangerous android.permission.GET_ACCOUNTS 45% 70% 57%
+normal android.permission.GET_PACKAGE_SIZE 5% 5% 5%
+normal android.permission.GET_TASKS 20% 15% 18%
+normal android.permission.INTERNET 95% 100% 98%
+removed android.permission.MANAGE_ACCOUNTS 5% 45% 25%
+normal android.permission.MODIFY_AUDIO_SETTINGS 40% 50% 45%
+normal android.permission.NFC 5% 40% 23%
+dangerous android.permission.READ_CALENDAR 25% 20% 23%
+dangerous android.permission.READ_CONTACTS 70% 65% 68%
+dangerous android.permission.READ_EXTERNAL_STORAGE 75% 70% 73%
+dangerous android.permission.READ_PHONE_STATE 70% 65% 68%
+removed android.permission.READ_PROFILE 15% 40% 28%
+dangerous android.permission.READ_SMS 50% 10% 30%
+normal android.permission.READ_SYNC_SETTINGS 5% 25% 15%
+normal android.permission.READ_SYNC_STATS 5% 10% 8%
+normal android.permission.RECEIVE_BOOT_COMPLETED 70% 85% 78%
+dangerous android.permission.RECEIVE_MMS 10% 5% 8%
+dangerous android.permission.RECEIVE_SMS 50% 15% 33%
+dangerous android.permission.RECORD_AUDIO 55% 50% 53%
+signature android.permission.REQUEST_INSTALL_PACKAGES 10% 10% 10%
+dangerous android.permission.SEND_SMS 25% 15% 20%
+signature android.permission.SYSTEM_ALERT_WINDOW 45% 25% 35%
+normal android.permission.USE_BIOMETRIC 5% 35% 20%
+removed android.permission.USE_CREDENTIALS 15% 50% 33%
+normal android.permission.USE_FINGERPRINT 5% 45% 25%
+normal android.permission.USE_FULL_SCREEN_INTENT 5% 20% 13%
+normal android.permission.VIBRATE 35% 85% 60%
+normal android.permission.WAKE_LOCK 95% 100% 98%
+dangerous android.permission.WRITE_CONTACTS 5% 20% 13%
+dangerous android.permission.WRITE_EXTERNAL_STORAGE 85% 80% 83%
+signature android.permission.WRITE_SETTINGS 30% 5% 18%
+removed android.permission.WRITE_SMS 10% 5% 8%
+normal com.android.launcher.permission.INSTALL_SHORTCUT 10% 35% 23%
+other com.android.launcher.permission.READ_SETTINGS 5% 10% 8%
+normal com.android.launcher.permission.UNINSTALL_SHORTCUT 10% 15% 13%
+other com.android.vending.BILLING 30% 35% 33%
+other com.google.android.c2dm.permission.RECEIVE 65% 90% 78%
+other com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE 40% 60% 50%
+unknown com.google.android.gm.permission.READ_GMAIL 5% 5% 5%
+other com.google.android.gms.permission.ACTIVITY_RECOGNITION 10% 20% 15%
+other com.google.android.providers.gsf.permission.READ_GSERVICES 5% 55% 30%

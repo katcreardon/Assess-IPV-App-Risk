@@ -1,4 +1,3 @@
-App Name,Package Name
 Facebook,com.facebook.katana
 Snapchat,com.snapchat.android
 YouTube,com.google.android.youtube

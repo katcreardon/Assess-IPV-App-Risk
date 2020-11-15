@@ -4,26 +4,27 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class AppRisk {
-	File whitelistTxt = new File("src/res/whitelist.txt");
 	File permWeightFile = new File("src/res/permissionWeights.txt");
+	File whitelistTxt = new File("src/res/whitelist.txt");
+	File permDescriptions = new File("src/res/permissionDescriptions.txt");
 //	File appDataFile = new File("src/res/appdata.txt");					// Comment for testing
 //	File appDataFile = new File("src/res/test_appdata.txt");     // Uncomment for testing
 	File appDataFile = new File("src/res/seed_appdata.txt");		// Uncomment for testing
 	Map<String, Permissions> permWeightMap = new HashMap<>();
 	ArrayList<App> appList = new ArrayList<>();
-	ArrayList<String> whiteList = new ArrayList();
+	Map<String, String> whitelist = new HashMap<>();
+	Map<String, String> permDesc = new HashMap<>();
 	String[] listData;
 
 	public AppRisk() {
 		try {
 			getWeights(permWeightMap);
 			appList = readAppData();
-			whiteList = readWhitelist(whitelistTxt);
+			whitelist = readWhitelist(whitelistTxt);
+			permDesc = readPermissionDescriptions(permDescriptions);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -58,7 +59,6 @@ public class AppRisk {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
 				double weight = 2 + Double.parseDouble(result[2]);
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -67,7 +67,6 @@ public class AppRisk {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
 				double weight = 1 + Double.parseDouble(result[2]);
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -76,7 +75,6 @@ public class AppRisk {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
 				double weight = 1.5 + Double.parseDouble(result[2]);
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -85,7 +83,6 @@ public class AppRisk {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
 				double weight = 1;
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -93,8 +90,7 @@ public class AppRisk {
 		if ((br.readLine()).equals("Shared Signature")) {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
-				double weight = 1 + Double.parseDouble(result[2]);;
-				// Adds "permName: type, weight"
+				double weight = 1 + Double.parseDouble(result[2]);
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -103,7 +99,6 @@ public class AppRisk {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
 				double weight = 3 + Double.parseDouble(result[2]);
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -112,7 +107,6 @@ public class AppRisk {
 			while (!(line = br.readLine()).equals("")) {
 				result = line.split("\t");
 				double weight = 1;
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -121,7 +115,6 @@ public class AppRisk {
 			while ((line = br.readLine()) != null) {
 				result = line.split("\t");
 				double weight = 0.3;
-				// Adds "permName: type, weight"
 				map.put(result[1], new Permissions(result[0], weight));
 			}
 		}
@@ -175,65 +168,82 @@ public class AppRisk {
 	}
 
 	public String[] calculateRisk(String selectedApp) {
+		String packageName = null;
 		String firstInstall = null;
 		String lastMod = null;
 		int weightPermCount = 0;
 		int totalPermCount;
 		double risk = 0;
 		double ratio = 0;
-		String perms = "";
+		List<String> permsList = new ArrayList<>();
 		
 		for (App a : appList) {
 			if (a.getAppName().equals(selectedApp)) {
-				System.out.print(selectedApp + " ");
+				packageName = a.getPackageName();
 				firstInstall = a.getFirstInstall();
 				lastMod = a.getLastMod();
 				totalPermCount = a.getPerms().size();
 				for (String s : a.getPerms()) {
 					if (permWeightMap.containsKey(s)) {
 						risk += permWeightMap.get(s).getWeight();
-						perms += s + "  "+ String.format("%.2f", permWeightMap.get(s).getWeight()) + "\n";
+						permsList.add(permWeightMap.get(s).getType() + " " + s);
 						weightPermCount += 1;
 					}
 				}
 				ratio = (double)weightPermCount / totalPermCount;
-				System.out.println(weightPermCount + "/" + totalPermCount + " = " + String.format("%.2f", ratio));
 			}
 		}
 		if (ratio >= 0.4 && ratio < 1) {
 			risk *= 1 + ratio;
 		}
-		String[] data = {String.format("%.2f", risk), firstInstall, lastMod, perms};
-		return data;
+		Collections.sort(permsList);
+
+		return new String[]{String.format("%.2f", risk), packageName, firstInstall, lastMod, String.join("\n", permsList)};
 	}
 	
-	ArrayList<String> readWhitelist(File wl) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(wl));
+	Map<String, String> readWhitelist(File wlTxt) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader(wlTxt));
 		String line;
 		String[] result;
-		ArrayList<String> list = new ArrayList<>();
-		
+		Map<String, String> map = new HashMap<>();
+
 		while ((line = br.readLine()) != null) {
 			result = line.split(",");
-			list.add(result[0]);
+			map.put(result[0], result[1]);
 		}
-		
-		return list;
+		br.close();
+
+		return map;
+	}
+	
+	Map<String, String> readPermissionDescriptions(File permDescTxt) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader(permDescTxt));
+		String line;
+		String[] result;
+		Map<String, String> map = new HashMap<>();
+
+		while ((line = br.readLine()) != null) {
+			result = line.split(",");
+			map.put(result[0], result[1]);
+		}
+		br.close();
+
+		return map;
 	}
 	
 	public String[] getListData() {
 		return listData;
 	}
-	
-	public ArrayList<App> getAppList() {
-		return appList;
+
+	public Map<String, String> getWhiteList() {
+		return whitelist;
 	}
-	
+
+	public Map<String, String> getPermissionDescriptions() {
+		return permDesc;
+	}
+
 	public Map<String, Permissions> getPermWeightMap() {
 		return permWeightMap;
-	}
-	
-	public ArrayList<String> getWhiteList() {
-		return whiteList;
 	}
 }

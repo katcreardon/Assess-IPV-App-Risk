@@ -96,7 +96,8 @@ public class AnalyzeAndroidPermissions {
         bw2.close();
     }
     // Counts repeated permissions and outputs to file sorted by type and descending count
-    static List<Entry<String, Permissions>> countPermissions(File txt, Map<String, Permissions> map, File countTxt) throws IOException {
+    static List<Entry<String, Permissions>> countPermissions(File txt, Map<String, Permissions> map, File countTxt)
+            throws IOException {
         String line;
         boolean isNormal = false;
         boolean isDangerous = false;
@@ -167,7 +168,8 @@ public class AnalyzeAndroidPermissions {
         return sortedEntries;
     }
 
-    static void comparePermissions(List<Entry<String, Permissions>> sp, List<Entry<String, Permissions>> pp) throws IOException {
+    static void comparePermissions(List<Entry<String, Permissions>> sp, List<Entry<String, Permissions>> pp)
+            throws IOException {
         BufferedWriter bw1 = new BufferedWriter(new FileWriter(sharedPerms));
         BufferedWriter bw2 = new BufferedWriter(new FileWriter(uniquePerms));
         List<String> spyList = new ArrayList<>();

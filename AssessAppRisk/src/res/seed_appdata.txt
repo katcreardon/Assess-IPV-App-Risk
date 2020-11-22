@@ -669,7 +669,7 @@ android.permission.WAKE_LOCK
 com.android.vending.BILLING
 
 App name: Cash App
-Package name: com.sqaureup.cash
+Package name: com.squareup.cash
 First installed: Jan 01, 1970, 12:00 AM
 Last modified: Jan 01, 1970, 12:00 AM
 Permissions:

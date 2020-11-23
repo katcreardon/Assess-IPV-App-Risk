@@ -30,16 +30,6 @@ public class AppRisk {
 		}
 	}
 
-	/*  Lines 1 - 18: dangerous shared with spyware counts
-        Lines 19 - 24: dangerous spyware only
-        Lines 25 - 26: dangerous popular only
-        Lines 27 - 29: signature shared
-        Lines 30 - 49: signature spyware only
-        Lines 50 - 51: signature popular only
-        Lines 52 - 57: removed shared
-        Lines 58 - 62: removed spyware
-        Lines 63 - 64: removed popular
-	 */
 	private void getWeights(Map<String, Permissions> map) throws IOException {		
 		BufferedReader br = new BufferedReader(new FileReader(permWeightFile));
 		String line;

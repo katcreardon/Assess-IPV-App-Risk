@@ -162,7 +162,6 @@ public class GraphicInterface extends JPanel {
                 .replace("signature ", "");
 
         listOutput.setText("Risk = " + data[0] + "\n\n"
-        		+ "Package name: " + data[1] + "\n"
         		+ "First installed: " + data[2] + "\n"
         		+ "Last modified: " + data[3] + "\n\n"
                 + "Permissions:\n");

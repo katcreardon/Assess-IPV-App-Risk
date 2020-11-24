@@ -81,9 +81,11 @@ com.android.launcher.permission.INSTALL_SHORTCUT
 com.android.launcher.permission.UNINSTALL_SHORTCUT
 
 Signature
-android.app.action.BIND_DEVICE_ADMIN
 android.permission.BATTERY_STATS
 android.permission.BIND_ACCESSIBILITY_SERVICE
+android.app.action.BIND_DEVICE_ADMIN
+android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+android.permission.CAPTURE_AUDIO_OUTPUT
 android.permission.CHANGE_CONFIGURATION
 android.permission.INTERACT_ACROSS_USERS
 android.permission.INTERACT_ACROSS_USERS_FULL
@@ -109,6 +111,7 @@ Removed
 android.permission.AUTHENTICATE_ACCOUNTS
 android.permission.FLASHLIGHT
 android.permission.MANAGE_ACCOUNTS
+android.permission.READ_HISTORY_BOOKMARKS
 android.permission.READ_PROFILE
 android.permission.READ_USER_DICTIONARY
 android.permission.SUBSCRIBED_FEEDS_READ

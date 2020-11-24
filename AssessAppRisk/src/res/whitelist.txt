@@ -1,18 +1,19 @@
-App Name,Package Name
 Facebook,com.facebook.katana
 Snapchat,com.snapchat.android
 YouTube,com.google.android.youtube
 TikTok,com.zhiliaoapp.musically
 Netflix,com.netflix.mediaclient
-Messenger,com.facebook.orca
+Facebook Messenger,com.facebook.orca
 Instagram,com.instagram.android
 WhatsApp,com.whatsapp
 Amazon,com.amazon.mShop.android.shopping
 Twitter,com.twitter.android
 Spotify,com.spotify.music
-The Weather Channel,com.weather.Weather
+Weather Channel,com.weather.Weather
 Pandora,com.pandora.android
 Uber,com.ubercab
 Hulu,com.hulu.plus
 Uber Eats,com.ubercab.eats
 Lyft,me.lyft.android
+Google Maps,com.google.android.apps.maps
+Gmail,com.google.android.gm

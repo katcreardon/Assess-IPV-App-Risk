@@ -1,60 +1,80 @@
-dangerous	android.permission.WRITE_EXTERNAL_STORAGE	0.8
-dangerous	android.permission.ACCESS_FINE_LOCATION	0.65
-dangerous	android.permission.ACCESS_COARSE_LOCATION	0.65
-dangerous	android.permission.READ_EXTERNAL_STORAGE	0.65
-dangerous	android.permission.READ_PHONE_STATE	0.65
-dangerous	android.permission.READ_CONTACTS	0.6
-dangerous	android.permission.RECORD_AUDIO	0.5
-dangerous	android.permission.CAMERA	0.45
-dangerous	android.permission.READ_SMS	0.35
+Very Dangerous
+dangerous	android.permission.WRITE_EXTERNAL_STORAGE	0.85
+dangerous	android.permission.ACCESS_FINE_LOCATION	0.75
+dangerous	android.permission.READ_EXTERNAL_STORAGE	0.75
+dangerous	android.permission.ACCESS_COARSE_LOCATION	0.7
+dangerous	android.permission.READ_CONTACTS	0.7
+dangerous	android.permission.READ_PHONE_STATE	0.7
+
+Moderately Dangerous
+dangerous	android.permission.RECORD_AUDIO	0.55
+dangerous	android.permission.CAMERA	0.5
+dangerous	android.permission.READ_SMS	0.5
+dangerous	android.permission.RECEIVE_SMS	0.5
+dangerous	android.permission.GET_ACCOUNTS	0.45
 dangerous	android.permission.CALL_PHONE	0.35
-dangerous	android.permission.RECEIVE_SMS	0.35
-dangerous	android.permission.GET_ACCOUNTS	0.3
-dangerous	android.permission.SEND_SMS	0.25
+dangerous	android.permission.ACCESS_BACKGROUND_LOCATION	0.3
+
+Less Dangerous
 dangerous	android.permission.ACCESS_MEDIA_LOCATION	0.25
-dangerous	android.permission.ACCESS_BACKGROUND_LOCATION	0.15
-dangerous	android.permission.READ_CALENDAR	0.1
+dangerous	android.permission.READ_CALENDAR	0.25
+dangerous	android.permission.SEND_SMS	0.25
+dangerous	android.permission.RECEIVE_MMS	0.1
 dangerous	android.permission.WRITE_CONTACTS	0.05
-dangerous	android.permission.READ_CALL_LOG	0.35
-dangerous	android.permission.PROCESS_OUTGOING_CALLS	0.3
+
+Only Spyware Dangerous
+dangerous	android.permission.READ_CALL_LOG	0.5
+dangerous	android.permission.PROCESS_OUTGOING_CALLS	0.45
+dangerous	android.permission.ACCESS_SUPERUSER	0.15
+dangerous	android.permission.READ_PHONE_NUMBERS	0.1
 dangerous	android.permission.WRITE_CALL_LOG	0.1
 dangerous	android.app.action.DEVICE_ADMIN_ENABLED	0.05
-dangerous	android.permission.ACCESS_SUPERUSER	0.05
-dangerous	android.permission.READ_PHONE_NUMBERS	0.05
+
+Only Popular Dangerous
 dangerous	android.permission.ACTIVITY_RECOGNITION	0.15
 dangerous	android.permission.WRITE_CALENDAR	0.1
-dangerous	android.permission.RECEIVE_MMS	0.05
-signature	android.permission.SYSTEM_ALERT_WINDOW	0.35
-signature	android.permission.WRITE_SETTINGS	0.3
-signature	android.permission.REQUEST_INSTALL_PACKAGES	0.05
-signature	android.permission.PACKAGE_USAGE_STATS	0.15
+
+Shared Signature
+signature	android.permission.SYSTEM_ALERT_WINDOW	0.45	0.25
+signature	android.permission.WRITE_SETTINGS	0.3	0.05
+signature	android.permission.REQUEST_INSTALL_PACKAGES	0.1	0.1
+
+Only Spyware Signature
+signature	android.permission.PACKAGE_USAGE_STATS	0.2
 signature	android.permission.READ_PRIVILEGED_PHONE_STATE	0.15
 signature	android.permission.INTERACT_ACROSS_USERS	0.1
 signature	android.permission.INTERACT_ACROSS_USERS_FULL	0.1
 signature	android.permission.READ_LOGS	0.1
 signature	android.permission.WRITE_SECURE_SETTINGS	0.1
+signature	android.app.action.BIND_DEVICE_ADMIN	0.05
+signature	android.permission.BIND_ACCESSIBILITY_SERVICE	0.05
+signature	android.permission.BIND_NOTIFICATION_LISTENER_SERVICE	0.05
+signature	android.permission.CAPTURE_AUDIO_OUTPUT	0.05
+signature	android.permission.CHANGE_CONFIGURATION	0.05
+signature	android.permission.MANAGE_DEVICE_ADMINS	0.05
+signature	android.permission.MANAGE_USERS	0.05
 signature	android.permission.MODIFY_PHONE_STATE	0.05
 signature	android.permission.OVERRIDE_WIFI_CONFIG	0.05
-signature	android.permission.MANAGE_USERS	0.05
-signature	android.app.action.BIND_DEVICE_ADMIN	0.05
-signature	android.permission.UPDATE_APP_OPS_STATS	0.05
-signature	android.permission.TETHER_PRIVILEGED	0.05
-signature	android.permission.STATUS_BAR	0.05
-signature	android.permission.CHANGE_CONFIGURATION	0.05
-signature	android.permission.BIND_ACCESSIBILITY_SERVICE	0.05
-signature	android.permission.MANAGE_DEVICE_ADMINS	0.05
 signature	android.permission.REBOOT	0.05
+signature	android.permission.STATUS_BAR	0.05
+signature	android.permission.TETHER_PRIVILEGED	0.05
+signature	android.permission.UPDATE_APP_OPS_STATS	0.05
 signature	com.android.launcher.permission.WRITE_SETTINGS	0.05
+
+Only Popular Signature
 signature	android.permission.BATTERY_STATS	0.05
 signature	android.permission.MANAGE_DOCUMENTS	0.05
-removed	android.permission.MANAGE_ACCOUNTS	0.05
-removed	android.permission.USE_CREDENTIALS	0.05
-removed	android.permission.READ_PROFILE	0.1
-removed	android.permission.AUTHENTICATE_ACCOUNTS	0.05
-removed	android.permission.FLASHLIGHT	0.05
-removed	android.permission.WRITE_SMS	0.1
-removed	com.android.browser.permission.READ_HISTORY_BOOKMARKS	0.1
-removed	com.android.browser.permission.WRITE_HISTORY_BOOKMARKS	0.05
+
+Removed
+removed	android.permission.USE_CREDENTIALS	0.15	0.5
+removed	android.permission.READ_PROFILE	0.15	0.4
+removed	android.permission.FLASHLIGHT	0.1	0.15
+removed	android.permission.WRITE_SMS	0.1	0.05
+removed	android.permission.MANAGE_ACCOUNTS	0.05	0.45
+removed	android.permission.AUTHENTICATE_ACCOUNTS	0.05	0.35
+removed	com.android.browser.permission.READ_HISTORY_BOOKMARKS	0.25
+removed	com.android.browser.permission.WRITE_HISTORY_BOOKMARKS	0.1
+removed	android.permission.READ_HISTORY_BOOKMARKS	0.05
 removed	android.permission.READ_USER_DICTIONARY	0.05
 removed	android.permission.WRITE_USER_DICTIONARY	0.05
 removed	android.permission.SUBSCRIBED_FEEDS_READ	0.05

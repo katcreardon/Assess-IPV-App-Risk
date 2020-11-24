@@ -1,4 +1,8 @@
-src\res\spyware\AllTracker.txt
+App name: AllTracker Anti-Theft
+Package name: city.russ.alltrackercorp
+First installed: Nov 08, 2020, 1:11 AM
+Last modified: Nov 08, 2020, 1:11 AM
+Permissions:
 android.permission.READ_SMS
 android.permission.RECEIVE_SMS
 android.permission.READ_CALL_LOG
@@ -37,7 +41,11 @@ android.permission.PACKAGE_USAGE_STATS
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 android.permission.ACCESS_BACKGROUND_LOCATION
 
-src\res\spyware\AndroidManger.txt
+App name: Update manager
+Package name: com.ibm.fb
+First installed: Nov 08, 2020, 1:16 AM
+Last modified: Nov 08, 2020, 1:16 AM
+Permissions:
 android.permission.INTERNET
 android.permission.WAKE_LOCK
 android.permission.SET_ALARM
@@ -79,7 +87,11 @@ com.google.android.c2dm.permission.RECEIVE
 com.ibm.fb.permission.C2D_MESSAGE
 android.permission.ACCESS_BACKGROUND_LOCATION
 
-src\res\spyware\CellTrackerKids.xml
+App name: Cell Tracker Kids
+Package name: us.cell.tracker.kids.locator
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.WAKE_LOCK
@@ -89,7 +101,11 @@ android.permission.READ_PHONE_STATE
 android.permission.READ_CONTACTS
 android.permission.RECEIVE_BOOT_COMPLETED
 
-src\res\spyware\Cerberus.xml
+App name: Cerberus
+Package name: com.lsdroid.cerberuss
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.READ_SMS
 android.permission.WRITE_SMS
 android.permission.SEND_SMS
@@ -144,7 +160,11 @@ android.permission.USE_FULL_SCREEN_INTENT
 android.permission.USE_BIOMETRIC
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 
-src\res\spyware\CloneWhatsWebPro.txt
+App name: Clone WhatsWeb Pro
+Package name: clone.whatsapp.pro
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.RECORD_AUDIO
 android.permission.CAMERA
@@ -155,7 +175,11 @@ android.permission.WRITE_EXTERNAL_STORAGE
 android.permission.READ_EXTERNAL_STORAGE
 android.permission.ACCESS_MEDIA_LOCATION
 
-src\res\spyware\ControlBySMS.xml
+App name: Control by SMS
+Package name: smartmob.com.controller
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.RECEIVE_SMS
 android.permission.WAKE_LOCK
 android.permission.DISABLE_KEYGUARD
@@ -166,9 +190,14 @@ android.permission.SEND_SMS
 android.permission.CALL_PHONE
 android.permission.READ_PHONE_STATE
 android.permission.READ_CONTACTS
+android.permission.WAKE_LOCK
 android.permission.MODIFY_AUDIO_SETTINGS
 
-src\res\spyware\FamiSafe.xml
+App name: FamiSafe
+Package name: com.wondershare.famisafe
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
 android.permission.READ_CONTACTS
 android.permission.ACCESS_COARSE_LOCATION
@@ -191,7 +220,11 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 android.permission.READ_EXTERNAL_STORAGE
 com.android.vending.BILLING
 
-src\res\spyware\GirlfriendCellTracker.xml
+App name: Girlfriend Cell Tracker
+Package name: com.omrup.cell.tracker
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.CAMERA
 android.permission.INTERNET
 com.android.vending.BILLING
@@ -212,7 +245,11 @@ android.permission.CALL_PHONE
 com.google.android.c2dm.permission.RECEIVE
 com.omrup.cell.tracker.permission.C2D_MESSAGE
 
-src\res\spyware\HighsterMobile.xml
+App name: Highster Mobile
+Package name: com.highstermob.main
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.highstermob.main.permission.MAPS_RECEIVE
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
@@ -226,7 +263,11 @@ com.highstermob.main.permission.C2D_MESSAGE
 com.google.android.c2dm.permission.RECEIVE
 android.permission.VIBRATE
 
-src\res\spyware\Hoverwatch.xml
+App name: Hoverwatch
+Package name: com.android.core.mntg
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.RECEIVE_SMS
 android.permission.ACCESS_FINE_LOCATION
 android.permission.ACCESS_COARSE_LOCATION
@@ -260,7 +301,11 @@ android.permission.WAKE_LOCK
 android.permission.CAMERA
 android.permission.WRITE_SETTINGS
 
-src\res\spyware\iKeyMonitor.xml
+App name: iKeyMonitor
+Package name: com.sec.android.internet.im.service.im20190419
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.REBOOT
 android.permission.RECEIVE_BOOT_COMPLETED
 android.permission.PACKAGE_USAGE_STATS
@@ -315,7 +360,11 @@ com.google.android.c2dm.permission.RECEIVE
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 android.permission.WRITE_CONTACTS
 
-src\res\spyware\IPWebcam.txt
+App name: IP Webcam
+Package name: com.pas.webcam
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.WAKE_LOCK
@@ -334,7 +383,11 @@ android.permission.READ_EXTERNAL_STORAGE
 android.permission.ACCESS_BACKGROUND_LOCATION
 android.permission.ACCESS_MEDIA_LOCATION
 
-src\res\spyware\iSpyoo.txt
+App name: iSpyoo
+Package name: com.systemservice
+First installed: Nov 08, 2020, 12:32 AM
+Last modified: Nov 08, 2020, 12:32 AM
+Permissions:
 android.permission.FLASHLIGHT
 android.permission.SYSTEM_ALERT_WINDOW
 com.android.browser.permission.READ_HISTORY_BOOKMARKS
@@ -372,7 +425,11 @@ android.permission.REQUEST_DELETE_PACKAGES
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 com.google.android.c2dm.permission.RECEIVE
 
-src\res\spyware\Mrecorder.txt
+App name: Mrecorder
+Package name: com.mobileservice.sync
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.ACCESS_FINE_LOCATION
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
@@ -398,7 +455,11 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 android.permission.ACCESS_BACKGROUND_LOCATION
 android.permission.ACCESS_MEDIA_LOCATION
 
-src\res\spyware\ScreenRecorder.txt
+App name: Screen Recorder
+Package name: net.example.hatiboy.gpcapture
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.RECORD_AUDIO
 android.permission.WRITE_EXTERNAL_STORAGE
 android.permission.WRITE_SETTINGS
@@ -410,7 +471,11 @@ android.permission.ACCESS_NETWORK_STATE
 android.permission.WAKE_LOCK
 android.permission.ACCESS_MEDIA_LOCATION
 
-src\res\spyware\SMSForwarder.txt
+App name: SMS Forwarder
+Package name: cz.psencik.smsforwarder
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.READ_CALL_LOG
 android.permission.AUTHENTICATE_ACCOUNTS
 android.permission.GET_ACCOUNTS
@@ -429,7 +494,11 @@ android.permission.FOREGROUND_SERVICE
 android.permission.READ_EXTERNAL_STORAGE
 android.permission.ACCESS_MEDIA_LOCATION
 
-src\res\spyware\SpyGPSSMSCallController.xml
+App name: Spy GPS SMS Call Controller
+Package name: com.dspark.phone.modefind
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.dspark.phone.modefind.permission.MAPS_RECEIVE
 android.permission.WRITE_EXTERNAL_STORAGE
 android.permission.READ_PHONE_STATE
@@ -446,6 +515,7 @@ android.permission.PROCESS_OUTGOING_CALLS
 com.google.android.c2dm.permission.RECEIVE
 com.dspark.phone.modefind.permission.C2D_MESSAGE
 android.permission.ACCESS_FINE_LOCATION
+android.permission.ACCESS_NETWORK_STATE
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.SYSTEM_ALERT_WINDOW
 android.permission.RECORD_AUDIO
@@ -456,12 +526,17 @@ android.permission.WRITE_SMS
 android.permission.BLUETOOTH
 android.permission.WRITE_SETTINGS
 android.permission.CALL_PHONE
+android.permission.READ_PHONE_STATE
 android.permission.READ_CONTACTS
 android.permission.SEND_SMS
 android.permission.READ_SMS
 android.permission.READ_EXTERNAL_STORAGE
 
-src\res\spyware\SpyToMobile.xml
+App name: Spy To Mobile
+Package name: com.spy2mobile.light
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.ACCESS_FINE_LOCATION
 android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
@@ -484,7 +559,11 @@ android.permission.READ_CALL_LOG
 android.permission.GET_ACCOUNTS
 android.permission.ACCESS_SUPERUSER
 
-src\res\spyware\TrackView.xml
+App name: TrackView
+Package name: com.trackview
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.CAMERA
@@ -503,7 +582,11 @@ android.permission.ACCESS_FINE_LOCATION
 com.google.android.c2dm.permission.RECEIVE
 com.trackview.permission.C2D_MESSAGE
 
-src\res\spyware\Unseen.txt
+App name: Unseen - No Last Seen
+Package name: com.tda.unseen
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.VIBRATE
 android.permission.WRITE_EXTERNAL_STORAGE
 android.permission.SYSTEM_ALERT_WINDOW
@@ -515,7 +598,11 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 com.google.android.c2dm.permission.RECEIVE
 android.permission.READ_EXTERNAL_STORAGE
 
-src\res\popular\Amazon.xml
+App name: Amazon
+Package name: com.amazon.mShop.android.shopping
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.amazon.mShop.android.shopping.permission.C2D_MESSAGE
 com.android.launcher.permission.INSTALL_SHORTCUT
 com.android.launcher.permission.READ_SETTINGS
@@ -570,14 +657,22 @@ com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permissio
 com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission
 com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission
 
-src\res\popular\AmongUs.xml
+App name: Among Us
+Package name: com.innersloth.spacemafia
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.CHANGE_WIFI_MULTICAST_STATE
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.WAKE_LOCK
 com.android.vending.BILLING
 
-src\res\popular\CashApp.txt
+App name: Cash App
+Package name: com.squareup.cash
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.ACCESS_FINE_LOCATION
 android.permission.ACCESS_NETWORK_STATE
@@ -602,7 +697,11 @@ android.permission.NFC
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 android.permission.WRITE_EXTERNAL_STORAGE
 
-src\res\popular\Facebook.txt
+App name: Facebook
+Package name: com.facebook.katana
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.android.vending.BILLING
 android.permission.BLUETOOTH
 android.permission.BLUETOOTH_ADMIN
@@ -666,7 +765,11 @@ com.amazon.device.messaging.permission.RECEIVE
 com.nokia.pushnotifications.permission.RECEIVE
 com.facebook.katana.permission.CREATE_SHORTCUT
 
-src\res\popular\Gmail.txt
+App name: Gmail
+Package name: com.google.android.gm
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.AUTHENTICATE_ACCOUNTS
 android.permission.ACCESS_NETWORK_STATE
 android.permission.GET_ACCOUNTS
@@ -702,7 +805,11 @@ com.google.android.email.permission.ACCESS_PROVIDER
 android.permission.READ_PROFILE
 android.permission.READ_EXTERNAL_STORAGE
 
-src\res\popular\GoogleMaps.txt
+App name: Google Maps
+Package name: com.google.android.apps.maps
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 com.google.android.providers.gsf.permission.READ_GSERVICES
 android.permission.WRITE_EXTERNAL_STORAGE
@@ -731,7 +838,11 @@ android.permission.CALL_PHONE
 android.permission.BROADCAST_STICKY
 android.permission.READ_EXTERNAL_STORAGE
 
-src\res\popular\Instagram.xml
+App name: Instagram
+Package name: com.instagram.android
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.WAKE_LOCK
@@ -765,7 +876,11 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 .permission.RECEIVE_ADM_MESSAGE
 com.amazon.device.messaging.permission.RECEIVE
 
-src\res\popular\Lyft.xml
+App name: Lyft
+Package name: me.lyft.android
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.ACCESS_FINE_LOCATION
 android.permission.ACCESS_NETWORK_STATE
@@ -794,7 +909,11 @@ android.permission.USE_FINGERPRINT
 android.permission.RECEIVE_BOOT_COMPLETED
 android.permission.FOREGROUND_SERVICE
 
-src\res\popular\Messenger.txt
+App name: Facebook Messenger
+Package name: com.facebook.orca
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.android.vending.BILLING
 com.facebook.katana.provider.ACCESS
 android.permission.INTERNET
@@ -858,7 +977,11 @@ com.nokia.pushnotifications.permission.RECEIVE
 com.facebook.orca.permission.CREATE_SHORTCUT
 android.permission.MANAGE_OWN_CALLS
 
-src\res\popular\Netflix.txt
+App name: Netflix
+Package name: com.netflix.mediaclient
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.android.vending.BILLING
 com.netflix.mediaclient.permission.C2D_MESSAGE
 com.netflix.partner.activation.permission.CHANNEL_ID
@@ -879,7 +1002,11 @@ android.permission.READ_EXTERNAL_STORAGE
 android.permission.ACCESS_MEDIA_LOCATION
 android.permission.ACTIVITY_RECOGNITION
 
-src\res\popular\PokemonGo.txt
+App name: Pokemon Go
+Package name: com.nianticlabs.pokemongo
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.android.vending.BILLING
 android.permission.VIBRATE
 android.permission.BLUETOOTH
@@ -905,7 +1032,11 @@ android.permission.ACCESS_BACKGROUND_LOCATION
 android.permission.ACCESS_MEDIA_LOCATION
 android.permission.ACTIVITY_RECOGNITION
 
-src\res\popular\Seamless.txt
+App name: Seamless
+Package name: com.seamlessweb.android.view
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_COARSE_LOCATION
 android.permission.ACCESS_FINE_LOCATION
@@ -923,7 +1054,11 @@ android.permission.RECEIVE_BOOT_COMPLETED
 android.permission.FOREGROUND_SERVICE
 com.google.android.c2dm.permission.RECEIVE
 
-src\res\popular\Snapchat.xml
+App name: Snapchat
+Package name: com.snapchat.android
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.WAKE_LOCK
 android.permission.CAMERA
 android.permission.RECORD_AUDIO
@@ -968,7 +1103,11 @@ com.oppo.launcher.permission.WRITE_SETTINGS
 me.everything.badger.permission.BADGE_COUNT_READ
 me.everything.badger.permission.BADGE_COUNT_WRITE
 
-src\res\popular\Spotify.xml
+App name: Spotify
+Package name: com.spotify.music
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.RECEIVE_BOOT_COMPLETED
@@ -980,7 +1119,11 @@ com.android.providers.tv.permission.WRITE_EPG_DATA
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 com.google.android.c2dm.permission.RECEIVE
 
-src\res\popular\TikTok.xml
+App name: TikTok
+Package name: com.zhiliaoapp.musically
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.READ_EXTERNAL_STORAGE
@@ -1044,7 +1187,11 @@ me.everything.badger.permission.BADGE_COUNT_WRITE
 android.permission.UPDATE_APP_BADGE
 com.vivo.notification.permission.BADGE_ICON
 
-src\res\popular\Twitter.xml
+App name: Twitter
+Package name: com.twitter.android
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.twitter.android.permission.RESTRICTED
 android.permission.MODIFY_AUDIO_SETTINGS
 android.permission.INTERNET
@@ -1087,7 +1234,11 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 android.permission.FOREGROUND_SERVICE
 android.permission.RECEIVE_BOOT_COMPLETED
 
-src\res\popular\Uber.txt
+App name: Uber
+Package name: com.ubercab
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.google.android.c2dm.permission.RECEIVE
 com.google.android.providers.gsf.permission.READ_GSERVICES
 com.ubercab.permission.C2D_MESSAGE
@@ -1122,7 +1273,11 @@ android.permission.RECORD_AUDIO
 android.permission.GET_ACCOUNTS
 android.permission.CHANGE_NETWORK_STATE
 
-src\res\popular\WeatherChannel.xml
+App name: Weather Channel
+Package name: com.weather.Weather
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 com.weather.Weather.permission.RECEIVE_ADM_MESSAGE
 android.permission.INTERNET
 android.permission.ACCESS_COARSE_LOCATION
@@ -1139,7 +1294,11 @@ com.amazon.device.messaging.permission.RECEIVE
 com.android.vending.BILLING
 com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 
-src\res\popular\WhatsApp.xml
+App name: WhatsApp
+Package name: com.whatsapp
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.READ_PHONE_STATE
 android.permission.RECEIVE_SMS
 android.permission.VIBRATE
@@ -1197,7 +1356,11 @@ com.whatsapp.permission.REGISTRATION
 com.whatsapp.sticker.READ
 android.permission.READ_EXTERNAL_STORAGE
 
-src\res\popular\YouTube.xml
+App name: YouTube
+Package name: com.google.android.youtube
+First installed: Jan 01, 1970, 12:00 AM
+Last modified: Jan 01, 1970, 12:00 AM
+Permissions:
 android.permission.INTERNET
 android.permission.ACCESS_NETWORK_STATE
 android.permission.ACCESS_WIFI_STATE

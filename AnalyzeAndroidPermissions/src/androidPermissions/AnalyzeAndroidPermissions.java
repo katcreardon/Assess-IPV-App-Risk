@@ -14,27 +14,55 @@ public class AnalyzeAndroidPermissions {
     static File[] spyFiles = new File("src/res/spyware").listFiles();
     static File[] popFiles = new File("src/res/popular").listFiles();
     static File permFile = new File("src/res/permissions/allPermissions.txt");
-    static File popData = new File("src/res/permissions/popularPermissions.txt");
     static File spyData = new File("src/res/permissions/spywarePermissions.txt");
+    static File popData = new File("src/res/permissions/popularPermissions.txt");
     static File permByAppFile = new File("src/res/permissions/permissionsByApp.txt");
     static Map<String, Permissions> spyMap = new HashMap<>();
     static Map<String, Permissions> popMap = new HashMap<>();
-    static File popCount = new File("src/res/permissions/popPermissionsCount.txt");
     static File spyCount = new File("src/res/permissions/spywarePermissionsCount.txt");
+    static File popCount = new File("src/res/permissions/popPermissionsCount.txt");
     static File sharedPerms = new File("src/res/permissions/sharedPermissions.txt");
     static File uniquePerms = new File("src/res/permissions/uniquePermissions.txt");
 
     public static void main(String[] args) {
         try {
-            getCategories();
             getPermissions(spyFiles, spyData, permByAppFile);
             getPermissions(popFiles, popData, permByAppFile);
+            getCategories();
             List<Entry<String, Permissions>> sortedSpy = countPermissions(spyData, spyMap, spyCount);
             List<Entry<String, Permissions>> sortedPop = countPermissions(popData, popMap, popCount);
             comparePermissions(sortedSpy, sortedPop);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    // Reads all permissions from set of apps (spyware or popular) and writes to file
+    static void getPermissions(File[] files, File dataTxt, File labeledTxt) throws IOException {
+        String line;
+        String prefix = "<uses-permission android:name=";
+        BufferedWriter bw1 = new BufferedWriter(new FileWriter(dataTxt));
+        BufferedWriter bw2 = new BufferedWriter(new FileWriter(labeledTxt, true));
+
+        for (File file : files) {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            // Used to filter out repeated permissions within the same XML file
+            HashSet<String> uniquePerms = new HashSet<>();
+            bw2.write(file.toString() + "\n");
+            while ((line = br.readLine()) != null) {
+                if (line.contains(prefix)) {
+                    String[] result = line.split("\"");
+                    if (!uniquePerms.contains(result[1])) {
+                        bw1.write(result[1] + "\n");
+                        bw2.write(result[1] + "\n");
+                        uniquePerms.add(result[1]);
+                    }
+                }
+            }
+            bw2.write("\n");
+            br.close();
+        }
+        bw1.close();
+        bw2.close();
     }
     // Reads categorized permissions (normal, dangerous, signature, or removed) and adds to set for use in program
     static void getCategories() throws IOException {
@@ -68,31 +96,9 @@ public class AnalyzeAndroidPermissions {
         }
         br.close();
     }
-    // Reads all permissions from set of apps (spyware or popular) and writes to file
-    static void getPermissions(File[] files, File dataTxt, File labeledTxt) throws IOException {
-        String line;
-        String prefix = "<uses-permission android:name=";
-        BufferedWriter bw1 = new BufferedWriter(new FileWriter(dataTxt));
-        BufferedWriter bw2 = new BufferedWriter(new FileWriter(labeledTxt, true));
-
-        for (File file : files) {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            bw2.write(file.toString() + "\n");
-            while ((line = br.readLine()) != null) {
-                if (line.contains(prefix)) {
-                    String[] result = line.split("\"");
-                    bw1.write(result[1] + "\n");
-                    bw2.write(result[1] + "\n");
-                }
-            }
-            bw2.write("\n");
-            br.close();
-        }
-        bw1.close();
-        bw2.close();
-    }
     // Counts repeated permissions and outputs to file sorted by type and descending count
-    static List<Entry<String, Permissions>> countPermissions(File txt, Map<String, Permissions> map, File countTxt) throws IOException {
+    static List<Entry<String, Permissions>> countPermissions(File txt, Map<String, Permissions> map, File countTxt)
+            throws IOException {
         String line;
         boolean isNormal = false;
         boolean isDangerous = false;
@@ -163,7 +169,8 @@ public class AnalyzeAndroidPermissions {
         return sortedEntries;
     }
 
-    static void comparePermissions(List<Entry<String, Permissions>> sp, List<Entry<String, Permissions>> pp) throws IOException {
+    static void comparePermissions(List<Entry<String, Permissions>> sp, List<Entry<String, Permissions>> pp)
+            throws IOException {
         BufferedWriter bw1 = new BufferedWriter(new FileWriter(sharedPerms));
         BufferedWriter bw2 = new BufferedWriter(new FileWriter(uniquePerms));
         List<String> spyList = new ArrayList<>();
@@ -173,6 +180,8 @@ public class AnalyzeAndroidPermissions {
         List<String> uniquePopList;
         String type;
         double percentIncl;
+        double spyPer;
+        double popPer;
 
         for (Entry<String, Permissions> e : sp) {
             spyList.add(e.getKey());
@@ -191,8 +200,11 @@ public class AnalyzeAndroidPermissions {
 
         for (String e : sharedList) {
             type = spyMap.get(e).getType();
+            spyPer = ((double)(spyMap.get(e).getCount()) / 20) * 100;
+            popPer = ((double)(popMap.get(e).getCount()) / 20) * 100;
             percentIncl = ((double)(spyMap.get(e).getCount() + popMap.get(e).getCount()) / 40) * 100;
-            bw1.write(type + " " + e + " " + String.format("%,.0f", percentIncl) +"%\n");
+            bw1.write(type + " " + e + " " + String.format("%,.0f", spyPer) + "% "
+                    + String.format("%,.0f", popPer) + "% " + String.format("%,.0f", percentIncl) +"%\n");
         }
 
         bw2.write("Spyware\n");

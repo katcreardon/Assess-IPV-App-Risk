@@ -11,7 +11,7 @@ public class AppRisk {
 	File whitelistTxt = new File("src/res/whitelist.txt");
 	File permDescriptions = new File("src/res/permissionDescriptions.txt");
 //	File appDataFile = new File("src/res/appdata.txt");					// Comment for testing
-//	File appDataFile = new File("src/res/test_appdata.txt");     // Uncomment for testing
+//	File appDataFile = new File("src/res/max_appdata.txt");     // Uncomment for testing
 	File appDataFile = new File("src/res/seed_appdata.txt");		// Uncomment for testing
 	Map<String, Permissions> permWeightMap = new HashMap<>();
 	ArrayList<App> appList = new ArrayList<>();

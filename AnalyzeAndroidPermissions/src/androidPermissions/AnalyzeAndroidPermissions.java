@@ -168,7 +168,7 @@ public class AnalyzeAndroidPermissions {
 
         return sortedEntries;
     }
-
+    // Returns shared and unique permissions
     static void comparePermissions(List<Entry<String, Permissions>> sp, List<Entry<String, Permissions>> pp)
             throws IOException {
         BufferedWriter bw1 = new BufferedWriter(new FileWriter(sharedPerms));

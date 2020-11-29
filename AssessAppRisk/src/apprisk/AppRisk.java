@@ -10,9 +10,9 @@ public class AppRisk {
 	File permWeightFile = new File("src/res/permissionWeights.txt");
 	File whitelistTxt = new File("src/res/whitelist.txt");
 	File permDescriptions = new File("src/res/permissionDescriptions.txt");
-//	File appDataFile = new File("src/res/appdata.txt");					// Comment for testing
+	File appDataFile = new File("src/res/appdata.txt");					// Comment for testing
 //	File appDataFile = new File("src/res/max_appdata.txt");     // Uncomment for testing
-	File appDataFile = new File("src/res/seed_appdata.txt");		// Uncomment for testing
+//	File appDataFile = new File("src/res/seed_appdata.txt");		// Uncomment for testing
 	Map<String, Permissions> permWeightMap = new HashMap<>();
 	ArrayList<App> appList = new ArrayList<>();
 	Map<String, String> whitelist = new HashMap<>();
@@ -29,7 +29,7 @@ public class AppRisk {
 			e.printStackTrace();
 		}
 	}
-
+	// Reads permissions and usage rates from file and adds to map
 	private void getWeights(Map<String, Permissions> map) throws IOException {		
 		BufferedReader br = new BufferedReader(new FileReader(permWeightFile));
 		String line;
@@ -111,7 +111,7 @@ public class AppRisk {
 		
 		br.close();
 	}
-
+	// Reads app data from file, adds names for list selection panel, and adds apps to list
 	// File must have two blank lines at end to work
 	private ArrayList<App> readAppData() throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(appDataFile));
@@ -156,7 +156,7 @@ public class AppRisk {
 		
 		return apps;
 	}
-
+	// Calculates risk of selected list item using weight map
 	public String[] calculateRisk(String selectedApp) {
 		String packageName = null;
 		String firstInstall = null;
@@ -188,9 +188,10 @@ public class AppRisk {
 		}
 		Collections.sort(permsList);
 
-		return new String[]{String.format("%.2f", risk), packageName, firstInstall, lastMod, String.join("\n", permsList)};
+		return new String[]{String.format("%.2f", risk), packageName, firstInstall, lastMod,
+				String.join("\n", permsList)};
 	}
-	
+	// Reads whitelist from file and adds to map
 	Map<String, String> readWhitelist(File wlTxt) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(wlTxt));
 		String line;
@@ -205,7 +206,7 @@ public class AppRisk {
 
 		return map;
 	}
-	
+	// Reads permission descriptions from file and adds to map
 	Map<String, String> readPermissionDescriptions(File permDescTxt) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(permDescTxt));
 		String line;

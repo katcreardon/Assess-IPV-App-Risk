@@ -41,6 +41,25 @@ public class GraphicInterface extends JPanel {
                          ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
                          ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 
+        assessmentOutput = new JTextArea(1, 10);
+        assessmentOutput.setEditable(false);
+        assessmentOutput.setLineWrap(true);
+        assessmentOutput.setWrapStyleWord(true);
+        assessmentOutput.setMargin(new Insets(2, 5, 2, 5));
+        assessmentOutput.setText("Click on an item to view its details.");
+        JScrollPane assessmentPane = new JScrollPane(assessmentOutput,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+
+        descriptionOutput = new JTextArea(1, 10);
+        descriptionOutput.setEditable(false);
+        descriptionOutput.setLineWrap(true);
+        descriptionOutput.setWrapStyleWord(true);
+        descriptionOutput.setMargin(new Insets(2, 5, 2, 5));
+        JScrollPane descriptionPane = new JScrollPane(descriptionOutput,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+
         //Do the layout.
         JSplitPane splitPaneLeft = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
         add(splitPaneLeft, BorderLayout.WEST);
@@ -64,17 +83,6 @@ public class GraphicInterface extends JPanel {
         bottomLeft.setPreferredSize(new Dimension(450, 300));
         splitPaneLeft.add(bottomLeft);
         
-        // Testing adding content to right side of program
-        assessmentOutput = new JTextArea(1, 10);
-        assessmentOutput.setEditable(false);
-        assessmentOutput.setLineWrap(true);
-        assessmentOutput.setWrapStyleWord(true);
-        assessmentOutput.setMargin(new Insets(2, 5, 2, 5));
-        assessmentOutput.setText("Click on an item to view its details.");
-        JScrollPane assessmentPane = new JScrollPane(assessmentOutput,
-        				ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-        				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        
         JSplitPane splitPaneRight = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
         
         JPanel topRight = new JPanel();
@@ -92,15 +100,6 @@ public class GraphicInterface extends JPanel {
         
         add(splitPaneRight, BorderLayout.CENTER);
         
-        descriptionOutput = new JTextArea(1, 10);
-        descriptionOutput.setEditable(false);
-        descriptionOutput.setLineWrap(true);
-        descriptionOutput.setWrapStyleWord(true);
-        descriptionOutput.setMargin(new Insets(2, 5, 2, 5));
-        JScrollPane descriptionPane = new JScrollPane(descriptionOutput,
-        				ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-        				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        
         JPanel bottomRight = new JPanel();
         bottomRight.setLayout(new BoxLayout(bottomRight, BoxLayout.LINE_AXIS));
         JPanel descriptionContainer = new JPanel(new GridLayout(1, 1));
@@ -112,8 +111,6 @@ public class GraphicInterface extends JPanel {
         bottomRight.setMinimumSize(new Dimension(100, 100));
         bottomRight.setPreferredSize(new Dimension(500, 500));
         splitPaneRight.add(bottomRight);
-        
-        
 	}
 	
 	    /**
@@ -142,7 +139,7 @@ public class GraphicInterface extends JPanel {
         //creating and showing this application's GUI.
         javax.swing.SwingUtilities.invokeLater(GraphicInterface::createAndShowGUI);
     }
-	
+	// Listen for change in list selection
     class ListSelectionHandler implements ListSelectionListener {
         public void valueChanged(ListSelectionEvent e) {
             boolean isAdjusting = e.getValueIsAdjusting();
@@ -151,7 +148,7 @@ public class GraphicInterface extends JPanel {
             }
         }
     }
-    
+    // Changes display in top right and bottom left panels according to list selection in first panel
     String getListOutput() {
         Map<String, String> whitelist = appRisk.getWhiteList();
 
@@ -198,7 +195,7 @@ public class GraphicInterface extends JPanel {
         }
         return data[4];
     }
-    
+    // Changes display in bottom right panel according to list selection in first panel
     void getPermissionDetails(String str) {
     	String[] result1 = str.split("\n");
     	
@@ -211,7 +208,6 @@ public class GraphicInterface extends JPanel {
                         + permDescMap.get(result2[1]) + "\n\n");
         	}
     	}
-    	
     	descriptionOutput.setCaretPosition(0);
     }
 }

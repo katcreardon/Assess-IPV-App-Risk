@@ -95,7 +95,7 @@ public class GraphicInterface extends JPanel {
         topRight.add(assessmentContainer);
         
         topRight.setMinimumSize(new Dimension(100, 100));
-        topRight.setPreferredSize(new Dimension(400, 300));
+        topRight.setPreferredSize(new Dimension(100, 300));
         splitPaneRight.add(topRight);
         
         add(splitPaneRight, BorderLayout.CENTER);
@@ -109,7 +109,7 @@ public class GraphicInterface extends JPanel {
         bottomRight.setBorder(BorderFactory.createEmptyBorder(5, 5, 0, 5));
         bottomRight.add(descriptionContainer);
         bottomRight.setMinimumSize(new Dimension(100, 100));
-        bottomRight.setPreferredSize(new Dimension(500, 500));
+        bottomRight.setPreferredSize(new Dimension(400, 400));
         splitPaneRight.add(bottomRight);
 	}
 	

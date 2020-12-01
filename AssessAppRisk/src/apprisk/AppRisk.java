@@ -1,18 +1,15 @@
 package apprisk;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class AppRisk {
-	File permWeightFile = new File("src/res/permissionWeights.txt");
-	File whitelistTxt = new File("src/res/whitelist.txt");
-	File permDescriptions = new File("src/res/permissionDescriptions.txt");
-	File appDataFile = new File("src/res/appdata.txt");					// Comment for testing
-//	File appDataFile = new File("src/res/max_appdata.txt");     // Uncomment for testing
-//	File appDataFile = new File("src/res/seed_appdata.txt");		// Uncomment for testing
+	InputStream permWeightFile = this.getClass().getResourceAsStream("/res/permissionWeights.txt");
+	InputStream whitelistTxt = this.getClass().getResourceAsStream("/res/whitelist.txt");
+	InputStream permDescriptions = this.getClass().getResourceAsStream("/res/permissionDescriptions.txt");
+	InputStream appDataFile = this.getClass().getResourceAsStream("/res/appdata.txt"); // Comment for testing
+//	InputStream appDataFile = this.getClass().getResourceAsStream("/res/max_appdata.txt"); // Uncomment for testing
+//	InputStream appDataFile = this.getClass().getResourceAsStream("/res/seed_appdata.txt"); // Uncomment for testing
 	Map<String, Permissions> permWeightMap = new HashMap<>();
 	ArrayList<App> appList = new ArrayList<>();
 	Map<String, String> whitelist = new HashMap<>();
@@ -31,7 +28,7 @@ public class AppRisk {
 	}
 	// Reads permissions and usage rates from file and adds to map
 	private void getWeights(Map<String, Permissions> map) throws IOException {		
-		BufferedReader br = new BufferedReader(new FileReader(permWeightFile));
+		BufferedReader br = new BufferedReader(new InputStreamReader(permWeightFile));
 		String line;
 		String[] result;
 
@@ -114,7 +111,7 @@ public class AppRisk {
 	// Reads app data from file, adds names for list selection panel, and adds apps to list
 	// File must have two blank lines at end to work
 	private ArrayList<App> readAppData() throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(appDataFile));
+		BufferedReader br = new BufferedReader(new InputStreamReader(appDataFile));
 		String line;
 		String appName = null;
 		String packageName = null;
@@ -192,8 +189,8 @@ public class AppRisk {
 				String.join("\n", permsList)};
 	}
 	// Reads whitelist from file and adds to map
-	Map<String, String> readWhitelist(File wlTxt) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(wlTxt));
+	Map<String, String> readWhitelist(InputStream wlTxt) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(wlTxt));
 		String line;
 		String[] result;
 		Map<String, String> map = new HashMap<>();
@@ -207,8 +204,8 @@ public class AppRisk {
 		return map;
 	}
 	// Reads permission descriptions from file and adds to map
-	Map<String, String> readPermissionDescriptions(File permDescTxt) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(permDescTxt));
+	Map<String, String> readPermissionDescriptions(InputStream permDescTxt) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(permDescTxt));
 		String line;
 		String[] result;
 		Map<String, String> map = new HashMap<>();
